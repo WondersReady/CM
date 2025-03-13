@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="MasteryMultiPlayerCollectionProtossMasteryEnergyRegenDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="MasteryMultiPlayerCollectionProtossMasteryUnitDamageDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionDisruptionBeamCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="MultiPlayerCollectionDisruptionBeamPeriodicSet"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionDisruptionBeamPeriodicSet"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="MultiPlayerCollectionDisruptionBeamTargetAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionDisruptionBeamTargetABTimeWarped">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1.6667"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionDisruptionBeamDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <ShieldBonus value="4"/>
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectSwitch id="MultiPlayerCollectionDisruptionBeamTimeWarpSwitch">
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="MultiPlayerCollectionCasterIsTimeWarpedMothership" Effect="MultiPlayerCollectionDisruptionBeamTargetABTimeWarped"/>
+        <CaseDefault value="MultiPlayerCollectionDisruptionBeamTargetAB"/>
+    </CEffectSwitch>
+    <CEffectCreateUnit id="MultiPlayerCollectionForceFieldCU">
+        <ValidatorArray value="CliffLevelGE1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnOwner Value="Neutral"/>
+        <SpawnEffect value="MultiPlayerCollectionForceFieldTimedLifeAB"/>
+        <SpawnUnit value="MultiPlayerCollectionForceField"/>
+        <SpawnRange value="0"/>
+    </CEffectCreateUnit>
+    <CEffectEnumArea id="MultiPlayerCollectionForceFieldSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Air,Ground,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.7"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="MultiPlayerCollectionForceFieldTimedLifeAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionForceFieldTimedLife"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionGuardianShieldAB">
+        <ValidatorArray index="0" value="SourceNotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionGuardianShield"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="MultiPlayerCollectionGuardianShieldCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="SourceUnit"/>
+        <PeriodCount value="36"/>
+        <PeriodicValidator value="NotHaveScramblerMissileBehavior"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionGuardianShieldSearch"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MultiPlayerCollectionGuardianShieldSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4.5" Effect="MultiPlayerCollectionGuardianShieldAB"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MultiPlayerCollectionDisruptionBeamPeriodicSet">
+        <ValidatorArray value="MultiPlayerCollectionNotHaveBeamTargetCDBehavior"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionDisruptionBeamDamage"/>
+        <EffectArray value="MultiPlayerCollectionDisruptionBeamTimeWarpSwitch"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="MultiPlayerCollectionGravitonBeamAttackCancel">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="MultiPlayerCollectionGravitonBeamDisableCasterEnergyRegenAB">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionGravitonBeamDisableEnergyRegen"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionGravitonBeamDisableCasterWeaponsAB">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionGravitonBeamDisablePhoenixWeapons"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="MultiPlayerCollectionGravitonBeamAntiGravityCP">
+        <ValidatorArray value="NoGravitonBeamInProgress"/>
+        <ValidatorArray value="NotAbducted"/>
+        <ValidatorArray value="NoReaperKD8Knockback"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="MultiPlayerCollectionGravitonBeamAntiGravityInitialSet"/>
+        <PeriodCount value="80"/>
+        <PeriodicValidator value="GravitonBeamValidators"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionGravitonBeamAntiGravityPeriodicSet"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="MultiPlayerCollectionGravitonBeamAntiGravityAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionGravitonBeam"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionGravitonBeamAntiGravityVisibilityDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Flags index="NoBehaviorResponse" value="1"/>
+        <Flags index="NoDamageTimerReset" value="1"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectIssueOrder id="MultiPlayerCollectionGravitonBeamHaltTerranBuild">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="TerranBuild"/>
+        <AbilCmdIndex value="30"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="MultiPlayerCollectionGravitonBeamAntiGravityHeightAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionGravitonBeamHeight"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionGravitonBeamAntiGravityInitialSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamDisableCasterEnergyRegenAB"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamDisableCasterWeaponsAB"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamAntiGravityHeightAB"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamHaltTerranBuild"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamAttackCancel"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamAntiGravityAB"/>
+    </CEffectSet>
+    <CEffectSet id="MultiPlayerCollectionGravitonBeamAntiGravityPeriodicSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamAntiGravityVisibilityDummy"/>
+        <EffectArray value="MultiPlayerCollectionGravitonBeamAntiGravityAB"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="MultiPlayerCollectionIonCannonsCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionIonCannonsLMLeft"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionIonCannonsLMRight"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="MultiPlayerCollectionIonCannonsLMLeft">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionIonCannonsULeft"/>
+        <AmmoUnit value="MultiPlayerCollectionIonCannons"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="MultiPlayerCollectionIonCannonsWeaponLeft" IfRangeLTE="6"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="MultiPlayerCollectionIonCannonsLMRight">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionIonCannonsURight"/>
+        <AmmoUnit value="MultiPlayerCollectionIonCannons"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="MultiPlayerCollectionIonCannonsWeaponRight" IfRangeLTE="6"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="MultiPlayerCollectionIonCannonsDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="5"/>
+        <Visibility value="Visible"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionIonCannonsULeft" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="5"/>
+        <Visibility value="Visible"/>
+        <Amount value="5"/>
+        <Death value="Blast"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionIonCannonsURight" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="5"/>
+        <Visibility value="Visible"/>
+        <Amount value="5"/>
+        <Death value="Blast"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="MultiPlayerCollectionOracleRevelationAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionOracleRevelation"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionOracleRevelationDummyDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Flags index="NoDamageTimerReset" value="1"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="MultiPlayerCollectionOracleRevelationSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="MultiPlayerCollectionOracleRevelationSet"/>
+    </CEffectEnumArea>
+    <CEffectDestroyPersistent id="MultiPlayerCollectionOracleRevelationDestroy">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Effect value="RevelationPersistent"/>
+        <Count value="1"/>
+        <Radius value="0.5"/>
+    </CEffectDestroyPersistent>
+    <CEffectCreatePersistent id="MultiPlayerCollectionOracleRevelationCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <ExpireDelay value="28"/>
+        <RevealRadius value="3"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionOracleRevelationSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionOracleRevelationAB"/>
+        <EffectArray value="MultiPlayerCollectionOracleRevelationCP"/>
+        <EffectArray value="MultiPlayerCollectionOracleRevelationDummyDamage"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionOracleBeamABTarget">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.86"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionOracleBeamABTargetTimeWarped">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1.4333"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="MultiPlayerCollectionOracleBeamCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="MultiPlayerCollectionOracleBeamPeriodicSet"/>
+        <PeriodicValidator value="OracleHasEnergyAndNotDead"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionOracleBeamPeriodicSet"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="MultiPlayerCollectionOracleBeamDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="7"/>
+        <ArmorReduction value="0"/>
+        <Visibility value="Visible"/>
+        <Kind value="Spell"/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectSet id="MultiPlayerCollectionOracleBeamPeriodicSet">
+        <ValidatorArray value="MultiPlayerCollectionNotHaveBeamTargetCDBehavior"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionOracleBeamDamage"/>
+        <EffectArray value="MultiPlayerCollectionOracleBeamTimeWarpSwitch"/>
+    </CEffectSet>
+    <CEffectSwitch id="MultiPlayerCollectionOracleBeamTimeWarpSwitch">
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="MultiPlayerCollectionCasterIsTimeWarpedMothership" Effect="MultiPlayerCollectionOracleBeamABTargetTimeWarped"/>
+        <CaseDefault value="MultiPlayerCollectionOracleBeamABTarget"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="MultiPlayerCollectionMothershipStrategicRecallSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="MultiPlayerCollectionMothershipStrategicRecallWarpOutSet"/>
+        <MinCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MultiPlayerCollectionMothershipStrategicRecallSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionMothershipStrategicRecallTeleport"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallPostAB"/>
+        <EffectArray value="MultiPlayerCollectionMothershipStrategicRecallSetPrevent2ndRecall"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionMothershipStrategicRecallSetPrevent2ndRecall">
+        <ValidatorArray index="0" value="MultiPlayerCollectionMothershipRecallSucceeded"/>
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="MultiPlayerCollectionNexusMassRecallWarpOut"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectTeleport id="MultiPlayerCollectionMothershipStrategicRecallTeleport">
+        <EditorCategories value="Race:Protoss"/>
+        <PlacementArc value="360"/>
+        <PlacementAround Effect="MultiPlayerCollectionMothershipStrategicRecallSearch" Value="SourcePoint"/>
+        <PlacementRange value="15"/>
+        <SourceLocation Effect="MultiPlayerCollectionMothershipStrategicRecallSearch" Value="TargetPoint"/>
+        <TargetLocation Effect="MultiPlayerCollectionMothershipStrategicRecallSearch" Value="SourcePoint"/>
+        <TeleportFlags index="TestCliff" value="1"/>
+        <TeleportFlags index="TestFog" value="0"/>
+    </CEffectTeleport>
+    <CEffectApplyBehavior id="MultiPlayerCollectionMothershipStrategicRecallWarpOutAB">
+        <Behavior value="MultiPlayerCollectionMothershipStrategicWarpOut"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionMothershipStrategicRecallWarpOutSet">
+        <ValidatorArray value="NotLarvaEgg"/>
+        <ValidatorArray value="NotLarva"/>
+        <ValidatorArray value="MultiPlayerCollectionIsNotWarpingIn"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallCastingAB"/>
+        <EffectArray value="MultiPlayerCollectionMothershipStrategicRecallWarpOutAB"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallPhasedAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionCloakingFieldAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionCloakField"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionCloakingFieldCasterAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="MultiPlayerCollectionCloakFieldCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="MultiPlayerCollectionCloakingFieldSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <AreaArray Radius="5" Effect="MultiPlayerCollectionCloakingFieldAB"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="MultiPlayerCollectionMothershipBeamDamage" parent="DU_WEAP_MISSILE">
+        <ValidatorArray value="MothershipRangeCheck"/>
+        <ValidatorArray value="MultiPlayerCollectionMultipleHitAttackTargetFilter"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Visibility value="Visible"/>
+        <Amount value="6"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="MultiPlayerCollectionMothershipBeamDummyMU">
+        <ValidatorArray value="MothershipRangeCheck"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="MultiPlayerCollectionMothershipBeamFriendlyFireSet">
+        <ValidatorArray value="FriendlyTargetExcludeSelf"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionMothershipBeamCP"/>
+        <EffectArray value="MultiPlayerCollectionMothershipSecondaryBeamCP"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="MultiPlayerCollectionMothershipBeamCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <InitialEffect value="MultiPlayerCollectionMothershipBeamDummyMU"/>
+        <PeriodCount value="2"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionMothershipBeamDamage"/>
+        <PeriodicPeriodArray value="0.375"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionMothershipBeamSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionMothershipBeamCP"/>
+        <EffectArray value="MultiPlayerCollectionMothershipSecondaryBeamCP"/>
+    </CEffectSet>
+    <CEffectSet id="MultiPlayerCollectionMothershipBeamSetCustom">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionMothershipSearch"/>
+        <EffectArray value="MultiPlayerCollectionMothershipBeamFriendlyFireSet"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectEnumArea id="MultiPlayerCollectionMothershipSearch">
+        <ValidatorArray value="CasterIsAlive"/>
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="MultiPlayerCollectionMothershipMothershipTargetFire"/>
+            <SortArray value="TSPriority"/>
+        </TargetSorts>
+        <AreaArray MaxCount="4" Radius="7" Effect="MultiPlayerCollectionMothershipBeamSet"/>
+        <MinCount value="1"/>
+        <SearchFlags index="CenterAtLaunch" value="1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="0"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="MultiPlayerCollectionMothershipSecondaryBeamCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <InitialDelay value="0.25"/>
+        <InitialEffect value="MultiPlayerCollectionMothershipBeamDummyMU"/>
+        <PeriodCount value="2"/>
+        <PeriodicValidator value="MothershipRangeCheckCombine"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionMothershipBeamDamage"/>
+        <PeriodicPeriodArray value="0.375"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="MultiPlayerCollectionVortexKillDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionVortexKill"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionVortexKillDamageDummy" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectDamage>
+    <CEffectSet id="MultiPlayerCollectionVortexKillSet">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker Link="Effect/DigesterCreepSecondarySet"/>
+        <EffectArray value="MultiPlayerCollectionVortexKillDamageDummy"/>
+        <EffectArray value="MultiPlayerCollectionVortexKillDamage"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionTargetFirePriorityAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionTargetFire"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionHighTemplarAttackDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <Amount value="4"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="MultiPlayerCollectionHighTemplarAttackLM">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionHighTemplarAttackSet"/>
+        <AmmoUnit value="MultiPlayerCollectionHighTemplarWeapon"/>
+        <Movers Link="MultiPlayerCollectionHighTemplarWeaponMover"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="MultiPlayerCollectionHighTemplarAttackSet">
+        <EffectArray value="MultiPlayerCollectionHighTemplarAttackDamage"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectSet>
+    <CEffectDamage id="MultiPlayerCollectionFeedbackDamageTargetbasedonEnergy">
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+        <VitalFractionCurrent index="Energy" value="0.5"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="MultiPlayerCollectionFeedbackRemoveTargetEnergy">
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <VitalArray index="Energy">
+            <ChangeFraction value="-1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="MultiPlayerCollectionFeedbackSet">
+        <ValidatorArray value="NotOrbitalCommand"/>
+        <ValidatorArray value="NotOrbitalCommandFlying"/>
+        <ValidatorArray value="NotNexus"/>
+        <ValidatorArray value="NotShieldBattery"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionFeedbackDamageTargetbasedonEnergy"/>
+        <EffectArray value="MultiPlayerCollectionFeedbackRemoveTargetEnergy"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionPsiStormAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionPsiStorm"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionPsiStormDamagePeriod">
+        <ValidatorArray value="PsiStormUTargetFilters"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Visibility value="Hidden"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionPsiStormDamageInit">
+        <ValidatorArray value="PsiStormUTargetFilters"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionPsiStormCP">
+        <EditorCategories value="Race:Protoss"/>
+        <InitialEffect value="MultiPlayerCollectionPsiStormSearch"/>
+        <PeriodCount value="6"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionPsiStormSearch"/>
+        <PeriodicPeriodArray value="0.5712"/>
+        <AINotifyEffect value="PsiStormSearch"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MultiPlayerCollectionPsiStormSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="MultiPlayerCollectionPsiStormAB"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="MultiPlayerCollectionPurificationNovaDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ShieldBonus value="100"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="100"/>
+        <Death value="Electrocute"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="MultiPlayerCollectionPurificationNovaTargettedCU">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="PlacementIgnoreBlockers" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="MultiPlayerCollectionPurificationNovaTargettedSpawnSet"/>
+        <SpawnUnit value="MultiPlayerCollectionDisruptorPhased"/>
+        <SpawnRange value="1"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="MultiPlayerCollectionPurificationNovaTargettedCasterAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionPurificationNovaTargettedCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionPurificationNovaTargettedInitialSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPurificationNovaTargettedCasterAB"/>
+        <EffectArray value="MultiPlayerCollectionPurificationNovaTargettedCU"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="MultiPlayerCollectionPurificationNovaTargettedIssueOrder">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="move"/>
+        <Target Effect="MultiPlayerCollectionPurificationNovaTargettedCU" Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="MultiPlayerCollectionPurificationNovaTargettedSearch">
+        <ValidatorArray value="CasterIsVisible"/>
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchLocation Value="TargetUnit"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="MultiPlayerCollectionPurificationNovaDamage"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MultiPlayerCollectionPurificationNovaTargettedSearchSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPurificationNovaTargettedSearch"/>
+        <EffectArray value="Kill"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionPurificationNovaTargettedSpawnAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionPurificationNovaTargettedTarget"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionPurificationNovaTargettedSpawnSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPurificationNovaTargettedSpawnAB"/>
+        <EffectArray value="MultiPlayerCollectionPurificationNovaTargettedIssueOrder"/>
+    </CEffectSet>
+    <CEffectTeleport id="MultiPlayerCollectionDarkTemplarBlink">
+        <ValidatorArray value="CasterNotFungalGrowthed"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <ClearQueuedOrders value="0"/>
+        <PlacementAround Value="CasterUnit"/>
+        <PlacementRange value="8"/>
+        <Range value="8"/>
+        <TargetLocation Value="TargetPoint"/>
+        <TeleportFlags index="TestCliff" value="1"/>
+        <TeleportEffect value="DarkTemplarBlinkAB"/>
+    </CEffectTeleport>
+    <CEffectDamage id="MultiPlayerCollectionArchonAttackBeamDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Biological" value="10"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="25"/>
+        <AreaArray Radius="0.25" Fraction="1"/>
+        <AreaArray Radius="0.5" Fraction="0.5"/>
+        <AreaArray Radius="1" Fraction="0.25"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionDarkTemplarWeaponDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="45"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionCarrierInterceptorLaunchUpgradeCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="8"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionCarrierInterceptorLaunchMagazine"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
+    <CEffectUseMagazine id="MultiPlayerCollectionCarrierInterceptorLaunchMagazine">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectUseMagazine>
+    <CEffectCreatePersistent id="MultiPlayerCollectionCarrierInterceptorLaunchCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="8"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionCarrierInterceptorLaunchMagazine"/>
+        <PeriodicPeriodArray value="0.375"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="MultiPlayerCollectionCarrierInterceptorAttackBeamDemage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionCarrierInterceptorAttackBeamCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <InitialEffect value="MultiPlayerCollectionCarrierInterceptorAttackBeamDemage"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionCarrierInterceptorAttackBeamDemage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionColossusThermalLancesSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionColossusThermalLancesForwardsCP"/>
+        <EffectArray value="MultiPlayerCollectionColossusThermalLancesBackwardsCP"/>
+        <EffectArray value="MultiPlayerCollectionColossusThermalLancesFriendlyCP"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="MultiPlayerCollectionColossusThermalLancesDelayCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <ExpireDelay value="0.25"/>
+        <FinalEffect value="MultiPlayerCollectionColossusThermalLancesDamage"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MultiPlayerCollectionColossusThermalLancesForwardsSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.15" Effect="MultiPlayerCollectionColossusThermalLancesDelayCP"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="MultiPlayerCollectionColossusThermalLancesBackwardsSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.15" Effect="MultiPlayerCollectionColossusThermalLancesDelayCP"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="MultiPlayerCollectionColossusThermalLancesForwardsCP">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <ExpireDelay value="0.73"/>
+        <ExpireEffect value="MultiPlayerCollectionColossusThermalLancesDamage"/>
+        <PeriodCount value="11"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionColossusThermalLancesForwardsSearch"/>
+        <PeriodicOffsetArray value="-1.25,0,0"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="-0.75,0,0"/>
+        <PeriodicOffsetArray value="-0.5,0,0"/>
+        <PeriodicOffsetArray value="-0.25,0,0"/>
+        <PeriodicOffsetArray value="0,0,0"/>
+        <PeriodicOffsetArray value="0.25,0,0"/>
+        <PeriodicOffsetArray value="0.5,0,0"/>
+        <PeriodicOffsetArray value="0.75,0,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="1.25,0,0"/>
+        <PeriodicPeriodArray value="0.0227"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="MultiPlayerCollectionColossusThermalLancesFriendlyCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <ExpireDelay value="0.2"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionColossusThermalLancesDamageFreindly"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionColossusThermalLancesDamageFreindly"/>
+        <PeriodicPeriodArray value="0.09"/>
+        <PeriodicPeriodArray value="0.09"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="MultiPlayerCollectionColossusThermalLancesDamageFreindly" parent="DU_WEAP">
+        <Name value="Effect/Name/ThermalLancesMU"/>
+        <ValidatorArray value="MultipleHitSelfAlliedOnlyGroundOnlyAttackTargetFilter"/>
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="ColossusAttackDamageMaxRange"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Marker Link="Effect/ThermalLancesMU"/>
+        <AttributeBonus index="Light" value="5"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="10"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionColossusThermalLancesDamage" parent="DU_WEAP">
+        <ValidatorArray value="MultipleHitGroundOnlyAttackTargetFilter"/>
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="ColossusAttackDamageMaxRange"/>
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="5"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="10"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionColossusThermalLancesBackwardsCP">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <ExpireDelay value="0.73"/>
+        <ExpireEffect value="MultiPlayerCollectionColossusThermalLancesDamage"/>
+        <PeriodCount value="11"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionColossusThermalLancesBackwardsSearch"/>
+        <PeriodicOffsetArray value="1.25,0,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0.75,0,0"/>
+        <PeriodicOffsetArray value="0.5,0,0"/>
+        <PeriodicOffsetArray value="0.25,0,0"/>
+        <PeriodicOffsetArray value="0,0,0"/>
+        <PeriodicOffsetArray value="-0.25,0,0"/>
+        <PeriodicOffsetArray value="-0.5,0,0"/>
+        <PeriodicOffsetArray value="-0.75,0,0"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="-1.25,0,0"/>
+        <PeriodicPeriodArray value="0.0227"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="MultiPlayerCollectionVoidRayDamageBoostAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionVoidRayDamageBoost"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionVoidRayDamageBoostCancel">
+        <BehaviorLink value="MultiPlayerCollectionVoidRayDamageBoost"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectRemoveBehavior>
+    <CEffectCreatePersistent id="MultiPlayerCollectionVoidRayBeamCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="MultiPlayerCollectionVoidRayBeamPeriodicSet"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionVoidRayBeamPeriodicSet"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="MultiPlayerCollectionVoidRayBeamDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Armored" value="4"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="MultiPlayerCollectionVoidRayBeamTargetAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.5"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionVoidRayBeamTargetABTimeWarped">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.8332"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionVoidRayBeamPeriodicSet">
+        <ValidatorArray value="MultiPlayerCollectionNotHaveBeamTargetCDBehavior"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionVoidRayBeamDamage"/>
+        <EffectArray value="MultiPlayerCollectionVoidRayBeamTimeWarpSwitch"/>
+    </CEffectSet>
+    <CEffectSwitch id="MultiPlayerCollectionVoidRayBeamTimeWarpSwitch">
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="MultiPlayerCollectionCasterIsTimeWarpedMothership" Effect="MultiPlayerCollectionVoidRayBeamTargetABTimeWarped"/>
+        <CaseDefault value="MultiPlayerCollectionVoidRayBeamTargetAB"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="MultiPlayerCollectionImmortalBarrierAddBarrier">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionImmortalOverload"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionImmortalBarrierAfterfirstdamageeffect">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionImmortalOverloadAB"/>
+        <EffectArray value="MultiPlayerCollectionImmortalBarrierSupressedApplyBehavior"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionImmortalBarrierRemoveBarrier">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="MultiPlayerCollectionImmortalOverload"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionImmortalBarrierRemoveactiveDuration">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="MultiPlayerCollectionTakenDamage"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionImmortalBarrierSupressedApplyBehavior">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionImmortalBarrierSupressed"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionImmortalOverloadAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="MultiPlayerCollectionTakenDamage"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionHallucinationABSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionHallucinationCreateUnitBHal"/>
+        <EffectArray value="MultiPlayerCollectionHallucinationCreateUnitBTimer"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionHallucinationCreateUnitBHal">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionHallucination"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionHallucinationCreateUnitBTimer">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionHallucinationTimedLife"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionKillHallucination">
+        <ValidatorArray value="KillHallucinationTargetFilters"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionAdeptDamage" parent="DU_WEAP">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="12"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="MultiPlayerCollectionAdeptLM">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionAdeptDamage"/>
+        <AmmoUnit value="MultiPlayerCollectionAdeptWeapon"/>
+        <Movers Link="AdeptWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectCreateUnit id="MultiPlayerCollectionPhaseShiftCU">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="PlacementIgnoreBlockers" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="MultiPlayerCollectionPhaseShiftSpawnSet"/>
+        <SpawnUnit value="MultiPlayerCollectionAdeptPhaseShift"/>
+        <SpawnRange value="1"/>
+    </CEffectCreateUnit>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseShiftCancel">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="MultiPlayerCollectionAdeptPhaseShiftCaster"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionAdeptPhaseShiftCancelAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionAdeptPhaseShiftCancelDummy"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionPhaseShiftCasterAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionAdeptPhaseShiftCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionPhaseShiftInitialSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftCasterAB"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftCU"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="MultiPlayerCollectionPhaseShiftIssueOrder">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="move"/>
+        <Target Effect="MultiPlayerCollectionPhaseShiftCU" Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="MultiPlayerCollectionPhaseShiftKillDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="TargetUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionAdeptPhaseShiftNeuraledShadeCP">
+        <ValidatorArray value="CasterIsNeuralParasited"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <FinalEffect value="MultiPlayerCollectionAdeptPhaseShiftCancelAB"/>
+        <PeriodicValidator value="CasterIsNeuralParasited"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionPhaseShiftRemoveDisablesSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPhaseNeuralParasiteRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseMothershipRecalledRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseMothershipRecallingRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseFungalGrowthRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseFungalMovementRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseDestroyGravitonBeamPersistant"/>
+        <EffectArray value="MultiPlayerCollectionPhaseStasisTrapRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftRemoveRecall"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="MultiPlayerCollectionPhaseShiftSelect">
+        <ImpactUnit Value="Caster"/>
+        <SelectTransferUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Target"/>
+        <SelectTransferFlags index="DeselectSource" value="1"/>
+        <SelectTransferFlags index="IncludeControlGroups" value="1"/>
+        <FacingLocation Effect="MultiPlayerCollectionPhaseShiftTeleportSet" Value="SourceUnit"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="MultiPlayerCollectionPhaseShiftSpawnAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionAdeptPhaseShift"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionPhaseShiftSpawnSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftSpawnAB"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftTimerSpawnAB"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftIssueOrder"/>
+        <EffectArray value="MultiPlayerCollectionAdeptPhaseShiftNeuraledShadeCP"/>
+    </CEffectSet>
+    <CEffectTeleport id="MultiPlayerCollectionPhaseShiftTeleport">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <MinDistance value="0"/>
+        <TargetLocation Effect="MultiPlayerCollectionPhaseShiftTeleportSet" Value="TargetPoint"/>
+    </CEffectTeleport>
+    <CEffectSet id="MultiPlayerCollectionPhaseShiftTeleportSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftRemoveDisablesSet"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftSelect"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftKillDummy"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftTeleport"/>
+        <EffectArray value="MultiPlayerCollectionPhaseUnitOrderQueue"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionPhaseShiftTimerSpawnAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionAdeptPhaseShiftTimer"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="MultiPlayerCollectionPhaseUnitOrderQueue">
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchUnit Effect="MultiPlayerCollectionPhaseShiftTeleportSet"/>
+        <ImpactUnit Value="Caster"/>
+        <CopyOrderCount value="50"/>
+        <CopyRallyCount value="50"/>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPurificationNovaTargettedCasterRB">
+        <ValidatorArray index="0" value="MultiPlayerCollectionIsDisruptor"/>
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="MultiPlayerCollectionPurificationNovaTargettedCaster"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionShadePhaseShiftCancelCasterBehaviorRB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionAdeptPhaseShiftCaster"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionShadePhaseShiftCancelRB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionAdeptPhaseShiftTimer"/>
+    </CEffectRemoveBehavior>
+    <CEffectTeleport id="MultiPlayerCollectionBlinkTeleport">
+        <ValidatorArray value="CasterNotFungalGrowthed"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <ClearQueuedOrders value="0"/>
+        <PlacementAround Value="CasterUnit"/>
+        <PlacementRange value="8"/>
+        <Range value="8"/>
+        <TargetLocation Value="TargetPoint"/>
+        <TeleportFlags index="TestCliff" value="1"/>
+    </CEffectTeleport>
+    <CEffectApplyBehavior id="MultiPlayerCollectionChargeAttackAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionChargingAttack"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionChargeAttackRemoveBuff">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionChargingAttack"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionChargeCheckAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionChargingAttackCheck"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionChargeCheckRemoveBuff">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionChargingAttackCheck"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="MultiPlayerCollectionChargingDamage">
+        <ValidatorArray value="MultiPlayerCollectionChargeDamageDistance"/>
+        <ValidatorArray value="MultiPlayerCollectionZealotChargeTargetNotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Effect="Charge" Value="TargetUnit"/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionChargingDamageSecondary">
+        <ValidatorArray value="MultiPlayerCollectionChargeTargetNotAlive"/>
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectSet id="MultiPlayerCollectionChargingPrimaryDamageSet">
+        <ValidatorArray value="MultiPlayerCollectionChargeTargetNotDead"/>
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionChargingDamage"/>
+        <EffectArray value="MultiPlayerCollectionChargeCheckRemoveBuff"/>
+        <EffectArray value="MultiPlayerCollectionChargeAttackRemoveBuff"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionChargeAB">
+        <ValidatorArray index="0" value="MultiPlayerCollectionChargeMinimumTriggerDistance"/>
+        <ValidatorArray value="MultiPlayerCollectionChargeMaxDistance"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionCharging"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionAssimilatorRichAB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionHarvestableRichVespeneGeyserGasProtoss"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionAssimilatorRichRB">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionHarvestableVespeneGeyserGasProtoss"/>
+    </CEffectRemoveBehavior>
+    <CEffectModifyUnit id="MultiPlayerCollectionBatteryAddEnergy">
+        <EditorCategories value="Race:Protoss"/>
+        <VitalArray index="Energy">
+            <Change value="50"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="MultiPlayerCollectionBatteryCooldownAB">
+        <WhichUnit Value="Source"/>
+        <Behavior value="MultiPlayerCollectionBatteryAcquireTargetCooldown"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionBatteryOverchargeAB">
+        <ValidatorArray index="0" value="MultiPlayerCollectionIsShieldBattery"/>
+        <ValidatorArray value="IsNotConstructing"/>
+        <ValidatorArray value="MultiPlayerCollectionTargetNotHaveBatteryOvercharge"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionBatteryOvercharge"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="MultiPlayerCollectionEnergyRechargeMU">
+        <EditorCategories value="Race:Protoss"/>
+        <VitalArray index="Energy">
+            <Change value="25"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="MultiPlayerCollectionEnergyRechargeCP">
+        <ValidatorArray value="EnergyNotFull"/>
+        <ValidatorArray value="NotNexus"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="MultiPlayerCollectionEnergyRechargeMU"/>
+        <PeriodCount value="3"/>
+        <PeriodicValidator value="TargetNotDead"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionEnergyRechargeMU"/>
+        <PeriodicPeriodArray value="0.476"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="MultiPlayerCollectionChronoBoostEnergyCostAB">
+        <ValidatorArray index="0" value="MultiPlayerCollectionHaveChronoBoostTargetBehavior"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionChronoBoostEnergyCost"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionNexusMassRecallCastingAB">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionNexusMassRecallCasting"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionNexusMassRecallCastingRB">
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionNexusMassRecallCasting"/>
+        <Count value="1"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionNexusMassRecallPhasedAB">
+        <ValidatorArray index="0" removed="1"/>
+        <Behavior value="MultiPlayerCollectionNexusMassRecallTargetPhased"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MultiPlayerCollectionNexusMassRecallPostAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionNexusMassRecallPost"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionNexusMassRecallPreTeleportDummy">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="MultiPlayerCollectionNexusMassRecallSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="MultiPlayerCollectionNexusMassRecallWarpOutSet"/>
+        <MinCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MultiPlayerCollectionNexusMassRecallSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallTeleport"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallPostAB"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallSetPrevent2ndRecall"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionNexusMassRecallSetPrevent2ndRecall">
+        <ValidatorArray index="0" value="MultiPlayerCollectionMothershipRecallSucceeded"/>
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="MothershipStrategicWarpOut"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectTeleport id="MultiPlayerCollectionNexusMassRecallTeleport">
+        <EditorCategories value="Race:Protoss"/>
+        <PlacementArc value="360"/>
+        <PlacementAround Effect="MultiPlayerCollectionNexusMassRecallSearch" Value="SourcePoint"/>
+        <PlacementRange value="15"/>
+        <SourceLocation Effect="MultiPlayerCollectionNexusMassRecallSearch" Value="TargetPoint"/>
+        <TargetLocation Effect="MultiPlayerCollectionNexusMassRecallSearch" Value="SourcePoint"/>
+        <TeleportFlags index="TestCliff" value="1"/>
+        <TeleportFlags index="TestFog" value="0"/>
+    </CEffectTeleport>
+    <CEffectApplyBehavior id="MultiPlayerCollectionNexusMassRecallWarpOutAB">
+        <ValidatorArray index="0" removed="1"/>
+        <Behavior value="MultiPlayerCollectionNexusMassRecallWarpOut"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MultiPlayerCollectionNexusMassRecallWarpOutSet">
+        <ValidatorArray value="NotLarvaEgg"/>
+        <ValidatorArray value="NotLarva"/>
+        <ValidatorArray value="MultiPlayerCollectionIsNotWarpingIn"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallCastingAB"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallWarpOutAB"/>
+        <EffectArray value="MultiPlayerCollectionNexusMassRecallPhasedAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionUpgradeToWarpGateAutoCastDisabler">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="MultiPlayerCollectionUpgradeToWarpGateAutoCastOff">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="MultiPlayerCollectionUpgradeToWarpGate"/>
+        <CmdFlags index="SetAutoCast" value="1"/>
+        <Player Value="Caster"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="MultiPlayerCollectionParticleBeam" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="MultiPlayerCollectionPhotonCannonLM">
+        <ValidatorArray index="0" value="PhotonCannonTargetFilters"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionPhotonCannonDmage"/>
+        <AmmoUnit value="MultiPlayerCollectionPhotonCannonWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="MultiPlayerCollectionPhotonCannonDmage" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionShieldBatteryRechargeDamageDummy">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="MultiPlayerCollectionShieldBatteryRechargeRevealSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Hidden"/>
+        <AreaArray Radius="10" Effect="MultiPlayerCollectionShieldBatteryRechargeDamageDummy"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreateHealer id="MultiPlayerCollectionShieldBatteryRecharge">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NotHiddenSelf"/>
+        <ValidatorArray value="MultiPlayerCollectionShieldBatteryRechargeTargetFilter"/>
+        <ValidatorArray value="NotInterceptor"/>
+        <EditorCategories value="Race:Protoss"/>
+        <PeriodicEffect value="MultiPlayerCollectionShieldBatteryRechargeRevealSearch"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.33">
+            <AccumulatorArray value="MultiPlayerCollectionShieldBatteryRechargeCostSwitch"/>
+        </DrainVitalCostFactor>
+        <RechargeVital value="Shields"/>
+        <RechargeVitalRate value="36"/>
+        <InitialEffect value="MultiPlayerCollectionBatteryCooldownAB"/>
+    </CEffectCreateHealer>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionDisableCharging">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MultiPlayerCollectionCharging"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="MultiPlayerCollectionPsiBladesDamage" parent="DU_WEAP">
+        <ValidatorArray value="MultipleHitGroundOnlyAttackTargetFilter"/>
+        <ValidatorArray value="ZealotAttackDamageMaxRange"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="8"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionPsiBlades">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionPsiBladesDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionPowerUserWarpablelevel2gained">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectSet>
+    <CEffectSet id="MultiPlayerCollectionPowerUserWarpablelevel2lost">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="MultiPlayerCollectionEntropyLanceSet">
+        <ValidatorArray index="0" value="StalkerTargetFilters"/>
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionEntropyLanceDamage"/>
+        <AmmoUnit value="MultiPlayerCollectionStalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="MultiPlayerCollectionEntropyLanceDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="13"/>
+    </CEffectDamage>
+    <CEffectDestroyPersistent id="MultiPlayerCollectionPhaseDestroyGravitonBeamPersistant">
+        <WhichLocation Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB"/>
+        <Effect value="GravitonBeam"/>
+        <Count value="1"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectDestroyPersistent>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseFungalGrowthRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value=""/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseFungalMovementRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="FungalGrowthSlowMovement"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseMothershipCoreRecalledRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="MothershipCoreRecalled"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseMothershipCoreRecallingRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="MothershipCoreRecalling"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseMothershipRecalledRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="MothershipRecalled"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseMothershipRecallingRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="MothershipRecalling"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseNeuralParasiteRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="NeuralParasite"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="MultiPlayerCollectionPhaseShiftRemoveRecall">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPhaseMothershipCoreRecalledRemove"/>
+        <EffectArray value="MultiPlayerCollectionPhaseMothershipCoreRecallingRemove"/>
+    </CEffectSet>
+    <CEffectSet id="MultiPlayerCollectionPhaseShiftTimerCancelSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionShadePhaseShiftCancelCasterBehaviorRB"/>
+        <EffectArray value="MultiPlayerCollectionPhaseShiftKillDummy"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="MultiPlayerCollectionPhaseStasisTrapRemove">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftTimerSpawnAB" Value="Caster"/>
+        <BehaviorLink value="OracleStasisTrapTarget"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="MultiPlayerCollectionWarpPrismUnloadCargoSetEffect">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionPurificationNovaTargettedCasterRB"/>
+    </CEffectSet>
+    <CEffectDamage id="MultiPlayerCollectionWarpPrismLoadDummy">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionPhaseDisruptorsDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="30"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionTemporalFieldAfterBubbleCP">
+        <EditorCategories value="Race:Protoss"/>
+        <InitialEffect value="MultiPlayerCollectionTemporalFieldSearchImpactDummy"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionTemporalFieldAfterBubbleSearch"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MultiPlayerCollectionTemporalFieldAfterBubbleSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden"/>
+        <AreaArray Radius="3.75" Effect="MultiPlayerCollectionTemporalFieldAB"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="MultiPlayerCollectionTemporalFieldAB">
+        <ValidatorArray value="NotFrenzied"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionTemporalField"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MultiPlayerCollectionTemporalFieldDamageDummy" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Flee" value="0"/>
+        <Kind value="Spell"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MultiPlayerCollectionTemporalFieldGrowingBubbleCP">
+        <EditorCategories value="Race:Protoss"/>
+        <OwningPlayer Value="Caster"/>
+        <InitialEffect value="MultiPlayerCollectionTemporalFieldSearchImpactDummy"/>
+        <ExpireDelay value="1"/>
+        <ExpireEffect value="MultiPlayerCollectionTemporalFieldAfterBubbleCP"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionTemporalFieldGrowingBubbleSearch"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MultiPlayerCollectionTemporalFieldGrowingBubbleSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
+        <AreaArray Radius="0.5" RadiusBonus="0.0437"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="MultiPlayerCollectionTemporalFieldSearchImpactDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3.75" Effect="MultiPlayerCollectionTemporalFieldDamageDummy"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="MultiPlayerCollectionOracleStasisTrapActivate">
+        <EditorCategories value="Race:Protoss"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="MultiPlayerCollectionOracleStasisTrapSearchSet"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="MultiPlayerCollectionOracleStasisTrapActivateAB">
+        <ValidatorArray index="0" value="NotFrenzied"/>
+        <ValidatorArray value="IsNotRecallingCombine"/>
+        <ValidatorArray value="NotLarva"/>
+        <ValidatorArray value="NotLarvaEgg"/>
+        <ValidatorArray value="IsNotBanelingCocoon"/>
+        <ValidatorArray value="NotRavagerCocoon"/>
+        <ValidatorArray value="NotLurkerCocoon"/>
+        <ValidatorArray value="IsNotInfestedTerransEgg"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MultiPlayerCollectionOracleStasisTrapTarget"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="MultiPlayerCollectionOracleStasisTrapActivateCP">
+        <WhichLocation Value="CasterPoint"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionOracleStasisTrapReveal"/>
+        <PeriodicEffectArray value="MultiPlayerCollectionOracleStasisTrapActivate"/>
+        <PeriodicEffectArray value="SuicideRemove"/>
+        <PeriodicPeriodArray value="0.5"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="1.66"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionOracleStasisTrapActivateSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionOracleStasisTrapActivateCP"/>
+        <EffectArray value="MultiPlayerCollectionOracleStasisTrapCasterAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MultiPlayerCollectionOracleStasisTrapCasterAB">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionOracleStasisTrapCaster"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="MultiPlayerCollectionOracleStasisTrapHaltIssueOrder">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="TerranBuild"/>
+        <AbilCmdIndex value="30"/>
+    </CEffectIssueOrder>
+    <CEffectCreatePersistent id="MultiPlayerCollectionOracleStasisTrapReveal">
+        <WhichLocation Value="CasterUnit"/>
+        <ExpireDelay value="4"/>
+        <RevealRadius value="4"/>
+        <RevealFlags index="Unfog" value="1"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MultiPlayerCollectionOracleStasisTrapSearchSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="MultiPlayerCollectionOracleStasisTrapStopIssueOrder"/>
+        <EffectArray value="MultiPlayerCollectionOracleStasisTrapHaltIssueOrder"/>
+        <EffectArray value="MultiPlayerCollectionOracleStasisTrapActivateAB"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="MultiPlayerCollectionOracleStasisTrapStopIssueOrder">
+        <ValidatorArray value="OracleStasisTrapBuildingSet"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="MultiPlayerCollectionOracleStasisWardBuildBeamOn">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionOracleStasisTrapBuildBeamOff">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="SourcePoint"/>
+    </CEffectDamage>
+    <CEffectDamage id="MultiPlayerCollectionTempestWeaponGroundDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Massive" value="22"/>
+        <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="30"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="MultiPlayerCollectionTempestWeaponGroundLM">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="MultiPlayerCollectionTempestWeaponGroundDamage"/>
+        <AmmoUnit value="MultiPlayerCollectionTempestWeaponGround"/>
+    </CEffectLaunchMissile>
+</Catalog>

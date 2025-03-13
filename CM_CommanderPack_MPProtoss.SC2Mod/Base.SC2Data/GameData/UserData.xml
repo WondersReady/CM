@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="CampaignPerk">
+        <Instances Id="MultiPlayerCollectionProtossLevel01">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel01">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel02">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel02">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel03">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel03">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel04">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel04">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel05">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel05">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel06">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel06">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel07">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel07">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel08">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel08">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel09">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel09">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel10">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel10">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel11">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel11">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel12">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel12">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel13">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel13">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel14">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel14">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel15">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevel15">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+    </CUser>
+    <CUser id="MasteryUpgrades">
+        <Instances Id="MultiPlayerCollectionProtossMastery1">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitCost">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="1">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery1_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery1_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitCost">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMastery2">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="1">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery2_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery2_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMastery3">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="2">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery3_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery3_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMastery4">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="2">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery4_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery4_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMastery5">
+            <Fixed Fixed="2">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="3">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery5_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery5_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMastery6">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="3">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery6_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery6_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMasteryII1">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitCost">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="1">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII1_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII1_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitCost">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMasteryII2">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="1">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII2_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII2_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMasteryII3">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="2">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII3_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII3_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMasteryII4">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="2">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII4_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII4_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMasteryII5">
+            <Fixed Fixed="2">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="3">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII5_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII5_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossMasteryII6">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Int Int="3">
+                <Field Id="Category"/>
+            </Int>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII6_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII6_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Upgrade Upgrade="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+    </CUser>
+    <CUser id="PlayerCommanders">
+        <Instances Id="MultiPlayerCollectionProtossI">
+            <GameLink GameLink="MultiPlayerCollectionProtossI">
+                <Field Id="CommanderData"/>
+            </GameLink>
+            <GameLink GameLink="ConsoleProtoss_Default">
+                <Field Id="DefaultConsoleSkin"/>
+            </GameLink>
+            <GameLink GameLink="Decal_Protoss_0011_01">
+                <Field Id="DefaultDecal"/>
+            </GameLink>
+            <GameLink GameLink="Prot">
+                <Field Id="Race"/>
+            </GameLink>
+            <GameLink GameLink="MultiPlayerCollectionProtoss">
+                <Field Id="SpawnRace"/>
+            </GameLink>
+            <GameLink GameLink="Default">
+                <Field Id="DefaultVoicePack"/>
+            </GameLink>
+            <Image Image="Assets\Textures\ui_battlenet_loading_player_racialicon_small_protoss_r.dds">
+                <Field Id="CustomImage"/>
+            </Image>
+            <Image Image="Assets\Textures\ui_battlenet_glue_icons_protoss_highlight.dds">
+                <Field Id="PrestigeIcon"/>
+            </Image>
+            <Image>
+                <Field Id="LoadingImage"/>
+            </Image>
+            <Int Int="12">
+                <Field Id="DefaultColor"/>
+            </Int>
+            <Int Int="19">
+                <Field Id="UniqueIndex"/>
+            </Int>
+            <Model Model="ZealotPortrait">
+                <Field Id="PortraitModel"/>
+            </Model>
+            <Sound Sound="AIComm_Protoss_FullForceEnterCombat">
+                <Field Id="StandardVO" Index="6"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_NeedDetection">
+                <Field Id="StandardVO" Index="10"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_EndingHarrass">
+                <Field Id="StandardVO" Index="11"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_ProtossSighted">
+                <Field Id="StandardVO" Index="7"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_TerranSighted">
+                <Field Id="StandardVO" Index="8"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_ZergSighted">
+                <Field Id="StandardVO" Index="9"/>
+            </Sound>
+            <String String="libMPPT_gt_MPPT_MasteryMultiPlayerCollectionProtoss_TriggerInit">
+                <Field Id="CommanderTriggerInitial"/>
+            </String>
+            <String String="MPProt">
+                <Field Id="CommanderConvoTag"/>
+            </String>
+            <Text Text="UserData/PlayerCommanders/MultiPlayerCollectionProtossI_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/PlayerCommanders/MultiPlayerCollectionProtossI_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Upgrade Upgrade="MultiPlayerCollectionProtossCommander">
+                <Field Id="DefaultUpgrades"/>
+            </Upgrade>
+            <User Type="PlayerHeros" Instance="[Default]">
+                <Field Id="HeroLinks"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossII">
+            <GameLink GameLink="MultiPlayerCollectionProtossII">
+                <Field Id="CommanderData"/>
+            </GameLink>
+            <GameLink GameLink="ConsoleProtoss_Default">
+                <Field Id="DefaultConsoleSkin"/>
+            </GameLink>
+            <GameLink GameLink="Decal_Protoss_0011_01">
+                <Field Id="DefaultDecal"/>
+            </GameLink>
+            <GameLink GameLink="Prot">
+                <Field Id="Race"/>
+            </GameLink>
+            <GameLink GameLink="MultiPlayerCollectionProtoss">
+                <Field Id="SpawnRace"/>
+            </GameLink>
+            <GameLink GameLink="Default">
+                <Field Id="DefaultVoicePack"/>
+            </GameLink>
+            <Image Image="Assets\Textures\ui_battlenet_loading_player_racialicon_small_protoss_r.dds">
+                <Field Id="CustomImage"/>
+            </Image>
+            <Image Image="Assets\Textures\ui_battlenet_glue_icons_protoss_highlight.dds">
+                <Field Id="PrestigeIcon"/>
+            </Image>
+            <Int Int="12">
+                <Field Id="DefaultColor"/>
+            </Int>
+            <Int Int="20">
+                <Field Id="UniqueIndex"/>
+            </Int>
+            <Model Model="ZealotPortrait">
+                <Field Id="PortraitModel"/>
+            </Model>
+            <Sound Sound="AIComm_Protoss_FullForceEnterCombat">
+                <Field Id="StandardVO" Index="6"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_NeedDetection">
+                <Field Id="StandardVO" Index="10"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_EndingHarrass">
+                <Field Id="StandardVO" Index="11"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_ProtossSighted">
+                <Field Id="StandardVO" Index="7"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_TerranSighted">
+                <Field Id="StandardVO" Index="8"/>
+            </Sound>
+            <Sound Sound="AIComm_Protoss_ZergSighted">
+                <Field Id="StandardVO" Index="9"/>
+            </Sound>
+            <String String="libMPPT_gt_MPPT_MasteryMultiPlayerCollectionProtoss_TriggerInit">
+                <Field Id="CommanderTriggerInitial"/>
+            </String>
+            <String String="MPProt">
+                <Field Id="CommanderConvoTag"/>
+            </String>
+            <Text Text="UserData/PlayerCommanders/MultiPlayerCollectionProtossII_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/PlayerCommanders/MultiPlayerCollectionProtossII_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Upgrade Upgrade="MultiPlayerCollectionProtossCommander">
+                <Field Id="DefaultUpgrades"/>
+            </Upgrade>
+            <User Type="PlayerHeros" Instance="[Default]">
+                <Field Id="HeroLinks"/>
+            </User>
+        </Instances>
+    </CUser>
+    <CUser id="PlayerLevels">
+        <Instances Id="MultiPlayerCollectionProtossLevel01">
+            <Int Int="1">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel02">
+            <Int Int="2">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel03">
+            <Int Int="3">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel04">
+            <Int Int="4">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel05">
+            <Int Int="5">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel06">
+            <Int Int="6">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel07">
+            <Int Int="7">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel08">
+            <Int Int="8">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel09">
+            <Int Int="9">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel10">
+            <Int Int="10">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel11">
+            <Int Int="11">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel12">
+            <Int Int="12">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel13">
+            <Int Int="13">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel14">
+            <Int Int="14">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevel15">
+            <Int Int="15">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossI">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII01">
+            <Int Int="1">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII02">
+            <Int Int="2">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII03">
+            <Int Int="3">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII04">
+            <Int Int="4">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII05">
+            <Int Int="5">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII06">
+            <Int Int="6">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII07">
+            <Int Int="7">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII08">
+            <Int Int="8">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII09">
+            <Int Int="9">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII10">
+            <Int Int="10">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII11">
+            <Int Int="11">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII12">
+            <Int Int="12">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII13">
+            <Int Int="13">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII14">
+            <Int Int="14">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII15">
+            <Int Int="15">
+                <Field Id="Level"/>
+            </Int>
+            <User Type="PlayerCommanders" Instance="MultiPlayerCollectionProtossII">
+                <Field Id="Commander"/>
+            </User>
+        </Instances>
+    </CUser>
+</Catalog>

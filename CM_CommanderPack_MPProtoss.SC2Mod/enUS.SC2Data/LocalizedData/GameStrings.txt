@@ -1,0 +1,480 @@
+﻿Behavior/Name/MasteryMultiPlayerCollectionProtossMasteryUnit=久经沙场
+Behavior/Name/MultiPlayerCollectionBatteryOvercharge=充能器超载
+Behavior/Name/MultiPlayerCollectionCharging=冲锋
+Behavior/Name/MultiPlayerCollectionChronoBoostEnergyCost=时空提速
+Behavior/Name/MultiPlayerCollectionCloakField=隐形力场
+Behavior/Name/MultiPlayerCollectionCloakFieldCasterEffect=隐形力场
+Behavior/Name/MultiPlayerCollectionGravitonBeam=引力光束
+Behavior/Name/MultiPlayerCollectionGuardianShield=守护者之盾
+Behavior/Name/MultiPlayerCollectionOracleRevelation=现形
+Behavior/Name/MultiPlayerCollectionOracleStasisTrapTarget=静滞
+Behavior/Name/MultiPlayerCollectionOracleWeapon=脉冲光线
+Behavior/Name/MultiPlayerCollectionPowerUserWarpable=正在折跃
+Behavior/Name/MultiPlayerCollectionPsiStorm=灵能风暴
+Behavior/Name/MultiPlayerCollectionTemporalField=时间扭曲
+Behavior/Name/MultiPlayerCollectionVoidRayDamageBoost=校准棱镜
+Behavior/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnit=从无数次战役中存活下来的远征军精锐，他们势必向埃蒙倾泻他们的怒火！
+Behavior/Tooltip/MultiPlayerCollectionBatteryOvercharge=恢复速度已提高，且不消耗能量。
+Behavior/Tooltip/MultiPlayerCollectionCharging=该狂热者正在冲锋，以极快的速度接近目标。
+Behavior/Tooltip/MultiPlayerCollectionChronoBoostEnergyCost=该建筑当前处于加速运作状态。
+Behavior/Tooltip/MultiPlayerCollectionCloakField=该单位已隐形，只能被侦测单位或侦测效果发现。
+Behavior/Tooltip/MultiPlayerCollectionGravitonBeam=目标已被举到空中，对空打击可对其造成伤害。在引力光束消失前，该单位无法攻击或使用技能。
+Behavior/Tooltip/MultiPlayerCollectionGuardianShield=吸收2点远程伤害。
+Behavior/Tooltip/MultiPlayerCollectionOracleRevelation=该单位或建筑正在为施法者提供视野。
+Behavior/Tooltip/MultiPlayerCollectionOracleStasisTrapTarget=该单位不能移动、攻击或受到伤害。
+Behavior/Tooltip/MultiPlayerCollectionOracleWeapon=先知的此项武器已启用，可以攻击地面单位。
+Behavior/Tooltip/MultiPlayerCollectionPowerUserWarpable=该单位正在被折跃门实体化。
+Behavior/Tooltip/MultiPlayerCollectionPsiStorm=目标正受到灵能风暴效果的影响，在效果范围内将受到大量伤害。
+Behavior/Tooltip/MultiPlayerCollectionTemporalField=该单位的攻击和移动速度降低50%。
+Behavior/Tooltip/MultiPlayerCollectionVoidRayDamageBoost=此单位能对重甲单位造成额外的6点伤害。
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime=建筑折跃时间
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryEnergyRegen=能量回复速度
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed=单位攻击速度
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitBuildingWithEnergy=久经沙场
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitCost=单位资源消耗
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitDamage=单位增伤
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed=单位移动速度
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitResearcher=久经沙场
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitWithEnergy=久经沙场
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitWithOutEnergy=久经沙场
+Button/Name/MasteryMultiPlayerCollectionProtossMasteryUnitWorker=久经沙场
+Button/Name/MultiPlayerCollectionActivateStasisWard=静止陷阱
+Button/Name/MultiPlayerCollectionAdeptPhaseShift=灵能传送
+Button/Name/MultiPlayerCollectionAdeptPiercingUpgrade=共鸣之刃
+Button/Name/MultiPlayerCollectionAdeptResearchPiercingUpgrade=研究共鸣之刃
+Button/Name/MultiPlayerCollectionArchonWarpSource=执政官融合
+Button/Name/MultiPlayerCollectionArchonWarpTarget=执政官融合
+Button/Name/MultiPlayerCollectionAssimilator=折跃吸纳舱
+Button/Name/MultiPlayerCollectionAttackWarpPrism=攻击
+Button/Name/MultiPlayerCollectionBatteryOvercharge=充能器超载
+Button/Name/MultiPlayerCollectionBlink=闪现
+Button/Name/MultiPlayerCollectionCarrier=折跃航母
+Button/Name/MultiPlayerCollectionCarrierInterceptor=制造拦截机
+Button/Name/MultiPlayerCollectionCharge=冲锋
+Button/Name/MultiPlayerCollectionChronoBoostEnergyCost=时空提速
+Button/Name/MultiPlayerCollectionColossus=折跃巨像
+Button/Name/MultiPlayerCollectionColossusCliffWalk=悬崖攀越
+Button/Name/MultiPlayerCollectionCyberneticsCore=折跃控制芯核
+Button/Name/MultiPlayerCollectionDarkShrine=折跃黑暗圣坛
+Button/Name/MultiPlayerCollectionDarkTemplar=折跃黑暗圣堂武士
+Button/Name/MultiPlayerCollectionDarkTemplarBlink=暗影步
+Button/Name/MultiPlayerCollectionDarkTemplarPermanentlyCloaked=永久隐形
+Button/Name/MultiPlayerCollectionEnergyRecharge=引导回充
+Button/Name/MultiPlayerCollectionFeedback=能量反蚀
+Button/Name/MultiPlayerCollectionFleetBeacon=折跃舰队航标
+Button/Name/MultiPlayerCollectionForceField=力场
+Button/Name/MultiPlayerCollectionForge=折跃锻炉
+Button/Name/MultiPlayerCollectionGateway=折跃传送门
+Button/Name/MultiPlayerCollectionGravitonBeam=引力光束
+Button/Name/MultiPlayerCollectionGuardianShield=守护者之盾
+Button/Name/MultiPlayerCollectionHighTemplar=折跃高阶圣堂武士
+Button/Name/MultiPlayerCollectionImmortal=折跃不朽者
+Button/Name/MultiPlayerCollectionImmortalOverload=屏障
+Button/Name/MultiPlayerCollectionImprovedEnergy=时空航道
+Button/Name/MultiPlayerCollectionMassRecall=群体召回
+Button/Name/MultiPlayerCollectionMorphBackToGateway=变形为传送门
+Button/Name/MultiPlayerCollectionMorphtoObserver=侦测器模式
+Button/Name/MultiPlayerCollectionMorphtoObserverSiege=监察模式
+Button/Name/MultiPlayerCollectionMotherShipCloakField=隐形力场
+Button/Name/MultiPlayerCollectionNexus=折跃星灵枢纽
+Button/Name/MultiPlayerCollectionNexusMassRecall=群体召回
+Button/Name/MultiPlayerCollectionNexusTrainMothership=折跃母舰
+Button/Name/MultiPlayerCollectionObserver=折跃侦测器
+Button/Name/MultiPlayerCollectionOracle=折跃先知
+Button/Name/MultiPlayerCollectionOracleBuildStasisTrap=静滞结界
+Button/Name/MultiPlayerCollectionOracleRevelation=天启
+Button/Name/MultiPlayerCollectionOracleWeaponOff=解除脉冲光线
+Button/Name/MultiPlayerCollectionOracleWeaponOn=激活脉冲光线
+Button/Name/MultiPlayerCollectionPermanentlyCloakedObserver=永久隐形
+Button/Name/MultiPlayerCollectionPermanentlyCloakedStasis=永久隐形
+Button/Name/MultiPlayerCollectionPhasingMode=相位模式
+Button/Name/MultiPlayerCollectionPhoenix=折跃凤凰
+Button/Name/MultiPlayerCollectionPhoenixRangeUpgrade=研究阴离子脉冲水晶
+Button/Name/MultiPlayerCollectionPhotonCannon=折跃光子炮台
+Button/Name/MultiPlayerCollectionProbe=折跃探机
+Button/Name/MultiPlayerCollectionProtossAirArmorLevel1=升级空中单位护甲等级1
+Button/Name/MultiPlayerCollectionProtossAirArmorLevel2=升级空中单位护甲等级2
+Button/Name/MultiPlayerCollectionProtossAirArmorLevel3=升级空中单位护甲等级3
+Button/Name/MultiPlayerCollectionProtossAirWeaponsLevel1=升级空中单位武器等级1
+Button/Name/MultiPlayerCollectionProtossAirWeaponsLevel2=升级空中单位武器等级2
+Button/Name/MultiPlayerCollectionProtossAirWeaponsLevel3=升级空中单位武器等级3
+Button/Name/MultiPlayerCollectionProtossBuild=星灵建造
+Button/Name/MultiPlayerCollectionProtossBuildAdvanced=星灵高级建造
+Button/Name/MultiPlayerCollectionProtossGroundArmorLevel1=升级地面单位护甲等级1
+Button/Name/MultiPlayerCollectionProtossGroundArmorLevel2=升级地面单位护甲等级2
+Button/Name/MultiPlayerCollectionProtossGroundArmorLevel3=升级地面单位护甲等级3
+Button/Name/MultiPlayerCollectionProtossGroundWeaponsLevel1=升级地面单位武器等级1
+Button/Name/MultiPlayerCollectionProtossGroundWeaponsLevel2=升级地面单位武器等级2
+Button/Name/MultiPlayerCollectionProtossGroundWeaponsLevel3=升级地面单位武器等级3
+Button/Name/MultiPlayerCollectionProtossShieldsLevel1=升级护盾等级1
+Button/Name/MultiPlayerCollectionProtossShieldsLevel2=升级护盾等级2
+Button/Name/MultiPlayerCollectionProtossShieldsLevel3=升级护盾等级3
+Button/Name/MultiPlayerCollectionPsiStorm=灵能风暴
+Button/Name/MultiPlayerCollectionPurificationNova=净化新星
+Button/Name/MultiPlayerCollectionPurificationNovaTargeted=净化新星
+Button/Name/MultiPlayerCollectionPylon=折跃水晶塔
+Button/Name/MultiPlayerCollectionPylonImprovedEnergy=时空航道
+Button/Name/MultiPlayerCollectionResearchCharge=研究冲锋
+Button/Name/MultiPlayerCollectionResearchDarkTemplarBlink=研究暗影步
+Button/Name/MultiPlayerCollectionResearchExtendedThermalLance=研发加长热能射线枪
+Button/Name/MultiPlayerCollectionResearchGraviticBooster=研究重力加速器
+Button/Name/MultiPlayerCollectionResearchGraviticDrive=研发重力驱动器
+Button/Name/MultiPlayerCollectionResearchPsiStorm=研习灵能风暴
+Button/Name/MultiPlayerCollectionResearchStalkerTeleport=研究闪现
+Button/Name/MultiPlayerCollectionResearchVoidRaySpeedUpgrade=研发熔流旋叶
+Button/Name/MultiPlayerCollectionResearchWarpGate=研究折跃门
+Button/Name/MultiPlayerCollectionRoboticsBay=折跃机械研究所
+Button/Name/MultiPlayerCollectionRoboticsFacility=折跃机械台
+Button/Name/MultiPlayerCollectionSentry=折跃机械哨兵
+Button/Name/MultiPlayerCollectionShieldBattery=折跃护盾充能器
+Button/Name/MultiPlayerCollectionShieldBatteryRecharge=恢复
+Button/Name/MultiPlayerCollectionStalker=折跃追猎者
+Button/Name/MultiPlayerCollectionStargate=折跃星门
+Button/Name/MultiPlayerCollectionTempest=折跃风暴战舰
+Button/Name/MultiPlayerCollectionTempestGroundAttackUpgrade=构造失稳器
+Button/Name/MultiPlayerCollectionTempestResearchGroundAttackUpgrade=研究构造失稳器
+Button/Name/MultiPlayerCollectionTemplarArchive=折跃圣堂武士文献馆
+Button/Name/MultiPlayerCollectionTemporalField=时间扭曲
+Button/Name/MultiPlayerCollectionTransportMode=运输模式
+Button/Name/MultiPlayerCollectionTwilightCouncil=折跃光影议会
+Button/Name/MultiPlayerCollectionUpgradeToWarpGate=变形为折跃门
+Button/Name/MultiPlayerCollectionVoidRay=折跃虚空辉光舰
+Button/Name/MultiPlayerCollectionVoidRayDamageBoost=校准棱镜
+Button/Name/MultiPlayerCollectionVortex=星河漩涡
+Button/Name/MultiPlayerCollectionWarpInAdept=折跃使徒
+Button/Name/MultiPlayerCollectionWarpPrism=召集折跃棱镜
+Button/Name/MultiPlayerCollectionWarpPrismLoad=装载
+Button/Name/MultiPlayerCollectionWarpPrismUnloadAll=全部卸载
+Button/Name/MultiPlayerCollectionWarpinDisruptor=折跃干扰者
+Button/Name/MultiPlayerCollectionZealot=折跃狂热者
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime=<n/><n/><c val="FFFF8A">精通：</c>探机折跃建筑所需时间降低<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeResearch=<n/><n/><c val="FFFF8A">精通：</c>该建筑研究与升级所需的时间减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryEnergyRegen=提高所有单位的能量回复速度。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed=提高所有战斗单位的攻击速度。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitBuildingWithEnergy=从无数次战役中存活下来的远征军精锐，他们势必向埃蒙倾泻他们的怒火！
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitBuildingWithEnergyAttackSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的攻击速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitBuildingWithEnergyCost=<n/><n/><c val="FFFF8A">精通：</c>该单位的资源消耗减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitBuildingWithEnergyMoveSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的移动速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitCost=降低所有战斗单位的资源消耗。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitDamage=提高所有战斗单位造成的伤害。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed=提高所有战斗单位的移动速度。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitResearcher=从无数次战役中存活下来的远征军精锐，他们势必向埃蒙倾泻他们的怒火！
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithEnergy=从无数次战役中存活下来的远征军精锐，他们势必向埃蒙倾泻他们的怒火！
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithEnergyAttackSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的攻击速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithEnergyCost=<n/><n/><c val="FFFF8A">精通：</c>该单位的资源消耗减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithEnergyMoveSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的移动速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithOutEnergy=从无数次战役中存活下来的远征军精锐，他们势必向埃蒙倾泻他们的怒火！
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithOutEnergyAttackSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的攻击速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithOutEnergyCost=<n/><n/><c val="FFFF8A">精通：</c>该单位的资源消耗减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWithOutEnergyMoveSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的移动速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWorker=从无数次战役中存活下来的远征军精锐，他们势必向埃蒙倾泻他们的怒火！
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWorkerAttackSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的攻击速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWorkerCost=<n/><n/><c val="FFFF8A">精通：</c>该单位的资源消耗减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MasteryMultiPlayerCollectionProtossMasteryUnitWorkerMoveSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的移动速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/Tooltip/MultiPlayerCollectionActivateStasisWard=使附近的敌人陷入静滞状态，持续<d ref="Behavior,MultiPlayerCollectionOracleStasisTrapTarget,Duration"/>秒。被困住的单位无法被攻击，也不会受到技能效果影响。
+Button/Tooltip/MultiPlayerCollectionAdeptPhaseShift=投射一个可以移动但无法攻击的无敌阴影。<d time="10"/>后，使徒传送到阴影所在位置。
+Button/Tooltip/MultiPlayerCollectionAdeptPiercingUpgrade=使徒的攻击速度提高45%。
+Button/Tooltip/MultiPlayerCollectionAdeptResearchPiercingUpgrade=<c val="ffff8a">使徒</c>的攻击速度提高45%。
+Button/Tooltip/MultiPlayerCollectionArchon=强大的灵能战士。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionArchonWarpSource=两名圣堂武士牺牲自身，融合为一名执政官。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionArchonWarpTarget=两名圣堂武士牺牲自身，融合为一名执政官。
+Button/Tooltip/MultiPlayerCollectionAssimilator=建造在瓦斯气泉上，用于采集高能瓦斯。
+Button/Tooltip/MultiPlayerCollectionAssimilatorRich=建造在瓦斯气泉上，用于采集高能瓦斯。
+Button/Tooltip/MultiPlayerCollectionAttackWarpPrism=命令选中的单位移动到目标地点，并对沿途遭遇的敌人发起攻击。收到攻击一个目标的命令后，单位会持续攻击该目标，直到对方被消灭。
+Button/Tooltip/MultiPlayerCollectionBatteryOvercharge=使星灵枢纽附近的目标护盾充能器超载，令其护盾恢复速度加快100%并且使其在<d ref="Behavior,MultiPlayerCollectionBatteryOvercharge,Duration"/>秒内不消耗能量就可以恢复护盾。
+Button/Tooltip/MultiPlayerCollectionBlink=使追猎者能够闪现到附近的目标位置。该技能<d ref="Abil,MultiPlayerCollectionBlink,Cost[0].Cooldown.TimeUse"/>秒内只能使用1次。
+Button/Tooltip/MultiPlayerCollectionCarrier=星灵的主力战舰。能够制造并发射拦截机攻击敌人。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionCarrierInterceptor=制造拦截机。拦截机能够自动攻击航母的目标，是航母唯一的武器。<n/><n/><c val="#ColorAttackInfo">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionCarrierInterceptorUnit=能够自动攻击航母目标的战斗飞行机。拦截机是航母唯一的武器。<n/><n/><c val="#ColorAttackInfo">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionCharge=允许狂热者能拦截附近的敌人。同时还会提高狂热者的移动速度。该技能每<d ref="Abil,MultiPlayerCollectionCharge,Cost.Cooldown.TimeUse"/>秒最多只能使用一次。
+Button/Tooltip/MultiPlayerCollectionChronoBoostEnergyCost=对目标建筑进行时空提速，使其运作效率提高<d ref="(((Behavior,ChronoBoostEnergyCost,Modification.RateMultiplierArray[Progress])-1)*100)" precision="1"/>%，持续<d ref="Behavior,ChronoBoostEnergyCost,Duration"/>秒。
+Button/Tooltip/MultiPlayerCollectionColossus=步战机器人，装备强大的范围攻击武器。能够攀越悬崖。对空武器可以对其进行攻击。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionColossusCliffWalk=巨像能够攀越悬崖。
+Button/Tooltip/MultiPlayerCollectionCyberneticsCore=为星灵空中单位提供武器和护甲升级方案，并提供折跃门升级方案。<n/><n/><c val="ffff8a">开启：</c><n/>- 可以在传送门中折跃机械哨兵<n/>- 可以在传送门中折跃追猎者<n/>- 可以在传送门中折跃使徒<n/>- 使探机可以折跃护盾充能器
+Button/Tooltip/MultiPlayerCollectionDarkShrine=为黑暗圣堂武士提供升级方案。<n/><n/><c val="ffff8a">开启：</c><n/>- 可以在传送门中折跃黑暗圣堂武士<n/>- 黑暗圣堂武士可以融合为执政官
+Button/Tooltip/MultiPlayerCollectionDarkTemplar=致命的近战杀手，该单位永远处于隐形状态，敌人在不借助侦测单位帮助的情况下无法发现他。可以融合为执政官。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionDarkTemplarBlink=将黑暗圣堂武士传送至附近位置。该技能每 <d ref="Abil,MultiPlayerCollectionDarkTemplarBlink,Cost[0].Cooldown.TimeUse"/>秒只能使用一次。
+Button/Tooltip/MultiPlayerCollectionDarkTemplarPermanentlyCloaked=黑暗圣堂武士处于永久隐形状态。
+Button/Tooltip/MultiPlayerCollectionDisruptor=机械干扰型单位。可使用净化新星造成大量的范围伤害。
+Button/Tooltip/MultiPlayerCollectionDisruptorPhased=高浓度太阳能。<d ref="Behavior,PurificationNovaTargettedTarget,Duration"/>秒后爆炸，造成范围伤害。
+Button/Tooltip/MultiPlayerCollectionEnergyRecharge=令选择的目标立刻恢复<d ref="Effect,MultiPlayerCollectionEnergyRechargeCP,PeriodCount*Effect,MultiPlayerCollectionEnergyRechargeMU,VitalArray[Energy].Change"/>点能量。
+Button/Tooltip/MultiPlayerCollectionFeedback=抽取目标所有能量。每点能量造成<d ref="(Effect,MultiPlayerCollectionFeedbackDamageTargetbasedonEnergy,VitalFractionCurrent[Energy])" Precision="2"/>点伤害。
+Button/Tooltip/MultiPlayerCollectionFleetBeacon=为凤凰和虚空辉光舰提供升级方案。<n/><n/><c val="ffff8a">开启：</c><n/>- 可以从星门折跃风暴战舰</n>- 可以从星门折跃航母<n/>- 可以从星灵枢纽折跃母舰
+Button/Tooltip/MultiPlayerCollectionForceField=阻拦地面部队移动的屏障，持续<d time="15"/>。重型单位可将力场踏碎。
+Button/Tooltip/MultiPlayerCollectionForge=为星灵地面单位提供武器和护甲升级方案，并为所有星灵单位和建筑提供护盾升级方案。<n/><n/><c val="ffff8a">开启：</c><n/>- 使探机可以折跃光子炮台
+Button/Tooltip/MultiPlayerCollectionGateway=使星灵可以利用折跃技术召集地面单位。<n/><n/><c val="ffff8a">开启：</c><n/>- 狂热者
+Button/Tooltip/MultiPlayerCollectionGravitonBeam=使目标单位浮空并无法使用技能。效果最多持续<d time="10"/>。<n/><n/><c val="#ColorAttackInfo">重型单位对该效果免疫</c><n/><c val="ffff8a">该技能需要引导</c>
+Button/Tooltip/MultiPlayerCollectionGuardianShield=制造一个范围<d ref="Effect,GuardianShieldSearch,AreaArray[0].Radius" precision="1"/>的光环，使友方单位受到的远程伤害降低2。持续<d time="15"/>。
+Button/Tooltip/MultiPlayerCollectionHighTemplar=强大的灵能运用大师。能够使用能量反蚀技能，升级后可以使用灵能风暴技能。可以融合为执政官。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionImmortal=攻击型步战机甲。可以使用屏障吸收伤害。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionImmortalOverload=吸收最多<d ref="Behavior,MultiPlayerCollectionImmortalOverload,DamageResponse.ModifyLimit"/>点伤害，持续<d time="3"/>。该效果每<d time="45"/>只能触发一次。
+Button/Tooltip/MultiPlayerCollectionImprovedEnergy=折跃进能量场的单位的折跃速度提高到<d time="5"/>。
+Button/Tooltip/MultiPlayerCollectionMassRecall=将目标区域内所有玩家单位传送至母舰。
+Button/Tooltip/MultiPlayerCollectionMorphBackToGateway=将折跃门转换为传送门。
+Button/Tooltip/MultiPlayerCollectionMorphtoObserver=把侦测器变形为标准的侦测器模式。使其能够随意移动，但视野范围会变小。
+Button/Tooltip/MultiPlayerCollectionMorphtoObserverSiege=把侦测器变形为监察模式。视野提高<d ref="(Unit,MultiPlayerCollectionObserverSiegeMode,Sight/Unit,MultiPlayerCollectionObserver,Sight-1)*100"/>%，但无法移动。
+Button/Tooltip/MultiPlayerCollectionMotherShipCloakField=使母舰附近的友方单位隐形。持续<d ref="Behavior,MultiPlayerCollectionCloakFieldCaster,Duration"/>秒。
+Button/Tooltip/MultiPlayerCollectionMothership=终极星灵战舰。能够使用战术召回和时间扭曲技能。使附近的友方单位和建筑隐形。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionNexus=基础建筑，用于接收采集到的资源。可以使用时空提速、群体召回技能。<n/><n/><c val="ffff8a">开启：</c><n/>- 探机<n/>- 母舰
+Button/Tooltip/MultiPlayerCollectionNexusMassRecall=将目标区域内所有该玩家的单位召回至星灵枢纽。
+Button/Tooltip/MultiPlayerCollectionNexusTrainMothership=终极星灵战舰。能够使用战术召回和时间扭曲技能。使附近的友方单位和建筑隐形。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionObserver=间谍型空中单位。拥有永久隐形的能力。<n/><n/><c val="FFE303">侦测单位</c>
+Button/Tooltip/MultiPlayerCollectionOracle=空中施法单位。可使用天启、静滞结界和脉冲光线技能。
+Button/Tooltip/MultiPlayerCollectionOracleBuildStasisTrap=在目标位置放置一个持续<d ref="Behavior,MultiPlayerCollectionStasisWardTimedLife,Duration"/>秒的隐形静滞结界。一旦被敌方地面单位触发后，该结界将使附近的敌人陷入静滞，持续<d ref="Behavior,MultiPlayerCollectionOracleStasisTrapTarget,Duration"/>秒。被困单位无法被攻击，也不会受到技能影响。
+Button/Tooltip/MultiPlayerCollectionOracleRevelation=使目标区域内的单位和建筑获得视野，持续<d ref="Behavior,MultiPlayerCollectionOracleRevelation,Duration"/>秒。显示隐形或潜地的单位和建筑。
+Button/Tooltip/MultiPlayerCollectionOracleStasisTrap=地面单位陷阱。隐形使敌人在不进行探测的情况下无法发现静滞结界。
+Button/Tooltip/MultiPlayerCollectionOracleWeaponOff=解除先知的脉冲光线以防止其进攻。
+Button/Tooltip/MultiPlayerCollectionOracleWeaponOn=为先知的脉冲光线充能，使其能够攻击敌方地面单位。<n/><n/><c val="f078ff">每秒消耗<d ref="-1 * (Behavior,MultiPlayerCollectionOracleWeapon,Modification.VitalRegenArray[2] + Unit,MultiPlayerCollectionOracle,EnergyRegenRate)" precision="1"/>点能量值。</c>
+Button/Tooltip/MultiPlayerCollectionPermanentlyCloakedObserver=侦测器处于永久隐形状态。
+Button/Tooltip/MultiPlayerCollectionPermanentlyCloakedStasis=静滞结界处于永久隐形状态。
+Button/Tooltip/MultiPlayerCollectionPhasingMode=将折跃棱镜转入相位模式，同时生成一个类似于水晶塔效果的能量辐射圈。该模式下的折跃棱镜无法移动。
+Button/Tooltip/MultiPlayerCollectionPhoenix=空中优势战机。<n/><n/><c val="ffff8a">可以对空</c>
+Button/Tooltip/MultiPlayerCollectionPhoenixRangeUpgrade=凤凰的射程+3。
+Button/Tooltip/MultiPlayerCollectionPhotonCannon=主力防御建筑。<n/><n/><c val="ffff8a">可以对地和对空。</c><n/><c val="FFE303">侦测单位</c>
+Button/Tooltip/MultiPlayerCollectionProbe=基础工作单位。用于采集资源和折跃星灵建筑。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionProtossAirArmorLevel1=提升星灵空中单位的护甲。
+Button/Tooltip/MultiPlayerCollectionProtossAirArmorLevel2=进一步提升星灵空中单位的护甲。
+Button/Tooltip/MultiPlayerCollectionProtossAirArmorLevel3=使星灵空中单位的护甲最大化。
+Button/Tooltip/MultiPlayerCollectionProtossAirWeaponsLevel1=提升星灵空中单位的火力。
+Button/Tooltip/MultiPlayerCollectionProtossAirWeaponsLevel2=进一步提升星灵空中单位的火力。
+Button/Tooltip/MultiPlayerCollectionProtossAirWeaponsLevel3=使星灵空中单位的火力最大化。
+Button/Tooltip/MultiPlayerCollectionProtossGroundArmorLevel1=提升星灵地面单位的护甲。
+Button/Tooltip/MultiPlayerCollectionProtossGroundArmorLevel2=进一步提升星灵地面单位的护甲。
+Button/Tooltip/MultiPlayerCollectionProtossGroundArmorLevel3=使星灵地面单位的护甲最大化。
+Button/Tooltip/MultiPlayerCollectionProtossGroundWeaponsLevel1=提升星灵地面单位的火力。
+Button/Tooltip/MultiPlayerCollectionProtossGroundWeaponsLevel2=进一步提升星灵地面单位的火力。
+Button/Tooltip/MultiPlayerCollectionProtossGroundWeaponsLevel3=使星灵地面单位的火力最大化。
+Button/Tooltip/MultiPlayerCollectionProtossShieldsLevel1=提升所有星灵单位和建筑的护盾。
+Button/Tooltip/MultiPlayerCollectionProtossShieldsLevel2=进一步提升所有星灵单位和建筑的护盾。
+Button/Tooltip/MultiPlayerCollectionProtossShieldsLevel3=使所有星灵单位和建筑的护盾最大化。
+Button/Tooltip/MultiPlayerCollectionPsiStorm=召唤一股持续<d time="4"/>的灵能风暴，对目标区域内的所有单位造成最多80点伤害。
+Button/Tooltip/MultiPlayerCollectionPurificationNova=发射一枚能量球，持续<d ref="Behavior,MultiPlayerCollectionPurificationNovaTargettedTarget,Duration"/>秒，并产生一道强力的能量新星，对附近的地面单位和建筑造成<d ref="Effect,MultiPlayerCollectionPurificationNovaDamage,Amount"/>点溅射伤害和额外<d ref="Effect,MultiPlayerCollectionPurificationNovaDamage,ShieldBonus"/>点对护盾的伤害。干扰者在激活该技能的时候无法移动。
+Button/Tooltip/MultiPlayerCollectionPurificationNovaTargeted=发射一枚能量球，持续<d ref="Behavior,MultiPlayerCollectionPurificationNovaTargettedTarget,Duration"/>秒，并产生一道强力的能量新星，对附近的地面单位和建筑造成<d ref="Effect,MultiPlayerCollectionPurificationNovaDamage,Amount"/>点溅射伤害和额外<d ref="Effect,MultiPlayerCollectionPurificationNovaDamage,ShieldBonus"/>点对护盾的伤害。干扰者在激活该技能的时候无法移动。
+Button/Tooltip/MultiPlayerCollectionPylon=提供补给。<n/>拥有补给是生产更多单位的前提。<n/>为附近的建筑提供能量。
+Button/Tooltip/MultiPlayerCollectionPylonImprovedEnergy=折跃进能量场的单位的折跃速度提高到<d time="5"/>。
+Button/Tooltip/MultiPlayerCollectionResearchCharge=允许<c val="ffff8a">狂热者</c>能拦截附近的敌人。同时还会提高<c val="ffff8a">狂热者</c>的移动速度。该技能每<d ref="Abil,Charge,Cost.Cooldown.TimeUse"/>秒只能使用一次。
+Button/Tooltip/MultiPlayerCollectionResearchDarkTemplarBlink=使<c val="ffff8a">黑暗圣堂武士</c>可以传送至附近目标位置。
+Button/Tooltip/MultiPlayerCollectionResearchExtendedThermalLance=<c val="ffff8a">巨像</c>的武器射程增加<d ref="$UpgradeEffectArrayValue:ExtendedThermalLance:Weapon,ThermalLances,Range$"/>码。
+Button/Tooltip/MultiPlayerCollectionResearchGraviticBooster=提高<c val="ffff8a">侦测器</c>的移动速度。
+Button/Tooltip/MultiPlayerCollectionResearchGraviticDrive=提高<c val="ffff8a">折跃棱镜</c>的移动速度。
+Button/Tooltip/MultiPlayerCollectionResearchPsiStorm=使<c val="ffff8a">高阶圣堂武士</c>能够召唤一股灵能风暴，对目标区域内的所有单位造成大量伤害。
+Button/Tooltip/MultiPlayerCollectionResearchStalkerTeleport=使<c val="ffff8a">追猎者</c>能够闪现到附近的目标位置。
+Button/Tooltip/MultiPlayerCollectionResearchVoidRaySpeedUpgrade=提高<c val="ffff8a">虚空辉光舰</c>的移动速度和移动加速度。
+Button/Tooltip/MultiPlayerCollectionResearchWarpGate=使<c val="ffff8a">传送门</c>可以升级为折跃门。
+Button/Tooltip/MultiPlayerCollectionRoboticsBay=为侦测器、折跃棱镜和巨像提供升级方案。<n/><n/><c val="ffff8a">开启：</c><n/>- 可以在机械台中折跃巨像<n/>- 可以在机械台中折跃干扰者
+Button/Tooltip/MultiPlayerCollectionRoboticsFacility=使星灵可以利用折跃技术召集机械单位。<n/><n/><c val="ffff8a">开启：</c><n/>- 侦测器<n/>- 折跃棱镜<n/>- 不朽者
+Button/Tooltip/MultiPlayerCollectionSentry=能量操控单位。能够使用力场、守护者之盾和幻像技能。<n/><n/><c val="#ColorAttackInfo">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionShieldBattery=防御建筑。为附近单位的护盾充能。
+Button/Tooltip/MultiPlayerCollectionShieldBatteryRecharge=为目标单位或建筑的护盾充能。
+Button/Tooltip/MultiPlayerCollectionShieldBatteryRechargeNotOvercharged=<n/><n/><c val="f078ff">每秒最多恢复72点护盾。</c>
+Button/Tooltip/MultiPlayerCollectionShieldBatteryRechargeNotOverchargedConstantText=<n/><n/><c val="#ColorAttackInfo">自动施法只会对单位和防御建筑使用。</c>
+Button/Tooltip/MultiPlayerCollectionShieldBatteryRechargeOvercharged=<n/><n/><c val="f078ff">每秒最多恢复36点护盾。每恢复3点护盾，护盾充能器消耗1点能量。</c>
+Button/Tooltip/MultiPlayerCollectionStalker=远程支援型步战机甲。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionStargate=折跃星灵空中单位。<n/><n/><c val="ffff8a">开启：</c><n/>- 凤凰<n/>- 虚空辉光舰<n/>- 先知
+Button/Tooltip/MultiPlayerCollectionTempest=攻城炮舰，拥有超远射程。<n/><n/><c val="ffff8a">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionTempestGroundAttackUpgrade=使风暴战舰的谐振盘在攻击建筑时伤害+<d ref="$UpgradeEffectArrayValue:MultiPlayerCollectionTempestGroundAttackUpgrade:Effect,MultiPlayerCollectionTempestWeaponGroundDamage,AttributeBonus[Structure]$"/>。
+Button/Tooltip/MultiPlayerCollectionTempestResearchGroundAttackUpgrade=使<c val="ffff8a">风暴战舰</c>的谐振盘在攻击建筑时伤害+<d ref="$UpgradeEffectArrayValue:TempestGroundAttackUpgrade:Effect,TempestDamageGround,AttributeBonus[Structure]$"/>。
+Button/Tooltip/MultiPlayerCollectionTemplarArchive=为高阶圣堂武士提供升级方案。<n/><n/><c val="ffff8a">开启：</c><n/>- 可以在传送门中折跃高阶圣堂武士<n/>- 高阶圣堂武士可以融合为执政官
+Button/Tooltip/MultiPlayerCollectionTemporalField=经过<d ref="(Effect,MultiPlayerCollectionTemporalFieldGrowingBubbleCP,PeriodCount*Effect,MultiPlayerCollectionTemporalFieldGrowingBubbleCP,PeriodicPeriodArray[0])"/>秒延迟后，弯曲目标区域的时空，持续<d ref="Effect,MultiPlayerCollectionTemporalFieldAfterBubbleCP,PeriodCount*Effect,MultiPlayerCollectionTemporalFieldAfterBubbleCP,PeriodicPeriodArray[0]"/>秒。在该区域内，所有敌方单位和建筑的攻击和移动速度将减少<d ref="(1-Behavior,MultiPlayerCollectionTemporalField,Modification.MoveSpeedMultiplier)*100"/>%。
+Button/Tooltip/MultiPlayerCollectionTransportMode=将折跃棱镜转回运输模式，使其可以移动。
+Button/Tooltip/MultiPlayerCollectionTwilightCouncil=为狂热者、追猎者以及使徒提供升级方案。
+Button/Tooltip/MultiPlayerCollectionUpgradeToWarpGate=将传送门升级为折跃门，使星灵可以利用折跃技术将地面单位召集到任何有水晶塔或折跃棱镜能量覆盖的区域。
+Button/Tooltip/MultiPlayerCollectionVoidRay=精确打击舰船。<n/><n/><c val="#ColorAttackInfo">可以对地和对空。</c>
+Button/Tooltip/MultiPlayerCollectionVoidRayDamageBoost=校准虚空辉光舰的棱镜光束，使其对重甲单位的伤害提高<d ref="Behavior,VoidRaySwarmDamageBoost,Modification[0].DamageDealtAttributeScaled[Armored]"/>点，持续<d ref="Behavior,VoidRaySwarmDamageBoost,Duration[0]"/>秒。激活时，虚空辉光舰移的动速度降低。
+Button/Tooltip/MultiPlayerCollectionVortex=创造一道引力漩涡，将一名敌人从战场上抹去。<n/><n/><c val="FFFF00">英雄单位免疫此效果</c>
+Button/Tooltip/MultiPlayerCollectionWarpGate=使星灵可以利用折跃技术召集地面单位。
+Button/Tooltip/MultiPlayerCollectionWarpInAdept=远程特种单位。可以使用灵能传送。<n/><n/><c val="#ColorAttackInfo">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionWarpPrism=空中运输单位。可以装载或卸载单位。部署后将生成一个能量场。
+Button/Tooltip/MultiPlayerCollectionWarpPrismLoad=将单位装载进折跃棱镜的矩阵距离扩大至<d ref="Abil,WarpPrismTransport,Range"/>。
+Button/Tooltip/MultiPlayerCollectionWarpPrismPhasing=定点能量供给单位。可以装载或卸载单位。可变形为移动式运输单位。
+Button/Tooltip/MultiPlayerCollectionWarpPrismUnloadAll=卸载所有单位。
+Button/Tooltip/MultiPlayerCollectionWarpinDisruptor=机械干扰型单位。可以使用净化新星造成大量伤害。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/MultiPlayerCollectionZealot=强大的近战战士。<n/><n/><c val="ffff8a">可以对地。</c>
+Button/Tooltip/WarpInMultiPlayerCollectionAdept=远程特种单位。可以使用灵能传送。<n/><n/><c val="#ColorAttackInfo">可以对地。</c>
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime=<n/><n/><c val="FFFF8A">精通：</c>该单位折跃建筑所需时间减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeDummy,Amount" player="current" precision="2"/>%</c>。
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeResearch=<n/><n/><c val="FFFF8A">精通：</c>该建筑进行升级和研发所需时间减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeDummy,Amount" player="current" precision="2"/>%</c>。
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryEnergyRegen=<n/><n/><c val="FFFF8A">精通：</c>该单位的能量回复速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryEnergyRegenDummy,Amount" player="current" precision="2"/>%</c>。
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的攻击速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitCost=<n/><n/><c val="FFFF8A">精通：</c>该单位的资源消耗减少<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy,Amount" player="current" precision="2"/>%</c>。
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitDamage=<n/><n/><c val="FFFF8A">精通：</c>该单位造成的伤害<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitDamageDummy,Amount" player="current" precision="2"/>%</c>。
+Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed=<n/><n/><c val="FFFF8A">精通：</c>该单位的移动速度提高<c val="FFFF8A"><d ref="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy,Amount" player="current" precision="2"/>%</c>。
+Commander/AbilTitle/Vorazun2=亚顿之矛
+Commander/Description/MultiPlayerCollectionProtossI=边星远征军
+Commander/Description/MultiPlayerCollectionProtossII=边星远征军
+Commander/Description/Vorazun2=奈拉齐姆女族长
+Commander/Details/Vorazun2=<ul indent="0" gap="1"path="Assets\Textures\UI_Battlenet_Glues_PageAssets_BulletPoint.dds" width="0" height="0"><li>适合有经验的玩家</li><li>从太空轨道使用潜行技能操纵战场局势</li><li>指挥一支隐形的高伤害部队</li></ul>
+Commander/Name/MultiPlayerCollectionProtossI=星灵远征军I
+Commander/Name/MultiPlayerCollectionProtossII=星灵远征军II
+Commander/Name/Vorazun2=沃拉尊 复件
+Commander/StoreName/Vorazun2=指挥官：沃拉尊
+DocInfo/DescLong=指挥官拓展包-天梯星灵。
+DocInfo/Name=CM_CommanderPack_MPProtoss
+Race/Name/MultiPlayerCollectionProtoss=星灵
+RequirementNode/Tooltip/CountBehaviorMultiPlayerCollectionPowerSourceFastCompleteOnlyAtUnit2655623778=靠近折跃门或星灵枢纽
+RequirementNode/Tooltip/CountUnitAlias_MultiPlayerCollectionGatewayCompleteOnly1095475748TechTreeCheat=传送门
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionAdeptPiercingAttackCompleteOnly3345741859=在光影议会研究共鸣之刃
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionBlinkTechCompleteOnly724633884TechTreeCheat=在光影议会中研究闪现
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionChargeCompleteOnly2408248929TechTreeCheat=在光影议会中研究冲锋
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeCompleteOnly1110162887TechTreeCheat=在黑暗圣坛中研究暗影步
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionPsiStormTechCompleteOnly2619729850TechTreeCheat=在圣堂武士文献馆中研习灵能风暴
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeCompleteOnly987723087=在舰队航标研究构造失稳器
+RequirementNode/Tooltip/CountUpgradeMultiPlayerCollectionWarpGateResearchCompleteOnly3798838933TechTreeCheat=在控制芯核中研究折跃门
+RequirementNode/Tooltip/Eq1192540988CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly1=星灵空中单位武器等级2
+RequirementNode/Tooltip/Eq1373265747CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly1=星灵地面单位武器等级1
+RequirementNode/Tooltip/Eq148189936CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly1=星灵护盾等级1
+RequirementNode/Tooltip/Eq1505276288CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly1=星灵地面单位护甲等级1
+RequirementNode/Tooltip/Eq1513043808CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly1=星灵空中单位护甲等级1
+RequirementNode/Tooltip/Eq1571024082CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly1=星灵地面单位武器等级2
+RequirementNode/Tooltip/Eq3712198327CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly1=星灵空中单位武器等级1
+RequirementNode/Tooltip/Eq3830575417CountUnitMultiPlayerCollectionMothershipQueuedOrBetter0=无母舰
+RequirementNode/Tooltip/Eq4175183297CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly1=星灵护盾等级2
+RequirementNode/Tooltip/Eq726478404CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly1=星灵地面单位护甲等级2
+RequirementNode/Tooltip/Eq815958491CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly1=星灵空中单位护甲等级2
+RequirementNode/Tooltip/LT3378327932CountUnitMultiPlayerCollectionCarrierInterceptorQueuedOrBetterAtUnit8=航母搭载的拦截机数量无法多于8架
+Unit/Category/MultiPlayerCollectionProtossUnits=MultiPlayerCollection - 星灵
+Unit/LifeArmorName/MultiPlayerCollectionProtossArmor=星灵护甲
+Unit/LifeArmorName/MultiPlayerCollectionProtossBuildingPlating=星灵结构护甲
+Unit/LifeArmorName/MultiPlayerCollectionProtossPlating=星灵护板
+Unit/Name/MultiPlayerCollectionAdept=使徒
+Unit/Name/MultiPlayerCollectionAdeptPhaseShift=阴影
+Unit/Name/MultiPlayerCollectionAdeptWeapon=MultiPlayerCollectionAdeptWeapon
+Unit/Name/MultiPlayerCollectionArchon=执政官
+Unit/Name/MultiPlayerCollectionAssimilator=吸纳舱
+Unit/Name/MultiPlayerCollectionAssimilatorRich=吸纳舱
+Unit/Name/MultiPlayerCollectionCarrier=航母
+Unit/Name/MultiPlayerCollectionCarrierInterceptor=拦截机
+Unit/Name/MultiPlayerCollectionColossus=巨像
+Unit/Name/MultiPlayerCollectionCyberneticsCore=控制芯核
+Unit/Name/MultiPlayerCollectionDarkShrine=黑暗圣坛
+Unit/Name/MultiPlayerCollectionDarkTemplar=黑暗圣堂武士
+Unit/Name/MultiPlayerCollectionDisruptor=干扰者
+Unit/Name/MultiPlayerCollectionDisruptorPhased=净化球
+Unit/Name/MultiPlayerCollectionFleetBeacon=舰队航标
+Unit/Name/MultiPlayerCollectionForceField=力场
+Unit/Name/MultiPlayerCollectionForge=锻炉
+Unit/Name/MultiPlayerCollectionGateway=传送门
+Unit/Name/MultiPlayerCollectionHighTemplar=高阶圣堂武士
+Unit/Name/MultiPlayerCollectionHighTemplarWeapon=MultiPlayerCollectionHighTemplarWeapon
+Unit/Name/MultiPlayerCollectionImmortal=不朽者
+Unit/Name/MultiPlayerCollectionIonCannons=MultiPlayerCollectionIonCannons
+Unit/Name/MultiPlayerCollectionMothership=母舰
+Unit/Name/MultiPlayerCollectionNexus=星灵枢纽
+Unit/Name/MultiPlayerCollectionObserver=侦测器
+Unit/Name/MultiPlayerCollectionObserverSiegeMode=侦测器
+Unit/Name/MultiPlayerCollectionOracle=先知
+Unit/Name/MultiPlayerCollectionOracleStasisTrap=静滞结界
+Unit/Name/MultiPlayerCollectionPhoenix=凤凰
+Unit/Name/MultiPlayerCollectionPhotonCannon=光子炮台
+Unit/Name/MultiPlayerCollectionPhotonCannonWeapon=MultiPlayerCollectionPhotonCannonWeapon
+Unit/Name/MultiPlayerCollectionProbe=探机
+Unit/Name/MultiPlayerCollectionPylon=水晶塔
+Unit/Name/MultiPlayerCollectionRoboticsBay=机械研究所
+Unit/Name/MultiPlayerCollectionRoboticsFacility=机械台
+Unit/Name/MultiPlayerCollectionSentry=机械哨兵
+Unit/Name/MultiPlayerCollectionShieldBattery=护盾充能器
+Unit/Name/MultiPlayerCollectionStalker=追猎者
+Unit/Name/MultiPlayerCollectionStalkerWeapon=MultiPlayerCollectionStalkerWeapon
+Unit/Name/MultiPlayerCollectionStargate=星门
+Unit/Name/MultiPlayerCollectionTempest=风暴战舰
+Unit/Name/MultiPlayerCollectionTempestWeaponGround=MultiPlayerCollectionTempest Weapon Ground
+Unit/Name/MultiPlayerCollectionTemplarArchive=圣堂武士文献馆
+Unit/Name/MultiPlayerCollectionTwilightCouncil=光影议会
+Unit/Name/MultiPlayerCollectionVoidRay=虚空辉光舰
+Unit/Name/MultiPlayerCollectionWarpGate=折跃门
+Unit/Name/MultiPlayerCollectionWarpPrism=折跃棱镜
+Unit/Name/MultiPlayerCollectionWarpPrismPhasing=折跃棱镜
+Unit/Name/MultiPlayerCollectionZealot=狂热者
+Unit/ShieldArmorName/MultiPlayerCollectionProtossPlasmaShields=星灵等离子护盾
+Upgrade/Name/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime=精通 星灵远征军 构建时间
+Upgrade/Name/MasteryMultiPlayerCollectionProtossMasteryEnergyRegen=精通 星灵远征军 能量恢复
+Upgrade/Name/MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed=精通 星灵远征军 单位攻速
+Upgrade/Name/MasteryMultiPlayerCollectionProtossMasteryUnitCost=精通 星灵远征军 单位消耗
+Upgrade/Name/MasteryMultiPlayerCollectionProtossMasteryUnitDamage=精通 星灵远征军 单位增伤
+Upgrade/Name/MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed=精通 星灵远征军 单位移动速度
+Upgrade/Name/MultiPlayerCollectionAdeptPiercingAttack=共鸣之刃
+Upgrade/Name/MultiPlayerCollectionBlinkTech=闪现
+Upgrade/Name/MultiPlayerCollectionCarrierLaunchSpeedUpgrade=引力弹射
+Upgrade/Name/MultiPlayerCollectionCharge=冲锋
+Upgrade/Name/MultiPlayerCollectionDarkTemplarBlinkUpgrade=暗影步
+Upgrade/Name/MultiPlayerCollectionExtendedThermalLances=加长热能射线枪
+Upgrade/Name/MultiPlayerCollectionGraviticDrive=重力驱动器
+Upgrade/Name/MultiPlayerCollectionHighTemplarKhaydarinAmulet=心能水晶坠饰
+Upgrade/Name/MultiPlayerCollectionObserverGraviticBooster=重力加速器
+Upgrade/Name/MultiPlayerCollectionPhoenixRangeUpgrade=阴离子脉冲水晶
+Upgrade/Name/MultiPlayerCollectionProtossAirArmors=星灵空中单位护甲
+Upgrade/Name/MultiPlayerCollectionProtossAirArmorsLevel1=星灵空中单位护甲等级1
+Upgrade/Name/MultiPlayerCollectionProtossAirArmorsLevel2=星灵空中单位护甲等级2
+Upgrade/Name/MultiPlayerCollectionProtossAirArmorsLevel3=星灵空中单位护甲等级3
+Upgrade/Name/MultiPlayerCollectionProtossAirWeapons=星灵空中单位武器
+Upgrade/Name/MultiPlayerCollectionProtossAirWeaponsLevel1=星灵空中单位武器等级1
+Upgrade/Name/MultiPlayerCollectionProtossAirWeaponsLevel2=星灵空中单位武器等级2
+Upgrade/Name/MultiPlayerCollectionProtossAirWeaponsLevel3=星灵空中单位武器等级3
+Upgrade/Name/MultiPlayerCollectionProtossCommander=星灵远征军
+Upgrade/Name/MultiPlayerCollectionProtossGroundArmors=星灵地面单位护甲
+Upgrade/Name/MultiPlayerCollectionProtossGroundArmorsLevel1=星灵地面单位护甲等级1
+Upgrade/Name/MultiPlayerCollectionProtossGroundArmorsLevel2=星灵地面单位护甲等级2
+Upgrade/Name/MultiPlayerCollectionProtossGroundArmorsLevel3=星灵地面单位护甲等级3
+Upgrade/Name/MultiPlayerCollectionProtossGroundWeapons=星灵地面单位武器
+Upgrade/Name/MultiPlayerCollectionProtossGroundWeaponsLevel1=星灵地面单位武器等级1
+Upgrade/Name/MultiPlayerCollectionProtossGroundWeaponsLevel2=星灵地面单位武器等级2
+Upgrade/Name/MultiPlayerCollectionProtossGroundWeaponsLevel3=星灵地面单位武器等级3
+Upgrade/Name/MultiPlayerCollectionProtossShields=星灵护盾
+Upgrade/Name/MultiPlayerCollectionProtossShieldsLevel1=星灵护盾等级1
+Upgrade/Name/MultiPlayerCollectionProtossShieldsLevel2=星灵护盾等级2
+Upgrade/Name/MultiPlayerCollectionProtossShieldsLevel3=星灵护盾等级3
+Upgrade/Name/MultiPlayerCollectionPsiStormTech=灵能风暴
+Upgrade/Name/MultiPlayerCollectionTempestGroundAttackUpgrade=构造失稳器
+Upgrade/Name/MultiPlayerCollectionVoidRaySpeedUpgrade=熔流旋叶
+Upgrade/Name/MultiPlayerCollectionWarpGateResearch=折跃门
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery1_Name=单位资源消耗
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery1_ValueFormat=-~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery2_Name=单位造成伤害
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery2_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery3_Name=单位移动速度
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery3_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery4_Name=单位攻击速度
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery4_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery5_Name=建筑折跃时间
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery5_ValueFormat=-~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery6_Name=单位能量回复速度
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMastery6_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII1_Name=单位资源消耗
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII1_ValueFormat=-~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII2_Name=单位造成伤害
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII2_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII3_Name=单位移动速度
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII3_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII4_Name=单位攻击速度
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII4_ValueFormat=+~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII5_Name=建筑折跃时间
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII5_ValueFormat=-~A~%
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII6_Name=单位能量回复速度
+UserData/MasteryUpgrades/MultiPlayerCollectionProtossMasteryII6_ValueFormat=+~A~%
+UserData/PlayerCommanders/MultiPlayerCollectionProtossII_Description=<ul indent="0" gap="1"path="Assets\Textures\UI_Battlenet_Glues_PageAssets_BulletPoint.dds" width="0" height="0"><li>适合有高水平的玩家</li><li>平庸的能力和数值需要付出更多操作成本</li><li>为部队添加适当的突变因子增益来获得更高收益</li></ul>
+UserData/PlayerCommanders/MultiPlayerCollectionProtossII_Name=星灵远征军II
+UserData/PlayerCommanders/MultiPlayerCollectionProtossI_Description=<ul indent="0" gap="1"path="Assets\Textures\UI_Battlenet_Glues_PageAssets_BulletPoint.dds" width="0" height="0"><li>适合有高水平的玩家</li><li>平庸的能力和数值需要付出更多操作成本</li><li>为部队添加适当的突变因子增益来获得更高收益</li></ul>
+UserData/PlayerCommanders/MultiPlayerCollectionProtossI_Name=星灵远征军I
+UserData/PlayerCommanders/MultiPlayerCollectionProtoss_Description=<ul indent="0" gap="1"path="Assets\Textures\UI_Battlenet_Glues_PageAssets_BulletPoint.dds" width="0" height="0"><li>适合有高水平的玩家</li><li>平庸的能力和数值需要付出更多操作成本</li><li>为部队添加适当的突变因子增益来获得更高收益</li></ul>
+UserData/PlayerCommanders/MultiPlayerCollectionProtoss_Name=星灵远征军
+Weapon/Name/MultiPlayerCollectionAdept=刃炮
+Weapon/Name/MultiPlayerCollectionArchonAttack=灵能冲击波
+Weapon/Name/MultiPlayerCollectionCarrierInterceptorBeam=拦截机射线
+Weapon/Name/MultiPlayerCollectionCarrierInterceptorLaunch=发射拦截机
+Weapon/Name/MultiPlayerCollectionColossusThermalLances=热能射线枪
+Weapon/Name/MultiPlayerCollectionDarkTemplarWeapon=曲光战刃
+Weapon/Name/MultiPlayerCollectionDisruptionBeam=瓦解射线
+Weapon/Name/MultiPlayerCollectionDisruptionBeamDummy=瓦解射线
+Weapon/Name/MultiPlayerCollectionInterceptorsDummy=拦截机
+Weapon/Name/MultiPlayerCollectionIonCannons=离子炮
+Weapon/Name/MultiPlayerCollectionMothershipBeam=净化光束
+Weapon/Name/MultiPlayerCollectionOracleBeam=脉冲光线
+Weapon/Name/MultiPlayerCollectionOracleBeamDisplayDummy=脉冲光线
+Weapon/Name/MultiPlayerCollectionParticleBeam=粒子光束
+Weapon/Name/MultiPlayerCollectionParticleDisruptors=粒子碎裂炮
+Weapon/Name/MultiPlayerCollectionPhaseDisruptors=相位碎裂炮
+Weapon/Name/MultiPlayerCollectionPhotonCannon=光子炮台
+Weapon/Name/MultiPlayerCollectionPsiBlades=灵能利刃
+Weapon/Name/MultiPlayerCollectionPurifierBeamDummyTargetFire=火力分配标记
+Weapon/Name/MultiPlayerCollectionTempestWeaponAir=动能过载
+Weapon/Name/MultiPlayerCollectionTempestWeaponGround=谐振盘
+Weapon/Name/MultiPlayerCollectionVoidRayBeam=棱镜光束

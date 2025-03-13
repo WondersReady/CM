@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTurret id="MultiPlayerCollectionPhoenix">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="360"/>
+        <YawRate value="539.2968"/>
+        <Fidget DelayMax="30" DelayMin="10" TurnAngle="0">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionFreeRotate">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionMothershipRotate">
+        <Idle value="Spin"/>
+        <YawArc value="360"/>
+        <YawRate value="7.207"/>
+        <YawIdleRate value="-7.207"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionColossus">
+        <Idle value="FollowMovement"/>
+        <YawArc value="360"/>
+        <YawRate value="999.8437"/>
+        <YawIdleRate value="90"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionImmortal">
+        <Idle value="FollowMovement"/>
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionPylonCrystalRotate">
+        <Idle value="Spin"/>
+        <YawArc value="360"/>
+        <YawRate value="27.9492"/>
+        <YawIdleRate value="27.9492"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionPylonRingRotate">
+        <Idle value="Spin"/>
+        <YawArc value="360"/>
+        <YawRate value="54.8437"/>
+        <YawIdleRate value="54.8437"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionPhotonCannon">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MultiPlayerCollectionWarpPrismPhasingRotate">
+        <Idle value="Spin"/>
+        <YawArc value="360"/>
+        <YawRate value="71.8945"/>
+        <YawIdleRate value="-71.8945"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+</Catalog>

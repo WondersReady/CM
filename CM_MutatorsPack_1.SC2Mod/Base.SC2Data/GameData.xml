@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Includes>
+    <Catalog path="GameData/AmonBloodDemon.xml"/>
+    <Catalog path="GameData/HybridDisaster.xml"/>
+    <Catalog path="GameData/VoidSpace.xml"/>
+    <Catalog path="GameData/DirtySoul.xml"/>
+</Includes>

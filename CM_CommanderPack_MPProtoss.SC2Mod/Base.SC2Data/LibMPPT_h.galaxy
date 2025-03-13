@@ -1,0 +1,15 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: MultiPlayerCollectionProtoss
+//--------------------------------------------------------------------------------------------------
+// Function Declarations
+void libMPPT_gf_CM_MasteryKerriganArmyVespeneCostList (int lp_player);
+void libMPPT_gf_MP_MasteryMultiPlayerCollectionProtossMasteryUnitCostReduction (string lp_unitType, int lp_player, int lp_upgradeCount);
+void libMPPT_gf_UT_Cooldown_MultiPlayerCollectionProtoss (int lp_pPlayer);
+
+// Trigger Declarations
+trigger libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_TriggerInit;
+trigger libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart;
+trigger libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss;
+

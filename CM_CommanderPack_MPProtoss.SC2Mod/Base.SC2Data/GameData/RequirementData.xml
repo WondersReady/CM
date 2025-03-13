@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="HaveMultiPlayerCollectionProtossUpgrade">
+        <NodeArray index="Show" Link="CountUpgradeMultiPlayerCollectionProtossCommanderCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossAny">
+        <NodeArray index="Show" Link="OrCountUpgradeMasteryMultiPlayerCollectionProtossMasteryEnergyRegenCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionProto2712954292"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossAnyExceptEnergy">
+        <NodeArray index="Show" Link="OrCountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionPro3212865719"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+        <NodeArray index="Show" Link="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryEnergyRegenCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+        <NodeArray index="Show" Link="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitCost">
+        <NodeArray index="Show" Link="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitCostCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+        <NodeArray index="Show" Link="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+        <NodeArray index="Show" Link="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+        <NodeArray index="Show" Link="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnPhoenixRangeUpgrade">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionPhoenixRangeUpgradeQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnTempestGroundAttackUpgrade">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnVoidRaySpeedUpgrade">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionVoidRaySpeedUpgradeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnExtendedThermalLance">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionExtendedThermalLancesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnGraviticBooster">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionObserverGraviticBoosterQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnGraviticDrive">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionGraviticDriveQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnPsiStorm">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionPsiStormTechQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnDarkTemplarBlink">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnAdeptPiercingAttack">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionAdeptPiercingAttackQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnBlink">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionBlinkTechQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnCharge">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionChargeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossAirArmor1">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossAirArmor2">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1513043808CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossAirArmor3">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq815958491CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossAirArmorsLevel3QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossAirWeapon1">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossAirWeapon2">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq3712198327CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossAirWeapon3">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1192540988CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel3QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnWarpGate">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMultiPlayerCollectionWarpGateResearchQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossGroundArmor1">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossGroundArmor2">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1505276288CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossGroundArmor3">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq726478404CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel3QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossGroundWeapon1">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossGroundWeapon2">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1373265747CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossGroundWeapon3">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1571024082CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel3QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossShield1">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossShieldsLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossShield2">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq148189936CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossShieldsLevel2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionLearnProtossShield3">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq4175183297CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMultiPlayerCollectionProtossShieldsLevel3QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveDarkShrine">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionDarkShrineCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveTemplarArchives">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionTemplarArchiveCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveFleetBeacon">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveTempestGroundAttackUpgrade">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeCompleteOnly987723087"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHavePhoenixRangeUpgrade">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionPhoenixRangeUpgradeCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionNexusTrainMothershipRequirements">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheatEq3830575417CountUnitMultiPlayerCollectionMothershipQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveRoboticsBay">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionRoboticsBayCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionUsePsiStorm">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionPsiStormTechCompleteOnly2619729850TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionUseDarkTemplarBlink">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeCompleteOnly1110162887TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionCarrierArmInterceptor">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="LT3378327932CountUnitMultiPlayerCollectionCarrierInterceptorQueuedOrBetterAtUnit8"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveExtendedThermalLance">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionExtendedThermalLancesCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionVoidRayPrismaticAlligned">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorMultiPlayerCollectionVoidRayDamageBoostCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveAdeptPiercingAttack">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionAdeptPiercingAttackCompleteOnly3345741859"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionPhaseShifting">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorMultiPlayerCollectionAdeptPhaseShiftCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveCyberneticsCore">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionCyberneticsCoreCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveForge">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionForgeCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveGateway">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitAlias_MultiPlayerCollectionGatewayCompleteOnly1095475748TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveNexus">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionNexusCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveRoboticsFa">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionRoboticsFacilityCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveStargate">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionStargateCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionHaveTwilightCouncil">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionIsGatewayMorphing">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountBehaviorMultiPlayerCollectionMorphingintoWarpGateCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionNearWarpgateorNexus">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountBehaviorMultiPlayerCollectionPowerSourceFastCompleteOnlyAtUnit2655623778"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionUseWarpGate">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionWarpGateResearchCompleteOnly3798838933TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionUseCharge">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionChargeCompleteOnly2408248929TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MultiPlayerCollectionUseBlink">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeMultiPlayerCollectionBlinkTechCompleteOnly724633884TechTreeCheat"/>
+    </CRequirement>
+</Catalog>

@@ -1,0 +1,56 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Mutator (TP)
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+unitgroup libMUTP_gv_cT_VoidSpace;
+fixed libMUTP_gv_cT_GoldRush;
+unitgroup libMUTP_gv_cT_HybridDisasterLargeUnitGroup;
+unitgroup libMUTP_gv_cT_HybridDisasterMediumUnitGroup;
+unitgroup libMUTP_gv_e5BC82E5BDA2E781BEE99ABEE5B08FE59E8BE58D95E4BD8DE7BB843;
+unitgroup libMUTP_gv_cT_HybridDisasterUnitGroup;
+fixed libMUTP_gv_e5BC82E5BDA2E781BEE99ABEE6ADBBE4BAA1E58D95E4BD8DE69CAAE4BDBFE794A8E8A180E9878F;
+fixed libMUTP_gv_cT_HybridDisasterSmallPrice;
+fixed libMUTP_gv_cT_HybridDisasterMediumPrice;
+fixed libMUTP_gv_cT_HybridDisasterLargePrice;
+
+// Function Declarations
+void libMUTP_gf_CT_ApplyDirtySouls (unit lp_createdUnit);
+void libMUTP_gf_CT_VoidSpaceFastSuicide (unit lp_killer, unit lp_killedUnit);
+void libMUTP_gf_CT_ApplyGoldRush (unit lp_createdUnit);
+void libMUTP_gf_CT_CreateAmonBloodDemon (unit lp_createdUnit);
+void libMUTP_gf_CT_CreateHybridDisaster (unit lp_killedUnit);
+void libMUTP_gf_CT_HybridDisasterSpawnHybridFX (unit lp_unit);
+
+// Trigger Declarations
+trigger libMUTP_gt_CT_InitializeAll;
+trigger libMUTP_gt_CT_OwnerChanges;
+trigger libMUTP_gt_CT_UnitDamage;
+trigger libMUTP_gt_CT_UnitDeath;
+trigger libMUTP_gt_CT_UnitCreation;
+trigger libMUTP_gt_CT_UnitOrdered;
+trigger libMUTP_gt_CT_UnitRevived;
+trigger libMUTP_gt_CT_UnitRemoved;
+trigger libMUTP_gt_CT_UpgradeChanged;
+trigger libMUTP_gt_CT_InitializeDirtySouls;
+trigger libMUTP_gt_CT_DirtySoulsRevive;
+trigger libMUTP_gt_CT_ShutdownDirtySouls;
+trigger libMUTP_gt_CT_InitializeVoidSpace;
+trigger libMUTP_gt_CT_CreateVoidSpace;
+trigger libMUTP_gt_CT_ShutdownVoidSpace;
+trigger libMUTP_gt_CT_VoidSpaceMovement;
+trigger libMUTP_gt_CT_InitializeBetrayalMoment;
+trigger libMUTP_gt_CT_ShutdownBetrayalMoment;
+trigger libMUTP_gt_CT_GoldRushCycle;
+trigger libMUTP_gt_CT_ShutdownGoldRush;
+trigger libMUTP_gt_CT_InitializeGoldRush;
+trigger libMUTP_gt_CT_BloodDemonWithinLevelCase;
+trigger libMUTP_gt_CT_InitializeAmonBloodDemon;
+trigger libMUTP_gt_CT_ShutdownAmonBloodDemon;
+trigger libMUTP_gt_CT_InitializeHybridDisaster;
+trigger libMUTP_gt_CT_ShutdownHybridDisaster;
+
+// Library Initialization
+void libMUTP_InitVariables ();
+

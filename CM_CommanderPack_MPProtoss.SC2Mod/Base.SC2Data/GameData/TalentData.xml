@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTalent id="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime" parent="CommanderDefaultSettings"/>
+    <CTalent id="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed" parent="CommanderDefaultSettings"/>
+    <CTalent id="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed" parent="CommanderDefaultSettings"/>
+    <CTalent id="MasteryMultiPlayerCollectionProtossMasteryUnitDamage" parent="CommanderDefaultSettings"/>
+    <CTalent id="MasteryMultiPlayerCollectionProtossMasteryUnitCost" parent="CommanderDefaultSettings"/>
+    <CTalent id="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen" parent="CommanderDefaultSettings"/>
+</Catalog>

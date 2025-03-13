@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementAnd id="AndEq1192540988CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq1192540988CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq1373265747CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq1373265747CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq148189936CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq148189936CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq1505276288CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq1505276288CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq1513043808CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq1513043808CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq1571024082CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq1571024082CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq3712198327CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq3712198327CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq4175183297CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq4175183297CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq726478404CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly1CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq726478404CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq815958491CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly1CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat">
+        <OperandArray value="Eq815958491CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionDarkShrineCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionDarkShrine" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionTemplarArchiveCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionTemplarArchive" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryEnergyRegenCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitCostCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MasteryMultiPlayerCollectionProtossMasteryUnitCost" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MasteryMultiPlayerCollectionProtossMasteryUnitDamage" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionAdeptPiercingAttackQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionAdeptPiercingAttack" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionBlinkTechQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionBlinkTech" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionChargeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionCharge" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionDarkTemplarBlinkUpgrade" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionExtendedThermalLancesQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionExtendedThermalLances" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionGraviticDriveQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionGraviticDrive" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionObserverGraviticBoosterQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionObserverGraviticBooster" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionPhoenixRangeUpgradeQueuedOrBetterTechTreeCheat">
+        <Count Link="MultiPlayerCollectionPhoenixRangeUpgrade" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirArmorsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirArmorsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirArmorsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirArmorsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirArmorsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirWeaponsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirWeaponsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirWeaponsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirWeaponsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossAirWeaponsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossCommanderCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="MultiPlayerCollectionProtossCommander" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundArmorsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundArmorsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundArmorsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundArmorsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundArmorsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundWeaponsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundWeaponsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundWeaponsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundWeaponsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossGroundWeaponsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossShieldsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossShieldsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossShieldsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossShieldsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossShieldsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossShieldsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionProtossShieldsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionProtossShieldsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionPsiStormTechQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionPsiStormTech" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionTempestGroundAttackUpgrade" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionVoidRaySpeedUpgradeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionVoidRaySpeedUpgrade" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionWarpGateResearchQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionWarpGateResearch" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="Eq1192540988CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1373265747CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq148189936CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossShieldsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1505276288CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1513043808CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1571024082CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3712198327CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq4175183297CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossShieldsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq726478404CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq815958491CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossAirArmorsLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirArmorsLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossAirWeaponsLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundArmorsLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossGroundWeaponsLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossShieldsLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossShieldsLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossShieldsLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossShieldsLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMultiPlayerCollectionProtossShieldsLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionProtossShieldsLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionAdeptPiercingAttackQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionAdeptPiercingAttackQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionBlinkTechQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionBlinkTechQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionChargeQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionChargeQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionExtendedThermalLancesQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionExtendedThermalLancesQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionGraviticDriveQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionGraviticDriveQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionObserverGraviticBoosterQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionObserverGraviticBoosterQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionPhoenixRangeUpgradeQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionPhoenixRangeUpgradeQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionPsiStormTechQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionPsiStormTechQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionVoidRaySpeedUpgradeQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionVoidRaySpeedUpgradeQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMultiPlayerCollectionWarpGateResearchQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMultiPlayerCollectionWarpGateResearchQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionPhoenixRangeUpgradeCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionPhoenixRangeUpgrade" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementAnd id="AndCountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheatEq3830575417CountUnitMultiPlayerCollectionMothershipQueuedOrBetter0">
+        <OperandArray value="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat"/>
+        <OperandArray value="Eq3830575417CountUnitMultiPlayerCollectionMothershipQueuedOrBetter0"/>
+    </CRequirementAnd>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionFleetBeaconCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionFleetBeacon" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionMothershipQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionMothership" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionRoboticsBayCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionRoboticsBay" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionPsiStormTechCompleteOnly2619729850TechTreeCheat">
+        <Count Link="MultiPlayerCollectionPsiStormTech" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionDarkTemplarBlinkUpgradeCompleteOnly1110162887TechTreeCheat">
+        <Count Link="MultiPlayerCollectionDarkTemplarBlinkUpgrade" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountBehavior id="CountBehaviorMultiPlayerCollectionVoidRayDamageBoostCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionVoidRayDamageBoost" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionCarrierInterceptorQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionCarrierInterceptor" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionExtendedThermalLancesCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionExtendedThermalLances" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountBehavior id="CountBehaviorMultiPlayerCollectionAdeptPhaseShiftCasterCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionAdeptPhaseShiftCaster" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMultiPlayerCollectionMorphingintoWarpGateCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionMorphingintoWarpGate" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMultiPlayerCollectionPowerSourceFastCompleteOnlyAtUnit2655623778">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionPowerSourceFast" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitAlias_MultiPlayerCollectionGatewayCompleteOnly1095475748TechTreeCheat">
+        <Count Link="Alias_MultiPlayerCollectionGateway" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionCyberneticsCoreCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionCyberneticsCore" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionForgeCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionForge" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionNexusCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionNexus" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionRoboticsFacilityCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionRoboticsFacility" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionStargateCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionStargate" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMultiPlayerCollectionTwilightCouncilCompleteOnlyTechTreeCheat">
+        <Count Link="MultiPlayerCollectionTwilightCouncil" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionAdeptPiercingAttackCompleteOnly3345741859">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionAdeptPiercingAttack" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionBlinkTechCompleteOnly724633884TechTreeCheat">
+        <Count Link="MultiPlayerCollectionBlinkTech" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionChargeCompleteOnly2408248929TechTreeCheat">
+        <Count Link="MultiPlayerCollectionCharge" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionTempestGroundAttackUpgradeCompleteOnly987723087">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MultiPlayerCollectionTempestGroundAttackUpgrade" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMultiPlayerCollectionWarpGateResearchCompleteOnly3798838933TechTreeCheat">
+        <Count Link="MultiPlayerCollectionWarpGateResearch" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="Eq3830575417CountUnitMultiPlayerCollectionMothershipQueuedOrBetter0">
+        <OperandArray index="0" value="CountUnitMultiPlayerCollectionMothershipQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementLT id="LT3378327932CountUnitMultiPlayerCollectionCarrierInterceptorQueuedOrBetterAtUnit8">
+        <OperandArray index="0" value="CountUnitMultiPlayerCollectionCarrierInterceptorQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="8"/>
+    </CRequirementLT>
+    <CRequirementOr id="OrCountUpgradeMasteryMultiPlayerCollectionProtossMasteryEnergyRegenCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionProto2712954292">
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryEnergyRegenCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitCostCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedCompleteOnly"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedCompleteOnlyCountUpgradeMasteryMultiPlayerCollectionPro3212865719">
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitDamageCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitCostCompleteOnly"/>
+        <OperandArray value="CountUpgradeMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedCompleteOnly"/>
+    </CRequirementOr>
+</Catalog>

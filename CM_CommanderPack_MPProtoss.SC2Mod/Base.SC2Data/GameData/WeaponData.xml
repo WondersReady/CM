@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="MultiPlayerCollectionDisruptionBeamDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionDisruptionBeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="1"/>
+        </Cost>
+        <Period value="1"/>
+        <Effect value="MultiPlayerCollectionDisruptionBeamCP"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionDisruptionBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionDisruptionBeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="1"/>
+        </Cost>
+        <Period value="1"/>
+        <Effect value="MultiPlayerCollectionDisruptionBeamCP"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionIonCannons">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionIonCannonsDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Arc value="4.9987"/>
+        <ArcSlop value="0"/>
+        <Period value="1.1"/>
+        <Effect value="MultiPlayerCollectionIonCannonsCP"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionOracleBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-oraclepulsarcannonon.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionOracleBeamDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <RangeSlop value="0"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown TimeUse="0.86"/>
+        </Cost>
+        <Period value="0.86"/>
+        <Backswing value="0.75"/>
+        <Effect value="MultiPlayerCollectionOracleBeamCP"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionOracleBeamDisplayDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-oraclepulsarcannonon.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionOracleBeamDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <RangeSlop value="0"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown TimeUse="1"/>
+        </Cost>
+        <Period value="0.86"/>
+        <Backswing value="0.75"/>
+        <Effect value="MultiPlayerCollectionOracleBeamCP"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionMothershipBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionMothershipBeamDamage"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireScanFilters value="-;Player,Ally,Neutral"/>
+        <Range value="7"/>
+        <RangeSlop value="4"/>
+        <TeleportResetRange value="0"/>
+        <Arc value="360"/>
+        <Period value="2.21"/>
+        <DamagePoint value="0"/>
+        <Effect value="MultiPlayerCollectionMothershipBeamSetCustom"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionPurifierBeamDummyTargetFire">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireScanFilters value="-;Player,Ally,Neutral"/>
+        <Range value="7"/>
+        <RangeSlop value="4"/>
+        <TeleportResetRange value="0"/>
+        <Arc value="360"/>
+        <Period value="1"/>
+        <DamagePoint value="0"/>
+        <Effect value="MultiPlayerCollectionTargetFirePriorityAB"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionHighTemplarWeapon">
+        <Name value="Weapon/Name/PsiBlast"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionHighTemplarAttackDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="6"/>
+        <Period value="1.754"/>
+        <Effect value="MultiPlayerCollectionHighTemplarAttackLM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionArchonAttack">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionArchonAttackBeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.754"/>
+        <Effect value="MultiPlayerCollectionArchonAttackBeamDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionDarkTemplarWeapon">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionDarkTemplarWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.694"/>
+        <DamagePoint value="0.361"/>
+        <Backswing value="1.333"/>
+        <Effect value="MultiPlayerCollectionDarkTemplarWeaponDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionInterceptorsDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionCarrierInterceptorAttackBeamDemage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Player,Ally,Neutral,Enemy"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="3"/>
+        <Effect value="MultiPlayerCollectionCarrierInterceptorLaunchCP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionCarrierInterceptorLaunch">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionCarrierInterceptorAttackBeamDemage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="0.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="MultiPlayerCollectionCarrierInterceptorLaunchCP"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponStrafe id="MultiPlayerCollectionCarrierInterceptorBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionCarrierInterceptorAttackBeamDemage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="2"/>
+        <TeleportResetRange value="0"/>
+        <Arc value="19.6875"/>
+        <Period value="3"/>
+        <Effect value="MultiPlayerCollectionCarrierInterceptorAttackBeamCP"/>
+    </CWeaponStrafe>
+    <CWeaponLegacy id="MultiPlayerCollectionColossusThermalLances">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionColossusThermalLancesDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByDistanceFromTarget"/>
+        <MinScanRange value="7.5"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Arc value="90"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0.0832"/>
+        <Effect value="MultiPlayerCollectionColossusThermalLancesSet"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionVoidRayBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionVoidRayBeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="2"/>
+        <TeleportResetRange value="0"/>
+        <ArcSlop value="39.9902"/>
+        <Cost>
+            <Cooldown TimeUse="0.5"/>
+        </Cost>
+        <Period value="0.5"/>
+        <Backswing value="0.75"/>
+        <Effect value="MultiPlayerCollectionVoidRayBeamCP"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionAdept">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionAdeptDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="2.25"/>
+        <Effect value="MultiPlayerCollectionAdeptLM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionParticleBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.2"/>
+        <Period value="1.5"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionPhotonCannon">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-building-protoss-photoncannon.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionPhotonCannonDmage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="1.25"/>
+        <Effect value="MultiPlayerCollectionPhotonCannonLM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionPsiBlades">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionPsiBladesDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.2"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionParticleDisruptors">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionEntropyLanceDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="6"/>
+        <Period value="1.87"/>
+        <Effect value="MultiPlayerCollectionEntropyLanceSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionPhaseDisruptors">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionPhaseDisruptorsDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="6"/>
+        <Period value="1.6"/>
+        <Effect value="MultiPlayerCollectionPhaseDisruptorsDamage"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionTempestWeaponAir">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionTempestWeaponGroundDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="13"/>
+        <Period value="3.3"/>
+        <Effect value="MultiPlayerCollectionTempestWeaponGroundLM"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MultiPlayerCollectionTempestWeaponGround">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MultiPlayerCollectionTempestWeaponGroundDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10.5"/>
+        <Range value="10"/>
+        <Period value="3.3"/>
+        <Effect value="MultiPlayerCollectionTempestWeaponGroundLM"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+</Catalog>

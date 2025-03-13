@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Icon>
+        <Value>bnet_vt.png</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:CM_IntegrationPack_Standard/0.0/243343,file:Mods\CM\CM_IntegrationPack_Standard.SC2Mod</Value>
+    </Dependencies>
+    <Preload>
+        <Value>GameLink:Unit;VoidThrasher</Value>
+    </Preload>
+</DocInfo>

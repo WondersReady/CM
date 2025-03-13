@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade default="1" id="MultiPlayerCollectionProtossShields">
+        <?token id="level" value="level0"?>
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossShields"/>
+        <WebPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <Race value="Prot"/>
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionAdept,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionArchon,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionAssimilator,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionCarrier,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionColossus,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionCyberneticsCore,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionDarkShrine,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionDarkTemplar,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionDisruptor,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionFleetBeacon,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionForge,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionGateway,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionHighTemplar,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionImmortal,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionCarrierInterceptor,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionMothership,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionNexus,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionObserver,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionOracle,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionOracleStasisTrap,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionPhoenix,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionPhotonCannon,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionProbe,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionPylon,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionRoboticsBay,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionRoboticsFacility,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionSentry,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionShieldBattery,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionStalker,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionStargate,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionTempest,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionTemplarArchive,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionTwilightCouncil,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionVoidRay,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionWarpGate,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionWarpPrism,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionWarpPrismPhasing,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionZealot,ShieldArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-shields##level##.dds"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAdept,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAdept,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionArchon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionArchon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAssimilator,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAssimilator,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAssimilatorRich,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAssimilatorRich,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrier,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrier,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionColossus,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionColossus,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCyberneticsCore,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCyberneticsCore,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDarkShrine,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDarkShrine,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDarkTemplar,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDarkTemplar,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptor,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptor,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptorPhased,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptorPhased,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionFleetBeacon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionFleetBeacon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionForge,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionForge,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionGateway,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionGateway,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionHighTemplar,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionHighTemplar,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionImmortal,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionImmortal,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrierInterceptor,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrierInterceptor,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionMothership,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionMothership,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionNexus,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionNexus,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserver,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserver,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserverSiegeMode,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserverSiegeMode,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracle,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracle,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracleStasisTrap,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracleStasisTrap,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhoenix,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhoenix,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhotonCannon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhotonCannon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionProbe,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionProbe,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPylon,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPylon,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionRoboticsBay,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionRoboticsBay,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionRoboticsFacility,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionRoboticsFacility,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionSentry,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionSentry,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionShieldBattery,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionShieldBattery,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionStalker,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionStalker,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionStargate,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionStargate,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTempest,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTempest,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTemplarArchive,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTemplarArchive,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTwilightCouncil,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTwilightCouncil,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionVoidRay,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionVoidRay,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpGate,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpGate,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrism,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrism,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrismPhasing,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrismPhasing,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionZealot,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionZealot,ShieldArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionArchon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionAssimilator"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrier"/>
+        <AffectedUnitArray value="MultiPlayerCollectionColossus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCyberneticsCore"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDarkShrine"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDarkTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionFleetBeacon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionForge"/>
+        <AffectedUnitArray value="MultiPlayerCollectionGateway"/>
+        <AffectedUnitArray value="MultiPlayerCollectionHighTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionImmortal"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrierInterceptor"/>
+        <AffectedUnitArray value="MultiPlayerCollectionMothership"/>
+        <AffectedUnitArray value="MultiPlayerCollectionNexus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionObserver"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPhoenix"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPhotonCannon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionProbe"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPylon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionRoboticsBay"/>
+        <AffectedUnitArray value="MultiPlayerCollectionRoboticsFacility"/>
+        <AffectedUnitArray value="MultiPlayerCollectionSentry"/>
+        <AffectedUnitArray value="MultiPlayerCollectionStalker"/>
+        <AffectedUnitArray value="MultiPlayerCollectionStargate"/>
+        <AffectedUnitArray value="MultiPlayerCollectionTemplarArchive"/>
+        <AffectedUnitArray value="MultiPlayerCollectionTwilightCouncil"/>
+        <AffectedUnitArray value="MultiPlayerCollectionVoidRay"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpGate"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrism"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrismPhasing"/>
+        <AffectedUnitArray value="MultiPlayerCollectionZealot"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="MultiPlayerCollectionProtossGroundArmors">
+        <?token id="level" value="level0"?>
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundArmors"/>
+        <WebPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <AffectedUnitArray value="MultiPlayerCollectionAdept"/>
+        <AffectedUnitArray value="MultiPlayerCollectionArchon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionColossus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDarkTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDisruptor"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDisruptorPhased"/>
+        <AffectedUnitArray value="MultiPlayerCollectionHighTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionImmortal"/>
+        <AffectedUnitArray value="MultiPlayerCollectionProbe"/>
+        <AffectedUnitArray value="MultiPlayerCollectionSentry"/>
+        <AffectedUnitArray value="MultiPlayerCollectionStalker"/>
+        <AffectedUnitArray value="MultiPlayerCollectionZealot"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionAdept,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionArchon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionColossus,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionDarkTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionDisruptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionHighTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionImmortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionProbe,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionSentry,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionStalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionZealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmor##level##.dds"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAdept,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionAdept,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionArchon,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionArchon,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionColossus,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionColossus,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDarkTemplar,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDarkTemplar,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptor,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptorPhased,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionDisruptorPhased,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionHighTemplar,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionHighTemplar,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionImmortal,LifeArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionImmortal,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionProbe,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionProbe,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionSentry,LifeArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionSentry,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionStalker,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionStalker,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionZealot,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionZealot,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="MultiPlayerCollectionProtossAirArmors">
+        <?token id="level" value="level0"?>
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirArmors"/>
+        <WebPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrier"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrierInterceptor"/>
+        <AffectedUnitArray value="MultiPlayerCollectionMothership"/>
+        <AffectedUnitArray value="MultiPlayerCollectionObserver"/>
+        <AffectedUnitArray value="MultiPlayerCollectionObserverSiegeMode"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPhoenix"/>
+        <AffectedUnitArray value="MultiPlayerCollectionVoidRay"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrism"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrismPhasing"/>
+        <AffectedUnitArray value="MultiPlayerCollectionTempest"/>
+        <AffectedUnitArray value="MultiPlayerCollectionOracle"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionCarrier,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionCarrierInterceptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionMothership,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionObserver,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionOracle,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionPhoenix,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionTempest,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionVoidRay,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionWarpPrism,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MultiPlayerCollectionWarpPrismPhasing,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmor##level##.dds"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrier,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrier,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrierInterceptor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionCarrierInterceptor,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionMothership,LifeArmor" Value="1.000000"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionMothership,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserver,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserver,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserverSiegeMode,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserverSiegeMode,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracle,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracle,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhoenix,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhoenix,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTempest,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionTempest,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionVoidRay,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionVoidRay,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrism,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrism,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrismPhasing,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrismPhasing,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="MultiPlayerCollectionProtossGroundWeapons">
+        <?token id="level" value="level0"?>
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundWeapons"/>
+        <WebPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionDisruptionBeamDummy,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionDisruptionBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionHighTemplarWeapon,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionArchonAttack,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionDarkTemplarWeapon,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionColossusThermalLances,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionAdept,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionPsiBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionParticleDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionPhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweapons##level##.dds"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionDisruptionBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionPhaseDisruptorsDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionPhaseDisruptorsDamage,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionAdeptDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionAdeptDamage,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionColossusThermalLancesDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionColossusThermalLancesDamage,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionDarkTemplarWeaponDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionPsiBladesDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionArchonAttackBeamDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionArchonAttackBeamDamage,AttributeBonus[Biological]" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionHighTemplarAttackDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionEntropyLanceDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionEntropyLanceDamage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionDisruptionBeamDummy,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionDisruptionBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionHighTemplarWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionArchonAttack,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionDarkTemplarWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionColossusThermalLances,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionAdept,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionPsiBlades,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionParticleDisruptors,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionPhaseDisruptors,Level" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionAdept"/>
+        <AffectedUnitArray value="MultiPlayerCollectionArchon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionColossus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDarkTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionHighTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionImmortal"/>
+        <AffectedUnitArray value="MultiPlayerCollectionSentry"/>
+        <AffectedUnitArray value="MultiPlayerCollectionStalker"/>
+        <AffectedUnitArray value="MultiPlayerCollectionZealot"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="MultiPlayerCollectionProtossAirWeapons">
+        <?token id="level" value="level0"?>
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirWeapons"/>
+        <WebPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionTempestWeaponGround,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionTempestWeaponAir,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionVoidRayBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionCarrierInterceptorBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionCarrierInterceptorLaunch,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionInterceptorsDummy,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionMothershipBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionIonCannons,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweapons##level##.dds"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionIonCannonsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionIonCannonsULeft,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionIonCannonsURight,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionMothershipBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionCarrierInterceptorAttackBeamDemage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionVoidRayBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionVoidRayBeamDamage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionTempestWeaponGroundDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionTempestWeaponGroundDamage,AttributeBonus[Massive]" Value="2"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionTempestWeaponGround,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionTempestWeaponAir,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionVoidRayBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionCarrierInterceptorBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionCarrierInterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionInterceptorsDummy,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionMothershipBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionIonCannons,Level" Value="1"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrierInterceptor"/>
+        <AffectedUnitArray value="MultiPlayerCollectionMothership"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPhoenix"/>
+        <AffectedUnitArray value="MultiPlayerCollectionVoidRay"/>
+        <AffectedUnitArray value="MultiPlayerCollectionTempest"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossCommander">
+        <Flags index="UpgradeCheat" value="0"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+        <EffectArray Reference="Effect,MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeDummy,Amount" Value="2"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build1].Time" Value="2.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build2].Time" Value="0.500000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build3].Time" Value="0.600000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build4].Time" Value="1.300000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build5].Time" Value="0.900000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build6].Time" Value="1.200000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build7].Time" Value="1.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build8].Time" Value="0.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build9].Time" Value="0.500000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build10].Time" Value="1.200000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build11].Time" Value="1.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build12].Time" Value="2.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build13].Time" Value="1.300000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build14].Time" Value="1.300000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build15].Time" Value="1.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionProtossBuild,InfoArray[Build16].Time" Value="0.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionTemplarArchivesResearch,InfoArray[Research1].Time" Value="2.200000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionTwilightCouncilResearch,InfoArray[Research1].Time" Value="2.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionTwilightCouncilResearch,InfoArray[Research2].Time" Value="3.400000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionTwilightCouncilResearch,InfoArray[Research3].Time" Value="2.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionRoboticsBayResearch,InfoArray[Research3].Time" Value="2.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionRoboticsBayResearch,InfoArray[Research1].Time" Value="1.600000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionRoboticsBayResearch,InfoArray[Research2].Time" Value="1.600000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research1].Time" Value="3.400000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research2].Time" Value="4.040000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research3].Time" Value="4.700000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research4].Time" Value="3.400000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research5].Time" Value="4.040000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research6].Time" Value="4.700000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research7].Time" Value="3.400000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research8].Time" Value="4.040000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionForgeResearch,InfoArray[Research9].Time" Value="4.700000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research1].Time" Value="3.600000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research2].Time" Value="4.300000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research3].Time" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research4].Time" Value="3.600000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research5].Time" Value="4.300000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research6].Time" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionCyberneticsCoreResearch,InfoArray[Research7].Time" Value="2.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionFleetBeaconResearch,InfoArray[Research1].Time" Value="1.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionFleetBeaconResearch,InfoArray[Research2].Time" Value="1.600000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionFleetBeaconResearch,InfoArray[Research3].Time" Value="2.800000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MultiPlayerCollectionDarkShrineResearch,InfoArray[Research1].Time" Value="2.800000"/>
+        <MaxLevel value="30"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+        <EffectArray Reference="Effect,MasteryMultiPlayerCollectionProtossMasteryEnergyRegenDummy,Amount" Value="1"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionHighTemplar,EnergyRegenRate" Value="0.0084375"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionSentry,EnergyRegenRate" Value="0.0084375"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionNexus,EnergyRegenRate" Value="0.0084375"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionShieldBattery,EnergyRegenRate" Value="0.0084375"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionPhoenix,EnergyRegenRate" Value="0.0084375"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionOracle,EnergyRegenRate" Value="0.0084375"/>
+        <MaxLevel value="30"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+        <EffectArray Reference="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitDamageDummy,Amount" Value="1"/>
+        <EffectArray Reference="Behavior,MasteryMultiPlayerCollectionProtossMasteryUnit,Modification.DamageDealtFraction[Melee]" Value="0.01"/>
+        <EffectArray Reference="Behavior,MasteryMultiPlayerCollectionProtossMasteryUnit,Modification.DamageDealtFraction[Ranged]" Value="0.01"/>
+        <EffectArray Reference="Behavior,MasteryMultiPlayerCollectionProtossMasteryUnit,Modification.DamageDealtFraction[Spell]" Value="0.01"/>
+        <EffectArray Reference="Behavior,MasteryMultiPlayerCollectionProtossMasteryUnit,Modification.DamageDealtFraction[Splash]" Value="0.01"/>
+        <MaxLevel value="30"/>
+        <LeaderAlias value="MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+        <EffectArray Reference="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeedDummy,Amount" Value="1"/>
+        <EffectArray Reference="Behavior,MasteryMultiPlayerCollectionProtossMasteryUnit,Modification.AttackSpeedMultiplier" Value="0.01"/>
+        <MaxLevel value="30"/>
+        <LeaderAlias value="MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+        <EffectArray Reference="Behavior,MasteryMultiPlayerCollectionProtossMasteryUnit,Modification.MoveSpeedMultiplier" Value="0.01"/>
+        <EffectArray Reference="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeedDummy,Amount" Value="1"/>
+        <MaxLevel value="30"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionWarpGateResearch">
+        <Icon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="MultiPlayerCollectionGateway"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossShieldsLevel1" parent="MultiPlayerCollectionProtossShields" level="level1">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossShieldsLevel1"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossShieldsLevel2" parent="MultiPlayerCollectionProtossShields" level="level2">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossShieldsLevel2"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossShieldsLevel3" parent="MultiPlayerCollectionProtossShields" level="level3">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossShieldsLevel3"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossGroundArmorsLevel1" parent="MultiPlayerCollectionProtossGroundArmors" level="level1">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundArmorsLevel1"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossGroundArmorsLevel2" parent="MultiPlayerCollectionProtossGroundArmors" level="level2">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundArmorsLevel2"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossGroundArmorsLevel3" parent="MultiPlayerCollectionProtossGroundArmors" level="level3">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundArmorsLevel3"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossAirArmorsLevel1" parent="MultiPlayerCollectionProtossAirArmors" level="level1">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirArmorsLevel1"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossAirArmorsLevel2" parent="MultiPlayerCollectionProtossAirArmors" level="level2">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirArmorsLevel2"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossAirArmorsLevel3" parent="MultiPlayerCollectionProtossAirArmors" level="level3">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirArmorsLevel3"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossAirWeaponsLevel1" parent="MultiPlayerCollectionProtossAirWeapons" level="level1">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirWeaponsLevel1"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossAirWeaponsLevel2" parent="MultiPlayerCollectionProtossAirWeapons" level="level2">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirWeaponsLevel2"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossAirWeaponsLevel3" parent="MultiPlayerCollectionProtossAirWeapons" level="level3">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossAirWeaponsLevel3"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossGroundWeaponsLevel1" parent="MultiPlayerCollectionProtossGroundWeapons" level="level1">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundWeaponsLevel1"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossGroundWeaponsLevel2" parent="MultiPlayerCollectionProtossGroundWeapons" level="level2">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundWeaponsLevel2"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionProtossGroundWeaponsLevel3" parent="MultiPlayerCollectionProtossGroundWeapons" level="level3">
+        <Name value="Upgrade/Name/MultiPlayerCollectionProtossGroundWeaponsLevel3"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionHighTemplarKhaydarinAmulet">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-khaydarinamulet.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionHighTemplar,EnergyStart" Value="25"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionHighTemplar"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionPsiStormTech">
+        <Icon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="400"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="MultiPlayerCollectionHighTemplar"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionDarkTemplarBlinkUpgrade">
+        <Icon value="Assets\Textures\btn-ability-protoss-stealth-blink.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDarkTemplar"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionGraviticDrive">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-graviticdrive.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrism,Speed" Value="0.875000"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionWarpPrism,Acceleration" Value="1.125"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrismPhasing"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrism"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionAdeptPiercingAttack">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-resonatingglaives-orange.dds"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionAdept,RateMultiplier" Value="0.45"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionAdept"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionBlinkTech">
+        <Icon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="MultiPlayerCollectionStalker"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionCharge">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionZealot,Speed" Value="1.125000"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionZealot"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionObserverGraviticBooster">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserver,Speed" Value="1.007800"/>
+        <EffectArray Reference="Unit,MultiPlayerCollectionObserver,Acceleration" Value="1.0625"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionObserver"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionCarrierLaunchSpeedUpgrade">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-gravitoncatapult.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Operation="Set" Reference="Weapon,MultiPlayerCollectionCarrierInterceptorLaunch,Effect" Value="MultiPlayerCollectionCarrierInterceptorLaunchUpgradeCP"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrier"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionExtendedThermalLances">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-extendedthermallance.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionColossusThermalLances,Range" Value="2"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionColossusThermalLances,MinScanRange" Value="2"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionColossus"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionVoidRaySpeedUpgrade">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fluxvanes.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Operation="Set" Reference="Unit,MultiPlayerCollectionVoidRay,Speed" Value="3.320300"/>
+        <EffectArray Operation="Set" Reference="Unit,MultiPlayerCollectionVoidRay,Acceleration" Value="2.687500"/>
+        <EffectArray Operation="Set" Reference="Behavior,MultiPlayerCollectionVoidRayDamageBoost,Modification.MoveSpeedMultiplier" Value="0.621"/>
+        <EffectArray Operation="Set" Reference="Behavior,MultiPlayerCollectionVoidRayDamageBoost,Modification.AccelerationMultiplier" Value="0.7441"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="MultiPlayerCollectionVoidRay"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionPhoenixRangeUpgrade">
+        <InfoTooltipPriority value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Weapon,MultiPlayerCollectionIonCannons,Range" Value="2"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPhoenix"/>
+    </CUpgrade>
+    <CUpgrade id="MultiPlayerCollectionTempestGroundAttackUpgrade">
+        <Icon value="Assets\Textures\btn-ability-protoss-disruptionblast.dds"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Effect,MultiPlayerCollectionTempestWeaponGroundDamage,AttributeBonus[Structure]" Value="40"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionTempest"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryMultiPlayerCollectionProtossMasteryUnitCost">
+        <AffectedUnitArray value="MultiPlayerCollectionZealot"/>
+        <AffectedUnitArray value="MultiPlayerCollectionAdept"/>
+        <AffectedUnitArray value="MultiPlayerCollectionStalker"/>
+        <AffectedUnitArray value="MultiPlayerCollectionSentry"/>
+        <AffectedUnitArray value="MultiPlayerCollectionDarkTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionHighTemplar"/>
+        <AffectedUnitArray value="MultiPlayerCollectionArchon"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrier"/>
+        <AffectedUnitArray value="MultiPlayerCollectionMothership"/>
+        <AffectedUnitArray value="MultiPlayerCollectionOracle"/>
+        <AffectedUnitArray value="MultiPlayerCollectionPhoenix"/>
+        <AffectedUnitArray value="MultiPlayerCollectionVoidRay"/>
+        <AffectedUnitArray value="MultiPlayerCollectionTempest"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrism"/>
+        <AffectedUnitArray value="MultiPlayerCollectionWarpPrismPhasing"/>
+        <AffectedUnitArray value="MultiPlayerCollectionObserver"/>
+        <AffectedUnitArray value="MultiPlayerCollectionObserverSiegeMode"/>
+        <AffectedUnitArray value="MultiPlayerCollectionColossus"/>
+        <AffectedUnitArray value="MultiPlayerCollectionImmortal"/>
+        <AffectedUnitArray value="MultiPlayerCollectionCarrierInterceptor"/>
+        <EffectArray Reference="Effect,MasteryMultiPlayerCollectionProtossMasteryUnitCostDummy,Amount" Value="1"/>
+        <MaxLevel value="30"/>
+    </CUpgrade>
+</Catalog>

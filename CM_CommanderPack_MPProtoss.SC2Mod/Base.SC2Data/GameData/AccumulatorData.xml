@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorConstant id="MultiPlayerCollectionShieldBatteryRechargeCostMutiplierFree">
+        <ApplicationRule value="Multiply"/>
+    </CAccumulatorConstant>
+    <CAccumulatorConstant id="MultiPlayerCollectionShieldBatteryRechargeCostMutiplierNormal">
+        <ApplicationRule value="Multiply"/>
+        <Amount value="1"/>
+    </CAccumulatorConstant>
+    <CAccumulatorSwitch id="MultiPlayerCollectionShieldBatteryRechargeCostSwitch">
+        <CaseArray Validator="MultiPlayerCollectionCasterHasBatteryOverchargeBehavior" Accumulator="MultiPlayerCollectionShieldBatteryRechargeCostMutiplierFree"/>
+        <CaseDefault value="MultiPlayerCollectionShieldBatteryRechargeCostMutiplierNormal"/>
+    </CAccumulatorSwitch>
+</Catalog>

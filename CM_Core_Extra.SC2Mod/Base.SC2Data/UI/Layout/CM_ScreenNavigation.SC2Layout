@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Constant name="ButtonOffset" val="-42"/>
+    <Constant name="ButtonOffsetLeft" val="-82"/>
+    <Constant name="StandardNavigation_Mainnav_Divider_Spacing_Horizontal" val="-1"/>
+    <Constant name="StandardNavigation_Mainnav_Button_Spacing_Horizontal" val="-42"/>
+    
+    <Frame type="Button" name="CM_NavigationButtonTemplate">
+        <Anchor side="Top" relative="$this/HitTestFrame" pos="Min" offset="-2"/>
+        <Anchor side="Left" relative="$this/HitTestFrame" pos="Min" offset="-42"/>
+        <Anchor side="Right" relative="$this/HitTestFrame" pos="Max" offset="42"/>
+        <DisplayType val="ImageLayer"/>
+        <ClickSound val="@UI_ScreenNavigation_ButtonClick01"/>
+        <HoverSound val="@UI_ScreenNavigation_MouseOver01"/>
+        <Height val="96"/>
+        <Toggleable val="true"/>
+
+        <Frame type="Image" name="HoverFrameImage">
+            <Anchor side="Top" relative="$parent/HitTestFrame" pos="Min" offset="-9"/>
+            <Anchor side="Bottom" relative="$parent/HitTestFrame" pos="Max" offset="9"/>
+            <Anchor side="Left" relative="$parent/HitTestFrame" pos="Min" offset="-12"/>
+            <Anchor side="Right" relative="$parent/HitTestFrame" pos="Max" offset="12"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_ButtonHover" layer="0"/>
+            <TextureType val="NineSlice"/>
+            <Tiled val="false"/>
+            <Alpha val="0"/>
+            <DesaturateOnDisable val="false"/>
+            
+            <Animation name="Hovered">
+                <Event event="OnMouseEnter" action="DirectionForward" frame="$parent"/>
+                <Event event="OnMouseEnter" action="Play" frame="$parent"/>
+                <Event event="OnMouseExit" action="DirectionReverse" frame="$parent"/>
+                <Event event="OnMouseExit" action="Play" frame="$parent"/>
+
+                <Controller type="Fade" end="Pause">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time=".4" value="255" in="Fast"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Image" name="SelectedFrameImage">
+            <Anchor side="Top" relative="$parent/HitTestFrame" pos="Min" offset="-9"/>
+            <Anchor side="Bottom" relative="$parent/HitTestFrame" pos="Max" offset="9"/>
+            <Anchor side="Left" relative="$parent/HitTestFrame" pos="Min" offset="-12"/>
+            <Anchor side="Right" relative="$parent/HitTestFrame" pos="Max" offset="12"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_ButtonHover"/>
+            <TextureType val="NineSlice"/>
+            <Alpha val="0"/>
+            <DesaturateOnDisable val="false"/>
+            
+            <Animation name="Toggled">
+                <Event event="Toggled" action="DirectionForward" frame="$parent"/>
+                <Event event="Toggled" action="Play" frame="$parent"/>
+                <Event event="Normal" action="DirectionReverse" frame="$parent"/>
+                <Event event="Normal" action="Play" frame="$parent"/>
+                <Event event="Disabled" action="DirectionReverse" frame="$parent"/>
+                <Event event="Disabled" action="Play" frame="$parent"/>
+                
+                <Controller type="Fade" end="Pause">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time=".5" value="255" in="Slow"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Image" name="SelectedGlowImage">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-25"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="10"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_ButtonSelected"/>
+            <Alpha val="0"/>
+            <BlendMode val="Add"/>
+            <DesaturateOnDisable val="false"/>
+
+            <Animation name="ShowAnim">
+                <Event event="Toggled" action="Reset" frame="$parent"/>
+                <Event event="Toggled" action="Play" frame="$parent"/>
+                
+                <Controller name="Visibility" type="Visibility" end="Pause">
+                    <Key type="Bool" time="0.0" value="true"/>
+                </Controller>
+                
+                <Controller type="Fade" end="Loop">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time="1.2" value="150" in="Slow"/>
+                    <Key type="Curve" time="2.4" value="0" in="Slow"/>
+                </Controller>
+            </Animation>
+            
+            <Animation name="HideAnim">
+                <Event event="Normal" action="Reset" frame="$parent"/>
+                <Event event="Normal" action="Play" frame="$parent"/>
+                <Event event="Disabled" action="Reset" frame="$parent"/>
+                <Event event="Disabled" action="Play" frame="$parent"/>
+                
+                <Controller name="Visibility" type="Visibility" end="Pause">
+                    <Key type="Bool" time="0.0" value="false"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Image" name="GlowImage">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-23"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="10"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_ButtonSelected"/>
+            <Alpha val="0"/>
+            <BlendMode val="Add"/>
+            <DesaturateOnDisable val="false"/>
+            
+            <Animation name="Toggled">
+                <Event event="Toggled" action="DirectionForward" frame="$parent"/>
+                <Event event="Toggled" action="Play" frame="$parent"/>
+                <Event event="Normal" action="DirectionReverse" frame="$parent"/>
+                <Event event="Normal" action="Play" frame="$parent"/>
+                <Event event="Disabled" action="DirectionReverse" frame="$parent"/>
+                <Event event="Disabled" action="Play" frame="$parent"/>
+                
+                <Controller type="Fade" end="Pause">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time=".5" value="180" in="Slow"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Image" name="UnderlineImage">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-20"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_ButtonSelectedLine"/>
+            <Alpha val="0"/>
+            <DesaturateOnDisable val="false"/>
+            
+            <Animation name="Toggled">
+                <Event event="Toggled" action="DirectionForward" frame="$parent"/>
+                <Event event="Toggled" action="Play" frame="$parent"/>
+                <Event event="Normal" action="DirectionReverse" frame="$parent"/>
+                <Event event="Normal" action="Play" frame="$parent"/>
+                <Event event="Disabled" action="DirectionReverse" frame="$parent"/>
+                <Event event="Disabled" action="Play" frame="$parent"/>
+                
+                <Controller type="Fade" end="Pause">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time=".5" value="255" in="Slow"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Image" name="Glow2Image">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-20"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="10"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_ButtonSelectedLine2"/>
+            <Alpha val="0"/>
+            <BlendMode val="Add"/>
+            <DesaturateOnDisable val="false"/>
+
+            <Animation name="ShowAnim">
+                <Event event="Toggled" action="Reset" frame="$parent"/>
+                <Event event="Toggled" action="Play" frame="$parent"/>
+                
+                <Controller name="Visibility" type="Visibility" end="Pause">
+                    <Key type="Bool" time="0.0" value="true"/>
+                </Controller>
+                
+                <Controller type="Fade" end="Loop">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time="1.2" value="255" in="Slow"/>
+                    <Key type="Curve" time="2.4" value="0" in="Slow"/>
+                </Controller>
+            </Animation>
+            
+            <Animation name="HideAnim">
+                <Event event="Normal" action="Reset" frame="$parent"/>
+                <Event event="Normal" action="Play" frame="$parent"/>
+                <Event event="Disabled" action="Reset" frame="$parent"/>
+                <Event event="Disabled" action="Play" frame="$parent"/>
+                
+                <Controller name="Visibility" type="Visibility" end="Pause">
+                    <Key type="Bool" time="0.0" value="false"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Label" name="Label">
+            <Anchor side="Top" relative="$parent/HitTestFrame" pos="Mid" offset="0"/>
+            <Anchor side="Bottom" relative="$parent/HitTestFrame" pos="Mid" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="69"/>
+            <RenderPriority val="601"/>
+            <Style val="BattlenetTopNav"/>
+        </Frame>
+        
+        <Frame type="Frame" name="HitTestFrame">
+            <Anchor side="Right" relative="$parent/Label" pos="Max" offset="0"/>
+            <Height val="72"/>
+            <TooltipAnchorPosition val="BottomCenter"/>
+        </Frame>
+        
+        <StateGroup name="AspectRatioState">
+            <DefaultState val="16x9"/>
+            <State name="16x9">
+                <Action type="SetProperty" frame="Label" style="BattlenetTopNav"/>
+                <Action type="SetAnchor" frame="$this/Label" side="Left" relative="$parent/HitTestFrame" pos="Min" offset="30"/>
+                <Action type="SetAnchor" frame="$this/HitTestFrame" side="Right" relative="$parent/Label" pos="Max" offset="28"/>
+            </State>
+        </StateGroup>
+
+    </Frame>
+
+    <Frame type="Button" name="CM_NavigationHomeButtonTemplate">
+        <Width val="81"/>
+        <Height val="80"/>
+        <TooltipAnchorPosition val="BottomCenter"/>
+        <DisplayType val="ImageLayer"/>
+        <ClickSound val="@UI_ActionButtonSelect"/>
+        <Toggleable val="true"/>
+        
+        <Frame type="Label" name="Label">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-3"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="25"/>
+            <RenderPriority val="601"/>
+            <Style val="BattlenetTopNav"/>
+            <Text val="0"/>
+            <Visible val="false"/>
+        </Frame>
+        
+        <Frame type="Frame" name="HitTestFrame">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="2"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-8"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        </Frame>
+        
+        <Frame type="Image" name="HomeIcon">
+            <Anchor side="Top" relative="$parent" pos="Mid" offset="-3"/>
+            <Anchor side="Bottom" relative="$parent" pos="Mid" offset="-3"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="-1"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="-1"/>
+            <Width val="50"/>
+            <Height val="49"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_Home"/>
+            
+            <Animation name="Toggled">
+                <Event event="Toggled" action="Reset" frame="$parent"/>
+                <Event event="Toggled" action="Play" frame="$parent"/>
+                <Event event="Normal" action="Reset" frame="$parent"/>
+                <Event event="Disabled" action="Reset" frame="$parent"/>
+                
+                <Controller type="Texture" end="Pause">
+                    <Key type="Image" time="0" image="@UI/Glues_Battlenet_TopNav_HomeSelected"/>
+                </Controller>
+            </Animation>
+        </Frame>
+        
+        <Frame type="Image" name="HomeIconHover">
+            <Anchor relative="$parent/HomeIcon"/>
+            <Texture val="@UI/Glues_Battlenet_TopNav_HomeHover"/>
+            <Alpha val="0"/>
+            
+            <Animation name="HomeHover">
+                <Event event="OnMouseEnter" action="Reset, Play" frame="$parent"/>
+                <Event event="OnMouseExit" action="DirectionReverse, Play" frame="$parent"/>
+                
+                <Controller type="Fade" end="Pause">
+                    <Key type="Curve" time="0" value="0" out="Fast"/>
+                    <Key type="Curve" time=".4" value="255" in="Fast"/>
+                </Controller>
+            </Animation>
+        </Frame>
+    </Frame>
+
+    <Frame type="Frame" name="CU_MainDialog">
+        <Anchor relative="$parent"/>
+        <Frame type="Frame" name="CM_ScreenNavigation">
+            <Anchor relative="$parent"/>
+            <!-- This must render above normal content screens so it is always accessible -->
+            <RenderPriority val="600"/>
+
+            <Frame type="Frame" name="NavigationContainer">
+                <Anchor relative="$parent"/>
+
+                <Frame type="TabControl" name="TabControl">
+                    <Anchor relative="$parent"/>
+                    <SelectedIndex val="0"/>
+                    
+                    <TabListItem val="$parent/HomeButton"/>
+                    <TabListItem val="$parent/CoopModeButton"/>
+                    <TabListItem val="$parent/ArchiveButton"/>
+                    <TabListItem val="$parent/AchievementButton"/>
+                    <PanelListItem val="$parent/$parent/$parent/HomePanel"/>
+                    <PanelListItem val="$parent/$parent/$parent/ScreenCoopCampaign"/>
+                    <PanelListItem val="$parent/$parent/$parent/ScreenCoopCampaign"/>
+                    <PanelListItem val="$parent/$parent/$parent/ScreenCoopCampaign"/>
+                </Frame>
+
+                <Frame type="BlurFrame" name="BlurEffect">
+                    <Anchor relative="$parent/Background"/>
+                    <BlurAmount val=".3"/>
+
+                    <Frame type="Image" name="LowImage">
+                        <Anchor relative="$parent"/>
+                        <Color val="0,0,0"/>
+                        <Alpha val="150"/>
+                    </Frame>
+                </Frame>
+
+                <Frame type="Image" name="Background">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                    <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+                    <Height val="72"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_Bg"/>
+                    <TextureType val="Normal"/>
+                    <Tiled val="False"/>
+                </Frame>
+                
+                <Frame type="Image" name="BackgroundHexShimmer">
+                    <Anchor side="Top" relative="$parent/Background" pos="Min" offset="4"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                    <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+                    <Anchor side="Bottom" relative="$parent/Background" pos="Max" offset="-4"/>
+                    <LayerCount val="2"/>
+                    
+                    <Texture val="@UI/Glues_Battlenet_TopNav_HexPattern" layer="0"/>
+                    <TextureType val="Normal" layer="0"/>
+                    <Tiled val="true" layer="0"/>
+                    <AlphaLayer val="true" layer="0"/>
+                    
+                    <Texture val="@UI/Glues_Battlenet_TopNav_HexShimmer" layer="1"/>
+                    <TextureCoords top="0" left="0" bottom="1" right="1" layer="1"/>
+                    <Alpha val="175" layer="1"/>
+                    
+                    <Animation name="Shimmer">
+                        <Event event="OnShown" action="DirectionForward" frame="$parent"/>
+                        <Event event="OnShown" action="Play" frame="$parent"/>
+                 
+                        <Controller type="LayerUV" layer="1" side="Right" relative="False" sidelock="True" end="Loop" >
+                            <Key type="Curve" time="0" value="1" out="linear"/>
+                            <Key type="Curve" time="8" value="0" in="linear"/>
+                        </Controller>
+                        
+                        <Controller type="Fade" end="Loop">
+                            <Key type="Curve" time="0" value="0"/>
+                            <Key type="Curve" time="1" value="100"/>
+                            <Key type="Curve" time="3" value="200"/>
+                            <Key type="Curve" time="4" value="255"/>
+                            <Key type="Curve" time="6" value="200"/>
+                            <Key type="Curve" time="8" value="0"/>
+                        </Controller>
+                    </Animation>
+                </Frame>
+                
+                <Frame type="Image" name="TopLineHighlightAnim">
+                    <Anchor side="Top" relative="$parent/Background" pos="Min" offset="0"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_TopHighlightAnim"/>
+                    
+                    <Animation name="Highlight">
+                        <Event event="OnShown" action="DirectionForward" frame="$parent"/>
+                        <Event event="OnShown" action="Play" frame="$parent"/>
+                        
+                        <Controller type="Fade" end="Loop">
+                            <Key type="Curve" time="0" value="0"/>
+                            <Key type="Curve" time="1" value="255"/>
+                            <Key type="Curve" time="7" value="255"/>
+                            <Key type="Curve" time="8" value="0"/>
+                        </Controller>
+                        
+                        <Controller type="Anchor" end="Loop" side="Left" relative="true">
+                            <Key type="Curve" time="0" value="0" out="linear"/>
+                            <Key type="Curve" time="8" value="1920" out="linear"/>
+                        </Controller>
+                    </Animation>
+                </Frame>
+                
+                <Frame type="Image" name="BottomLineHighlightAnim">
+                    <Anchor side="Bottom" relative="$parent/Background" pos="Max" offset="2"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_BottomHighlightAnim"/>
+                    
+                    <Animation name="Highlight">
+                        <Event event="OnShown" action="DirectionForward" frame="$parent"/>
+                        <Event event="OnShown" action="Play" frame="$parent"/>
+                        
+                        <Controller type="Fade" end="Loop">
+                            <Key type="Curve" time="0" value="0"/>
+                            <Key type="Curve" time="2" value="0"/>
+                            <Key type="Curve" time="4.5" value="255"/>
+                            <Key type="Curve" time="6" value="255"/>
+                            <Key type="Curve" time="8" value="0"/>
+                        </Controller>
+                        
+                        <Controller type="Anchor" end="Loop" side="Left" relative="true">
+                            <Key type="Curve" time="0" value="0" out="linear"/>
+                            <Key type="Curve" time="2" value="0" out="linear"/>
+                            <Key type="Curve" time="8" value="1920" out="linear"/>
+                        </Controller>
+                    </Animation>
+                </Frame>
+                
+                <Frame type="Image" name="ButtonDivider1">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="4"/>
+                    <Anchor side="Right" relative="$parent/HomeButton" pos="Max" offset="1"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_ButtonDivider"/>
+                </Frame>
+                
+                <Frame type="Image" name="ButtonDivider2">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="4"/>
+                    <Anchor side="Left" relative="$parent/CoopModeButton/HitTestFrame" pos="Max" offset="#StandardNavigation_Mainnav_Divider_Spacing_Horizontal"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_ButtonDivider"/>
+                </Frame>
+                
+                <Frame type="Image" name="ButtonDivider3">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="4"/>
+                    <Anchor side="Left" relative="$parent/ArchiveButton/HitTestFrame" pos="Max" offset="#StandardNavigation_Mainnav_Divider_Spacing_Horizontal"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_ButtonDivider"/>
+                </Frame>
+                
+                <Frame type="Image" name="ButtonDivider4">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="4"/>
+                    <Anchor side="Left" relative="$parent/AchievementButton/HitTestFrame" pos="Max" offset="#StandardNavigation_Mainnav_Divider_Spacing_Horizontal"/>
+                    <Texture val="@UI/Glues_Battlenet_TopNav_ButtonDivider"/>
+                </Frame>
+                
+                <Frame type="Button" name="HomeButton" template="CM_ScreenNavigation/CM_NavigationHomeButtonTemplate">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                    <Shortcut val="@UI/ScreenNavigation1_Hotkey"/>
+                    
+                    <StateGroup name="AspectRatioState">
+                        <DefaultState val="Not4x3"/>
+                        
+                        <State name="4x3">
+                            <When type="StateGroup" frame="$GlueUI" AspectRatioState="4x3"/>
+                            <Action type="SetProperty" frame="HomeIcon" Width="35"/>
+                            <Action type="SetProperty" frame="HomeIcon" Height="35"/>
+                        </State>
+                        
+                        <State name="Not4x3">
+                            <Action type="SetProperty" frame="HomeIcon" Width="50"/>
+                            <Action type="SetProperty" frame="HomeIcon" Height="49"/>
+                        </State>
+                    </StateGroup>
+                </Frame>
+
+                <Frame type="Button" name="CoopModeButton" template="CM_ScreenNavigation/CM_NavigationButtonTemplate">
+                    <Text val="@UI/HomePanel/Coop"/>
+                    <Shortcut val="@UI/ScreenNavigation2_Hotkey"/>
+                    
+                    <Frame type="Frame" name="HitTestFrame">
+                        <Anchor side="Top" relative="$parent/$parent" pos="Min" offset="0"/>
+                        <Anchor side="Left" relative="$parent/$parent/HomeButton" pos="Max" offset="0"/>
+                    </Frame>
+
+                </Frame>
+
+                <Frame type="Button" name="ArchiveButton" template="CM_ScreenNavigation/CM_NavigationButtonTemplate">
+                    <Text val="@UI/BattleReportPanelTitle"/>
+                    <Shortcut val="@UI/ScreenNavigation3_Hotkey"/>
+                    
+                    <Frame type="Frame" name="HitTestFrame">
+                        <Anchor side="Top" relative="$parent/$parent" pos="Min" offset="0"/>
+                        <Anchor side="Left" relative="$parent/$parent/CoopModeButton/HitTestFrame" pos="Max" offset="0"/>
+                    </Frame>
+                </Frame>
+
+                <Frame type="Button" name="AchievementButton" template="CM_ScreenNavigation/CM_NavigationButtonTemplate">
+                    <Text val="@UI/UserProfileAchievementsFrame/Showcase"/>
+                    <Shortcut val="@UI/ScreenNavigation4_Hotkey"/>
+                    
+                    <Frame type="Frame" name="HitTestFrame">
+                        <Anchor side="Top" relative="$parent/$parent" pos="Min" offset="0"/>
+                        <Anchor side="Left" relative="$parent/$parent/ArchiveButton/HitTestFrame" pos="Max" offset="0"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </Frame>
+
+        <Frame type="Frame" name="HomePanel" template="CM_ScreenHome/HomePanel">
+        </Frame>
+
+        <Frame type="Frame" name="ScreenCoopCampaign" template="CM_ScreenCoopCampaign/ScreenCoopCampaign">
+        </Frame>
+    </Frame>
+</Desc>

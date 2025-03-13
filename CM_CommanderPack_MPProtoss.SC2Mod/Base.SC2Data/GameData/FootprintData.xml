@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="MultiPlayerCollectionFootprint3x3ForceField">
+        <Layers index="Check" Area="-1,-1,2,2">
+            <Sets Character="o"/>
+            <Rows value="ooo"/>
+            <Rows value="ooo"/>
+            <Rows value="ooo"/>
+        </Layers>
+        <Layers index="Place" Area="-1,-1,2,2">
+            <Sets Character="o">
+                <Positive index="NoBuild" value="1"/>
+            </Sets>
+            <Rows value="ooo"/>
+            <Rows value="ooo"/>
+            <Rows value="ooo"/>
+        </Layers>
+        <Shape>
+            <Radius value="2.1213"/>
+            <Offsets value="-1.5,-1.5;-1.5,1.5;1.5,1.5;1.5,-1.5"/>
+            <Borders value="3,0,2;0,1,2;1,2,2;2,3,2"/>
+        </Shape>
+    </CFootprint>
+    <CFootprint id="MultiPlayerCollectionOracleStasisTrap">
+        <Layers index="Check" Area="0,0,1,1">
+            <Sets index="0">
+                <Negative index="Creep" value="0"/>
+            </Sets>
+            <Rows value="x"/>
+        </Layers>
+        <Layers index="Place" Area="0,0,1,1">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+            </Sets>
+            <Rows value="x"/>
+        </Layers>
+        <Shape>
+            <Radius value="0.3955"/>
+            <Offsets value="-0.125,-0.375;0.125,-0.375;-0.125,0.375;0.125,0.375;-0.375,-0.125;-0.375,0.125;0.375,-0.125;0.375,0.125"/>
+            <Borders value="0,4,1;1,0,1;2,3,1;3,7,1;4,5,1;5,2,1;6,1,1;7,6,1"/>
+        </Shape>
+    </CFootprint>
+</Catalog>

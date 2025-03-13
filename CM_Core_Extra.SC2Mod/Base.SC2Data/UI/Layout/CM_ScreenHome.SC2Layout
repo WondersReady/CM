@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="Button" name="AdvertisementFrameTemplate">
+        <Width val="500"/>
+        <Height val="77"/>
+        <NormalImage val="NormalImage"/>
+        <HoverImage val="HoverImage"/>
+
+        <HoverSound val="@UI_HoverTick"/>
+        <ClickSound val="@UI_ActionButtonSelect"/>
+
+        <Frame type="BlurFrame" name="BlurEffect">
+            <Anchor side="Left" relative="$parent" pos="Min" offset="2"/>
+            <Anchor side="Top" relative="$parent" pos="Min" offset="2"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-2"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-2"/>
+            <BlurAmount val=".3"/>
+
+            <Frame type="Image" name="LowImage">
+                <Anchor relative="$parent" offset="0"/>
+                <Color val="0,0,0"/>
+                <Alpha val="150"/>
+            </Frame>
+        </Frame>
+
+        <Frame type="Image" name="NormalImage">
+            <Anchor relative="$parent"/>
+            <Texture val="@UI/Glues_Battlenet_PageAssets_NewsPanel_WidgetItem_Normal"/>
+            <TextureType val="Nineslice"/>
+        </Frame>
+        
+        <Frame type="Image" name="HoverImage">
+            <Anchor relative="$parent"/>
+            <Texture val="@UI/Glues_Battlenet_PageAssets_NewsPanel_WidgetItem_Hover"/>
+            <TextureType val="Nineslice"/>
+        </Frame>
+
+        <Frame type="Image" name="IconImage">
+            <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="5"/>
+            <Height val="87"/>
+            <Width val="84"/>
+            <Texture val="Assets/Textures/UI_Battlenet_Glue_Coop_NewUser_SplashIcon.dds"/>
+        </Frame>
+
+        <Frame type="Label" name="DescriptionLabel">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="10"/>
+            <Anchor side="Bottom" relative="$parent" pos="Mid" offset="3"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+            <Style val="Tournament_PortalAdText"/>
+            <AcceptsMouseTooltip val="True"/>
+        </Frame>
+        
+        <Frame type="Label" name="DescriptionSubLabel">
+            <Anchor side="Top" relative="$parent/DescriptionLabel" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent/DescriptionLabel" pos="Min" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+            <Style val="Tournament_PortalAdSubText"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="Frame" name="HomePanel">
+        <Anchor relative="$parent"/>
+        <Frame type="Image" name="Vignette">
+            <Anchor relative="$parent"/>
+            <Texture val="@UI/SC2_UI_Coop_Vignette"/>
+            <Alpha val="255"/>
+        </Frame>
+        <!-- This must render above normal content screens so it is always accessible -->
+        <RenderPriority val="580"/>
+        <Frame type="Frame" name="HomeLogo">
+            <Width val="625"/>
+            <Height val="315"/>
+            <Anchor side="Bottom" relative="$parent/AdvertisementFrame" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/AdvertisementFrame" pos="Mid" offset="0"/>
+            <Anchor side="Right" relative="$parent/AdvertisementFrame" pos="Mid" offset="0"/>
+            <Alpha val="255"/>
+
+            <Frame type="Image" name="Background">
+                <Anchor relative="$parent"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_bg"/>
+            </Frame>
+
+            <Frame type="Image" name="BackgroundGlow">
+                <Anchor relative="$parent"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_bg_glow"/>
+                <BlendMode val="Add"/>
+                <Alpha val="0"/>
+
+                <Animation name="Smoke">
+                    <Event event="OnShown" action="Reset,Play" frame="$parent"/>
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Linear"/>
+                        <Key type="Curve" time="10" value="200" in="Linear"/>
+                        <Key type="Curve" time="20" value="0" in="Linear"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="BackgroundSmoke_3">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="-30"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_smoke"/>
+                <BlendMode val="Add"/>
+                <LayerColor val="5781a3"/>
+                <Alpha val="20"/>
+                <Width val="200"/>
+                <Height val="200"/>
+
+                <Animation name="Smoke">
+                    <Event event="OnShown" action="Reset,Play" frame="$parent"/>
+                    <Event event="OnHidden" action="Stop" frame="$parent"/>
+
+                    <Controller type="Rotation" relative="False" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Linear"/>
+                        <Key type="Curve" time="14" value="-360" in="Linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="10" out="Fast"/>
+                        <Key type="Curve" time="10" value="20" in="Slow"/>
+                        <Key type="Curve" time="20" value="10" out="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="BackgroundSmoke_5">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_smoke"/>
+                <BlendMode val="Add"/>
+                <LayerColor val="6bcdff"/>
+                <Alpha val="30"/>
+
+                <Animation name="Smoke">
+                    <Event event="OnShown" action="Reset,Play" frame="$parent"/>
+                    <Event event="OnHidden" action="Stop" frame="$parent"/>
+
+                    <Controller type="Rotation" relative="False" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Linear"/>
+                        <Key type="Curve" time="14" value="-360" in="Linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="25" out="Fast"/>
+                        <Key type="Curve" time="10" value="50" in="Slow"/>
+                        <Key type="Curve" time="20" value="25" out="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="BackgroundSmoke_4">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="30"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_smoke"/>
+                <BlendMode val="Add"/>
+                <LayerColor val="5781a3"/>
+                <Alpha val="20"/>
+                <Width val="200"/>
+                <Height val="200"/>
+
+                <Animation name="Smoke">
+                    <Event event="OnShown" action="Reset,Play" frame="$parent"/>
+                    <Event event="OnHidden" action="Stop" frame="$parent"/>
+
+                    <Controller type="Rotation" relative="False" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Linear"/>
+                        <Key type="Curve" time="15" value="360" in="Linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="10" out="Fast"/>
+                        <Key type="Curve" time="10" value="20" in="Slow"/>
+                        <Key type="Curve" time="20" value="10" out="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="BackgroundSmoke_1">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="80"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_smoke"/>
+                <BlendMode val="Add"/>
+                <LayerColor val="5babeb"/>
+                <Alpha val="30"/>
+
+                <Animation name="Smoke">
+                    <Event event="OnShown" action="Reset,Play" frame="$parent"/>
+                    <Event event="OnHidden" action="Stop" frame="$parent"/>
+
+                    <Controller type="Rotation" relative="False" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Linear"/>
+                        <Key type="Curve" time="10" value="360" in="Linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="10" out="Fast"/>
+                        <Key type="Curve" time="10" value="30" in="Slow"/>
+                        <Key type="Curve" time="20" value="10" out="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="BackgroundSmoke_2">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="-80"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_smoke"/>
+                <BlendMode val="Add"/>
+                <LayerColor val="5babeb"/>
+                <Alpha val="30"/>
+
+                <Animation name="Smoke">
+                    <Event event="OnShown" action="Reset,Play" frame="$parent"/>
+                    <Event event="OnHidden" action="Stop" frame="$parent"/>
+
+                    <Controller type="Rotation" relative="False" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Linear"/>
+                        <Key type="Curve" time="12" value="-360" in="Linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="10" out="Fast"/>
+                        <Key type="Curve" time="10" value="30" in="Slow"/>
+                        <Key type="Curve" time="20" value="10" out="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="Logo_II">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="1"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="1"/>
+                <Width val="460"/>
+                <Height val="200"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_II"/>
+            </Frame>
+
+            <Frame type="Image" name="Logo_II_Shimmer">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="1"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="1"/>
+                <Width val="460"/>
+                <Height val="200"/>
+                <LayerCount val="2"/>
+                <Alpha val="255"/>
+
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_II_ShimmerMask" layer="0"/>
+                <TextureCoords top="0" left="0" bottom="1" right="1" layer="0"/>
+                <AlphaLayer val="True" layer="0"/>
+                <TextureType val="Normal" layer="0"/>
+
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_Shimmer" layer="1"/>
+                <TextureCoords top="0" left="0" bottom="1" right="1" layer="1"/>
+                <BlendMode val="Add" layer="1"/>
+                <Alpha val="100"/>
+
+                <Animation name="ShimmerAnim">
+                    <Event event="OnShown" action="Reset,Play"/>
+             
+                    <Controller type="LayerUV" layer="1" side="Left" relative="False" sidelock="True" end="Loop" >
+                        <Key type="Curve" time="0" value="-1" out="linear"/>
+                        <Key type="Curve" time="1.0" value="-1" out="linear"/>
+                        <Key type="Curve" time="7.0" value="1" in="linear"/>
+                        <Key type="Curve" time="14.0" value="1" in="linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Fast"/>
+                        <Key type="Curve" time="4" value="100" in="Fast"/>
+                        <Key type="Curve" time="10" value="100" in="Fast"/>
+                        <Key type="Curve" time="14" value="0" in="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+
+            <Frame type="Image" name="Logo">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="1"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="1"/>
+                <Width val="460"/>
+                <Height val="200"/>
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC"/>
+            </Frame>
+
+            <Frame type="Image" name="Logo_Shimmer">
+                <Anchor side="Top" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Bottom" relative="$parent" pos="Mid" offset="16"/>
+                <Anchor side="Left" relative="$parent" pos="Mid" offset="1"/>
+                <Anchor side="Right" relative="$parent" pos="Mid" offset="1"/>
+                <Width val="460"/>
+                <Height val="200"/>
+                <LayerCount val="2"/>
+                <Alpha val="255"/>
+
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_ShimmerMask" layer="0"/>
+                <TextureCoords top="0" left="0" bottom="1" right="1" layer="0"/>
+                <AlphaLayer val="True" layer="0"/>
+                <TextureType val="Normal" layer="0"/>
+
+                <Texture val="@UI/Glues_Battlenet_Home_Logo_SC_Shimmer" layer="1"/>
+                <TextureCoords top="0" left="0" bottom="1" right="1" layer="1"/>
+                <BlendMode val="Add" layer="1"/>
+                <LayerColor val="6bcdff" layer="1"/>
+
+                <Animation name="ShimmerAnim">
+                    <Event event="OnShown" action="Reset,Play"/>
+             
+                    <Controller type="LayerUV" layer="1" side="Left" relative="False" sidelock="True" end="Loop" >
+                        <Key type="Curve" time="0" value="1" out="linear"/>
+                        <Key type="Curve" time="1.0" value="1" out="linear"/>
+                        <Key type="Curve" time="7.0" value="-1" in="linear"/>
+                        <Key type="Curve" time="14.0" value="-1" in="linear"/>
+                    </Controller>
+
+                    <Controller type="Fade" end="Loop">
+                        <Key type="Curve" time="0" value="0" out="Fast"/>
+                        <Key type="Curve" time="4" value="150" in="Fast"/>
+                        <Key type="Curve" time="10" value="150" in="Fast"/>
+                        <Key type="Curve" time="14" value="0" in="Fast"/>
+                    </Controller>
+                </Animation>
+            </Frame>
+        </Frame>
+
+        <Frame type="Frame" name="AdvertisementFrame">
+            <Width val="516"/>
+            <Anchor side="Top" relative="$parent" pos="0.4" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="112"/>
+            <Anchor side="Bottom" relative="$this/Item1" pos="Max" offset="0"/>
+            <Alpha val="255"/>
+
+            <Frame type="Button" name="Item0" template="CM_ScreenHome/AdvertisementFrameTemplate">
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Left" relative="$parent" pos="Min" offset="8"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-8"/>
+            </Frame>
+
+            <Frame type="Button" name="Item1" template="CM_ScreenHome/AdvertisementFrameTemplate">
+                <Anchor side="Top" relative="$parent/Item0" pos="Max" offset="10"/>
+                <Anchor side="Left" relative="$parent" pos="Min" offset="8"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-8"/>
+            </Frame>
+        </Frame>
+    </Frame></Desc>

@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TriggerData>
+    <Library Id="MPPT">
+        <Root>
+            <Item Type="Trigger" Library="MPPT" Id="4D5A2902"/>
+            <Item Type="Trigger" Library="MPPT" Id="F7973CB9"/>
+            <Item Type="FunctionDef" Library="MPPT" Id="17D38396"/>
+            <Item Type="FunctionDef" Library="MPPT" Id="0C81E05C"/>
+            <Item Type="Trigger" Library="MPPT" Id="04626A10"/>
+            <Item Type="FunctionDef" Library="MPPT" Id="2F4FC50A"/>
+        </Root>
+        <Element Type="Trigger" Id="4D5A2902">
+            <Action Type="FunctionCall" Library="MPPT" Id="3B3B9D89"/>
+        </Element>
+        <Element Type="FunctionCall" Id="3B3B9D89">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
+            <Parameter Type="Param" Library="MPPT" Id="9F58F796"/>
+            <Parameter Type="Param" Library="MPPT" Id="EEF50F59"/>
+            <Parameter Type="Param" Library="MPPT" Id="1155438A"/>
+        </Element>
+        <Element Type="Param" Id="9F58F796">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000183"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000065"/>
+        </Element>
+        <Element Type="Param" Id="EEF50F59">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000184"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000068"/>
+        </Element>
+        <Element Type="Param" Id="1155438A">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
+            <ValueType Type="trigger"/>
+            <ValueElement Type="Trigger" Library="MPPT" Id="F7973CB9"/>
+        </Element>
+        <Element Type="Trigger" Id="F7973CB9">
+            <Action Type="FunctionCall" Library="MPPT" Id="D2EB8F65"/>
+            <Action Type="FunctionCall" Library="MPPT" Id="979CEDB8"/>
+            <Action Type="FunctionCall" Library="MPPT" Id="C11FB2F9"/>
+        </Element>
+        <Element Type="FunctionCall" Id="D2EB8F65">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="71596144"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="0E6FD178"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="62366F30"/>
+        </Element>
+        <Element Type="FunctionCall" Id="0E6FD178">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000242"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="A1B37466"/>
+            <Parameter Type="Param" Library="MPPT" Id="E1A13191"/>
+            <Parameter Type="Param" Library="MPPT" Id="0668CDD2"/>
+        </Element>
+        <Element Type="Param" Id="E1A13191">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000419"/>
+            <Value>0.5</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Param" Id="0668CDD2">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000420"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000013"/>
+        </Element>
+        <Element Type="FunctionCall" Id="62366F30">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="20298AEC"/>
+            <Parameter Type="Param" Library="MPPT" Id="A12D9502"/>
+            <Parameter Type="Param" Library="MPPT" Id="B75F0063"/>
+            <Parameter Type="Param" Library="MPPT" Id="2EF051B0"/>
+        </Element>
+        <Element Type="Param" Id="A12D9502">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="B0C6E51B"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B0C6E51B">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="5A832F2D"/>
+        </Element>
+        <Element Type="Param" Id="B75F0063">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="E123C832"/>
+        </Element>
+        <Element Type="Param" Id="2EF051B0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
+            <Value>2.0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="FunctionCall" Id="979CEDB8">
+            <FunctionDef Type="FunctionDef" Library="MPPT" Id="17D38396"/>
+            <Parameter Type="Param" Library="MPPT" Id="39826045"/>
+        </Element>
+        <Element Type="Param" Id="39826045">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C11FB2F9">
+            <FunctionDef Type="FunctionDef" Library="MPPT" Id="17D38396"/>
+            <Parameter Type="Param" Library="MPPT" Id="5CFB5FA8"/>
+        </Element>
+        <Element Type="Param" Id="5CFB5FA8">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+            <Value>2</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionDef" Id="17D38396">
+            <Identifier>CM_MasteryKerriganArmyVespeneCostList</Identifier>
+            <Internal/>
+            <FlagAction/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+            <Variable Type="Variable" Library="MPPT" Id="4B75B5F5"/>
+            <Variable Type="Variable" Library="MPPT" Id="78417832"/>
+            <Variable Type="Variable" Library="MPPT" Id="C432819F"/>
+            <Variable Type="Variable" Library="MPPT" Id="D57C8DBD"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="801FD6D2"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="7A2689F5"/>
+        </Element>
+        <Element Type="ParamDef" Id="D31C5D5D">
+            <ParameterType>
+                <Type Value="int"/>
+            </ParameterType>
+            <Default Type="Param" Library="MPPT" Id="232CC7C8"/>
+        </Element>
+        <Element Type="Param" Id="232CC7C8">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Variable" Id="4B75B5F5">
+            <VariableType>
+                <Type Value="int"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="95211EE0"/>
+        </Element>
+        <Element Type="Param" Id="95211EE0">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Variable" Id="78417832">
+            <VariableType>
+                <Type Value="int"/>
+                <Constant/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="B3CB5B76"/>
+        </Element>
+        <Element Type="Param" Id="B3CB5B76">
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="392FB417"/>
+        </Element>
+        <Element Type="FunctionCall" Id="392FB417">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="4E004004"/>
+            <Parameter Type="Param" Library="MPPT" Id="9A9F35BE"/>
+            <Parameter Type="Param" Library="MPPT" Id="B297828B"/>
+            <Parameter Type="Param" Library="MPPT" Id="A2E0967B"/>
+            <Parameter Type="Param" Library="MPPT" Id="B86F8104"/>
+        </Element>
+        <Element Type="Param" Id="9A9F35BE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0031ED18"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000534"/>
+        </Element>
+        <Element Type="Param" Id="B297828B">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="FC11E017"/>
+            <Value>AffectedUnitArray</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CUpgrade"/>
+        </Element>
+        <Element Type="Param" Id="A2E0967B">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="893D368F"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+        </Element>
+        <Element Type="Param" Id="B86F8104">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="99B05266"/>
+            <Value>MasteryMultiPlayerCollectionProtossMasteryUnitCost</Value>
+            <ValueType Type="catalogentry"/>
+        </Element>
+        <Element Type="Variable" Id="C432819F">
+            <VariableType>
+                <Type Value="gamelink"/>
+                <GameType Value="Unit"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="725F3F6F"/>
+        </Element>
+        <Element Type="Param" Id="725F3F6F">
+            <Preset Type="PresetValue" Library="Ntve" Id="C9DCA6C0"/>
+        </Element>
+        <Element Type="Variable" Id="D57C8DBD">
+            <VariableType>
+                <Type Value="int"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="C761BC00"/>
+        </Element>
+        <Element Type="Param" Id="C761BC00">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="801FD6D2">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="9BBF09FF"/>
+            <Parameter Type="Param" Library="MPPT" Id="B2269DBF"/>
+        </Element>
+        <Element Type="Param" Id="9BBF09FF">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="4B75B5F5"/>
+        </Element>
+        <Element Type="Param" Id="B2269DBF">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="7E98B4F2"/>
+        </Element>
+        <Element Type="FunctionCall" Id="7E98B4F2">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000255"/>
+            <Parameter Type="Param" Library="MPPT" Id="BFB8BB44"/>
+            <Parameter Type="Param" Library="MPPT" Id="F4D2E958"/>
+            <Parameter Type="Param" Library="MPPT" Id="C2AE2470"/>
+        </Element>
+        <Element Type="Param" Id="BFB8BB44">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="448F39DC"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="D78D6018"/>
+        </Element>
+        <Element Type="Param" Id="F4D2E958">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000447"/>
+            <Value>MasteryMultiPlayerCollectionProtossMasteryUnitCost</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="Param" Id="C2AE2470">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000446"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+        </Element>
+        <Element Type="FunctionCall" Id="7A2689F5">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="66474248"/>
+            <Parameter Type="Param" Library="MPPT" Id="4DDDAD02"/>
+            <Parameter Type="Param" Library="MPPT" Id="1FD79080"/>
+            <Parameter Type="Param" Library="MPPT" Id="358B5EC9"/>
+            <Parameter Type="Param" Library="MPPT" Id="000B247C"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="329B0F53"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="B8E7037A"/>
+        </Element>
+        <Element Type="Param" Id="4DDDAD02">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="F13E2CDE"/>
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="1FD79080">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="C25E6187"/>
+            <Variable Type="Variable" Library="MPPT" Id="78417832"/>
+        </Element>
+        <Element Type="Param" Id="358B5EC9">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="F3144A4A"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="000B247C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="8CB41668"/>
+            <Variable Type="Variable" Library="MPPT" Id="D57C8DBD"/>
+        </Element>
+        <Element Type="FunctionCall" Id="329B0F53">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="DAF49931"/>
+            <Parameter Type="Param" Library="MPPT" Id="6CF61543"/>
+            <Parameter Type="Param" Library="MPPT" Id="0A9A4AFB"/>
+        </Element>
+        <Element Type="Param" Id="6CF61543">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="C432819F"/>
+        </Element>
+        <Element Type="Param" Id="0A9A4AFB">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="1445BF7D"/>
+        </Element>
+        <Element Type="FunctionCall" Id="1445BF7D">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8051F8E8"/>
+            <Parameter Type="Param" Library="MPPT" Id="CC182CBD"/>
+        </Element>
+        <Element Type="Param" Id="CC182CBD">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="8CF68742"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="0C1C5E62"/>
+        </Element>
+        <Element Type="FunctionCall" Id="0C1C5E62">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000383"/>
+            <Parameter Type="Param" Library="MPPT" Id="DDB88717"/>
+            <Parameter Type="Param" Library="MPPT" Id="7ACAB56F"/>
+            <Parameter Type="Param" Library="MPPT" Id="C9BD240D"/>
+            <Parameter Type="Param" Library="MPPT" Id="E2901155"/>
+        </Element>
+        <Element Type="Param" Id="DDB88717">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000750"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+        </Element>
+        <Element Type="Param" Id="7ACAB56F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000747"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000534"/>
+        </Element>
+        <Element Type="Param" Id="C9BD240D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000748"/>
+            <Value>MasteryMultiPlayerCollectionProtossMasteryUnitCost</Value>
+            <ValueType Type="catalogentry"/>
+        </Element>
+        <Element Type="Param" Id="E2901155">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000749"/>
+            <Value>AffectedUnitArray[0]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CUpgrade"/>
+            <ValueParam Type="Param" Library="MPPT" Id="2CA19A69"/>
+        </Element>
+        <Element Type="Param" Id="2CA19A69">
+            <Variable Type="Variable" Library="MPPT" Id="D57C8DBD"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B8E7037A">
+            <FunctionDef Type="FunctionDef" Library="MPPT" Id="0C81E05C"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="DAF49931"/>
+            <Parameter Type="Param" Library="MPPT" Id="366A305F"/>
+            <Parameter Type="Param" Library="MPPT" Id="32996259"/>
+            <Parameter Type="Param" Library="MPPT" Id="780E45B3"/>
+        </Element>
+        <Element Type="Param" Id="366A305F">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="15AC81B4"/>
+            <Variable Type="Variable" Library="MPPT" Id="C432819F"/>
+        </Element>
+        <Element Type="Param" Id="32996259">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="59F0778E"/>
+            <Variable Type="Variable" Library="MPPT" Id="4B75B5F5"/>
+        </Element>
+        <Element Type="Param" Id="780E45B3">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="2071B2C1"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="D31C5D5D"/>
+        </Element>
+        <Element Type="FunctionDef" Id="0C81E05C">
+            <Internal/>
+            <FlagAction/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="15AC81B4"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="2071B2C1"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="59F0778E"/>
+            <Variable Type="Variable" Library="MPPT" Id="23B2B845"/>
+            <Variable Type="Variable" Library="MPPT" Id="6EF34AD4"/>
+            <Variable Type="Variable" Library="MPPT" Id="496B4B88"/>
+            <Variable Type="Variable" Library="MPPT" Id="A59C0C00"/>
+            <Variable Type="Variable" Library="MPPT" Id="D0BCD8D2"/>
+            <Variable Type="Variable" Library="MPPT" Id="FEE3588E"/>
+            <Variable Type="Variable" Library="MPPT" Id="C0665AA3"/>
+            <Variable Type="Variable" Library="MPPT" Id="059BD9E9"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="201D895F"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="02078900"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="EA4C1EAD"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="ACB93896"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="D3531E7F"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="B43DDF1D"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="AA20B4D4"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="95DAFBB4"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="46F022EC"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="FDE89DA3"/>
+        </Element>
+        <Element Type="ParamDef" Id="15AC81B4">
+            <ParameterType>
+                <Type Value="gamelink"/>
+                <GameType Value="Unit"/>
+            </ParameterType>
+            <ParamFlagPreload/>
+            <Default Type="Param" Library="MPPT" Id="3DEDFDD6"/>
+        </Element>
+        <Element Type="Param" Id="3DEDFDD6">
+            <Preset Type="PresetValue" Library="Ntve" Id="C9DCA6C0"/>
+        </Element>
+        <Element Type="ParamDef" Id="2071B2C1">
+            <ParameterType>
+                <Type Value="int"/>
+            </ParameterType>
+            <Default Type="Param" Library="MPPT" Id="08EDCCDE"/>
+        </Element>
+        <Element Type="Param" Id="08EDCCDE">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="ParamDef" Id="59F0778E">
+            <ParameterType>
+                <Type Value="int"/>
+            </ParameterType>
+            <Default Type="Param" Library="MPPT" Id="103E8999"/>
+        </Element>
+        <Element Type="Param" Id="103E8999">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Variable" Id="23B2B845">
+            <VariableType>
+                <Type Value="fixed"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="D8E75B89"/>
+        </Element>
+        <Element Type="Param" Id="D8E75B89">
+            <Value>0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Variable" Id="6EF34AD4">
+            <Identifier>UnitVespeneCostReductionPerPoint</Identifier>
+            <VariableType>
+                <Type Value="fixed"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="AB8DEB3D"/>
+        </Element>
+        <Element Type="Param" Id="AB8DEB3D">
+            <Value>100.0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Variable" Id="496B4B88">
+            <VariableType>
+                <Type Value="fixed"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="88EC26D2"/>
+        </Element>
+        <Element Type="Param" Id="88EC26D2">
+            <Value>0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Variable" Id="A59C0C00">
+            <Identifier>UnitVespeneCostNew</Identifier>
+            <VariableType>
+                <Type Value="int"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="4285EB84"/>
+        </Element>
+        <Element Type="Param" Id="4285EB84">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Variable" Id="D0BCD8D2">
+            <VariableType>
+                <Type Value="fixed"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="18570930"/>
+        </Element>
+        <Element Type="Param" Id="18570930">
+            <Value>0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Variable" Id="FEE3588E">
+            <Identifier>UnitVespeneCostReductionPerPoint2</Identifier>
+            <VariableType>
+                <Type Value="fixed"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="B141EFD5"/>
+        </Element>
+        <Element Type="Param" Id="B141EFD5">
+            <Value>100.0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Variable" Id="C0665AA3">
+            <VariableType>
+                <Type Value="fixed"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="8AD96E0F"/>
+        </Element>
+        <Element Type="Param" Id="8AD96E0F">
+            <Value>0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="Variable" Id="059BD9E9">
+            <Identifier>UnitVespeneCostNew2</Identifier>
+            <VariableType>
+                <Type Value="int"/>
+            </VariableType>
+            <Value Type="Param" Library="MPPT" Id="9DFDA38A"/>
+        </Element>
+        <Element Type="Param" Id="9DFDA38A">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="201D895F">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="1D3178F7"/>
+            <Parameter Type="Param" Library="MPPT" Id="7702BE20"/>
+        </Element>
+        <Element Type="Param" Id="1D3178F7">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="23B2B845"/>
+        </Element>
+        <Element Type="Param" Id="7702BE20">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="22DDC670"/>
+        </Element>
+        <Element Type="FunctionCall" Id="22DDC670">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000001"/>
+            <Parameter Type="Param" Library="MPPT" Id="35927637"/>
+        </Element>
+        <Element Type="Param" Id="35927637">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000001"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="FB01EAA7"/>
+        </Element>
+        <Element Type="FunctionCall" Id="FB01EAA7">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="70AF8BB2"/>
+            <Parameter Type="Param" Library="MPPT" Id="9A463013"/>
+            <Parameter Type="Param" Library="MPPT" Id="F504BD52"/>
+            <Parameter Type="Param" Library="MPPT" Id="E85FAD89"/>
+            <Parameter Type="Param" Library="MPPT" Id="9F06C666"/>
+        </Element>
+        <Element Type="Param" Id="9A463013">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="356612FA"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="2071B2C1"/>
+        </Element>
+        <Element Type="Param" Id="F504BD52">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EBBE6FE0"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000533"/>
+        </Element>
+        <Element Type="Param" Id="E85FAD89">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0B726DCE"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="15AC81B4"/>
+        </Element>
+        <Element Type="Param" Id="9F06C666">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="940E72C2"/>
+            <Value>CostResource[0]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CUnit"/>
+            <ValueParam Type="Param" Library="MPPT" Id="13BB061F"/>
+        </Element>
+        <Element Type="Param" Id="13BB061F">
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="02078900">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="F79A3343"/>
+            <Parameter Type="Param" Library="MPPT" Id="CBF36E18"/>
+        </Element>
+        <Element Type="Param" Id="F79A3343">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="496B4B88"/>
+        </Element>
+        <Element Type="Param" Id="CBF36E18">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="278C53CA"/>
+        </Element>
+        <Element Type="FunctionCall" Id="278C53CA">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000129"/>
+            <Parameter Type="Param" Library="MPPT" Id="56E1847C"/>
+            <Parameter Type="Param" Library="MPPT" Id="97450A8D"/>
+            <Parameter Type="Param" Library="MPPT" Id="65010897"/>
+        </Element>
+        <Element Type="Param" Id="56E1847C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000209"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000087"/>
+        </Element>
+        <Element Type="Param" Id="97450A8D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000210"/>
+            <Variable Type="Variable" Library="MPPT" Id="23B2B845"/>
+        </Element>
+        <Element Type="Param" Id="65010897">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000208"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="59BBEECB"/>
+        </Element>
+        <Element Type="FunctionCall" Id="59BBEECB">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000001"/>
+            <Parameter Type="Param" Library="MPPT" Id="6E0CDA7C"/>
+        </Element>
+        <Element Type="Param" Id="6E0CDA7C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000001"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="59F0778E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="EA4C1EAD">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="870B1EED"/>
+            <Parameter Type="Param" Library="MPPT" Id="7F70FB3E"/>
+        </Element>
+        <Element Type="Param" Id="870B1EED">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="496B4B88"/>
+        </Element>
+        <Element Type="Param" Id="7F70FB3E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="693559ED"/>
+        </Element>
+        <Element Type="FunctionCall" Id="693559ED">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000129"/>
+            <Parameter Type="Param" Library="MPPT" Id="E6BFEF13"/>
+            <Parameter Type="Param" Library="MPPT" Id="A3F3920F"/>
+            <Parameter Type="Param" Library="MPPT" Id="B5F9B2F8"/>
+        </Element>
+        <Element Type="Param" Id="E6BFEF13">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000209"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000088"/>
+        </Element>
+        <Element Type="Param" Id="A3F3920F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000210"/>
+            <Variable Type="Variable" Library="MPPT" Id="6EF34AD4"/>
+        </Element>
+        <Element Type="Param" Id="B5F9B2F8">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000208"/>
+            <Variable Type="Variable" Library="MPPT" Id="496B4B88"/>
+        </Element>
+        <Element Type="FunctionCall" Id="ACB93896">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="871F8293"/>
+            <Parameter Type="Param" Library="MPPT" Id="ACB0AB1A"/>
+        </Element>
+        <Element Type="Param" Id="871F8293">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="A59C0C00"/>
+        </Element>
+        <Element Type="Param" Id="ACB0AB1A">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="026B48A6"/>
+        </Element>
+        <Element Type="FunctionCall" Id="026B48A6">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000003"/>
+            <Parameter Type="Param" Library="MPPT" Id="A68A61FE"/>
+        </Element>
+        <Element Type="Param" Id="A68A61FE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000003"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="0C6C6CCF"/>
+        </Element>
+        <Element Type="FunctionCall" Id="0C6C6CCF">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000129"/>
+            <Parameter Type="Param" Library="MPPT" Id="A6498523"/>
+            <Parameter Type="Param" Library="MPPT" Id="F30D0F7E"/>
+            <Parameter Type="Param" Library="MPPT" Id="EF8733A2"/>
+        </Element>
+        <Element Type="Param" Id="A6498523">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000209"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000086"/>
+        </Element>
+        <Element Type="Param" Id="F30D0F7E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000210"/>
+            <Variable Type="Variable" Library="MPPT" Id="496B4B88"/>
+        </Element>
+        <Element Type="Param" Id="EF8733A2">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000208"/>
+            <Variable Type="Variable" Library="MPPT" Id="23B2B845"/>
+        </Element>
+        <Element Type="FunctionCall" Id="D3531E7F">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="1706AD61"/>
+            <Parameter Type="Param" Library="MPPT" Id="DEC96C4B"/>
+        </Element>
+        <Element Type="Param" Id="1706AD61">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="D0BCD8D2"/>
+        </Element>
+        <Element Type="Param" Id="DEC96C4B">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="9D3ECBA1"/>
+        </Element>
+        <Element Type="FunctionCall" Id="9D3ECBA1">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000001"/>
+            <Parameter Type="Param" Library="MPPT" Id="EC30B646"/>
+        </Element>
+        <Element Type="Param" Id="EC30B646">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000001"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="E0150890"/>
+        </Element>
+        <Element Type="FunctionCall" Id="E0150890">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="70AF8BB2"/>
+            <Parameter Type="Param" Library="MPPT" Id="8FC14365"/>
+            <Parameter Type="Param" Library="MPPT" Id="49056989"/>
+            <Parameter Type="Param" Library="MPPT" Id="B3546CFE"/>
+            <Parameter Type="Param" Library="MPPT" Id="B6B9C9F5"/>
+        </Element>
+        <Element Type="Param" Id="8FC14365">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="356612FA"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="2071B2C1"/>
+        </Element>
+        <Element Type="Param" Id="49056989">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EBBE6FE0"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000533"/>
+        </Element>
+        <Element Type="Param" Id="B3546CFE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0B726DCE"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="15AC81B4"/>
+        </Element>
+        <Element Type="Param" Id="B6B9C9F5">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="940E72C2"/>
+            <Value>CostResource[0]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CUnit"/>
+            <ValueParam Type="Param" Library="MPPT" Id="C2818D53"/>
+        </Element>
+        <Element Type="Param" Id="C2818D53">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B43DDF1D">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="3E570C5E"/>
+            <Parameter Type="Param" Library="MPPT" Id="0E41BEAD"/>
+        </Element>
+        <Element Type="Param" Id="3E570C5E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="C0665AA3"/>
+        </Element>
+        <Element Type="Param" Id="0E41BEAD">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="0F26B9F3"/>
+        </Element>
+        <Element Type="FunctionCall" Id="0F26B9F3">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000129"/>
+            <Parameter Type="Param" Library="MPPT" Id="0796D2EC"/>
+            <Parameter Type="Param" Library="MPPT" Id="C14CBF15"/>
+            <Parameter Type="Param" Library="MPPT" Id="DE62F6E1"/>
+        </Element>
+        <Element Type="Param" Id="0796D2EC">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000209"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000087"/>
+        </Element>
+        <Element Type="Param" Id="C14CBF15">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000210"/>
+            <Variable Type="Variable" Library="MPPT" Id="D0BCD8D2"/>
+        </Element>
+        <Element Type="Param" Id="DE62F6E1">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000208"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="0877680F"/>
+        </Element>
+        <Element Type="FunctionCall" Id="0877680F">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000001"/>
+            <Parameter Type="Param" Library="MPPT" Id="D241872F"/>
+        </Element>
+        <Element Type="Param" Id="D241872F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000001"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="59F0778E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="AA20B4D4">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="334248B0"/>
+            <Parameter Type="Param" Library="MPPT" Id="E23110D7"/>
+        </Element>
+        <Element Type="Param" Id="334248B0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="C0665AA3"/>
+        </Element>
+        <Element Type="Param" Id="E23110D7">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="79C81F85"/>
+        </Element>
+        <Element Type="FunctionCall" Id="79C81F85">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000129"/>
+            <Parameter Type="Param" Library="MPPT" Id="A6C75242"/>
+            <Parameter Type="Param" Library="MPPT" Id="F579CF3F"/>
+            <Parameter Type="Param" Library="MPPT" Id="817F05A5"/>
+        </Element>
+        <Element Type="Param" Id="A6C75242">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000209"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000088"/>
+        </Element>
+        <Element Type="Param" Id="F579CF3F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000210"/>
+            <Variable Type="Variable" Library="MPPT" Id="FEE3588E"/>
+        </Element>
+        <Element Type="Param" Id="817F05A5">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000208"/>
+            <Variable Type="Variable" Library="MPPT" Id="C0665AA3"/>
+        </Element>
+        <Element Type="FunctionCall" Id="95DAFBB4">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="MPPT" Id="554D5D8E"/>
+            <Parameter Type="Param" Library="MPPT" Id="F6417D91"/>
+        </Element>
+        <Element Type="Param" Id="554D5D8E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="MPPT" Id="059BD9E9"/>
+        </Element>
+        <Element Type="Param" Id="F6417D91">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="A10E8F89"/>
+        </Element>
+        <Element Type="FunctionCall" Id="A10E8F89">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000003"/>
+            <Parameter Type="Param" Library="MPPT" Id="AAC7D223"/>
+        </Element>
+        <Element Type="Param" Id="AAC7D223">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000003"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="9E3D26A2"/>
+        </Element>
+        <Element Type="FunctionCall" Id="9E3D26A2">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000129"/>
+            <Parameter Type="Param" Library="MPPT" Id="AF5D9FB8"/>
+            <Parameter Type="Param" Library="MPPT" Id="F54AD9BA"/>
+            <Parameter Type="Param" Library="MPPT" Id="873F16EE"/>
+        </Element>
+        <Element Type="Param" Id="AF5D9FB8">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000209"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000086"/>
+        </Element>
+        <Element Type="Param" Id="F54AD9BA">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000210"/>
+            <Variable Type="Variable" Library="MPPT" Id="C0665AA3"/>
+        </Element>
+        <Element Type="Param" Id="873F16EE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000208"/>
+            <Variable Type="Variable" Library="MPPT" Id="D0BCD8D2"/>
+        </Element>
+        <Element Type="FunctionCall" Id="46F022EC">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="03D7A0F2"/>
+            <Parameter Type="Param" Library="MPPT" Id="D607BDCE"/>
+            <Parameter Type="Param" Library="MPPT" Id="6199E720"/>
+            <Parameter Type="Param" Library="MPPT" Id="7A2E6148"/>
+            <Parameter Type="Param" Library="MPPT" Id="E3B31247"/>
+            <Parameter Type="Param" Library="MPPT" Id="9835923D"/>
+        </Element>
+        <Element Type="Param" Id="D607BDCE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="8C112760"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="2071B2C1"/>
+        </Element>
+        <Element Type="Param" Id="6199E720">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="B3F30050"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="C84B5253"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C84B5253">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000002"/>
+            <Parameter Type="Param" Library="MPPT" Id="CAD28AAE"/>
+        </Element>
+        <Element Type="Param" Id="CAD28AAE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000002"/>
+            <Variable Type="Variable" Library="MPPT" Id="059BD9E9"/>
+        </Element>
+        <Element Type="Param" Id="7A2E6148">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="229F5A76"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000533"/>
+        </Element>
+        <Element Type="Param" Id="E3B31247">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="6414D178"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="15AC81B4"/>
+        </Element>
+        <Element Type="Param" Id="9835923D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="479AF09B"/>
+            <Value>CostResource[0]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CUnit"/>
+            <ValueParam Type="Param" Library="MPPT" Id="7F7BA8D5"/>
+        </Element>
+        <Element Type="Param" Id="7F7BA8D5">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="FDE89DA3">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="03D7A0F2"/>
+            <Parameter Type="Param" Library="MPPT" Id="3B03A20F"/>
+            <Parameter Type="Param" Library="MPPT" Id="BB72156A"/>
+            <Parameter Type="Param" Library="MPPT" Id="59290BF0"/>
+            <Parameter Type="Param" Library="MPPT" Id="1410C026"/>
+            <Parameter Type="Param" Library="MPPT" Id="2DB0DC27"/>
+        </Element>
+        <Element Type="Param" Id="3B03A20F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="8C112760"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="2071B2C1"/>
+        </Element>
+        <Element Type="Param" Id="BB72156A">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="B3F30050"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="C3DE69C4"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C3DE69C4">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000002"/>
+            <Parameter Type="Param" Library="MPPT" Id="A370C4FB"/>
+        </Element>
+        <Element Type="Param" Id="A370C4FB">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000002"/>
+            <Variable Type="Variable" Library="MPPT" Id="A59C0C00"/>
+        </Element>
+        <Element Type="Param" Id="59290BF0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="229F5A76"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000533"/>
+        </Element>
+        <Element Type="Param" Id="1410C026">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="6414D178"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="15AC81B4"/>
+        </Element>
+        <Element Type="Param" Id="2DB0DC27">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="479AF09B"/>
+            <Value>CostResource[0]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CUnit"/>
+            <ValueParam Type="Param" Library="MPPT" Id="7AF9559F"/>
+        </Element>
+        <Element Type="Param" Id="7AF9559F">
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Trigger" Id="04626A10">
+            <Event Type="FunctionCall" Library="MPPT" Id="30F11EC6"/>
+            <Condition Type="FunctionCall" Library="MPPT" Id="DA695CE0"/>
+            <Action Type="FunctionCall" Library="MPPT" Id="7747D980"/>
+            <Action Type="Comment" Library="MPPT" Id="770178ED"/>
+            <Action Type="FunctionCall" Library="MPPT" Id="BB678572"/>
+            <Action Type="Comment" Library="MPPT" Id="B8182B90"/>
+            <Action Type="FunctionCall" Library="MPPT" Id="D4AE8446"/>
+        </Element>
+        <Element Type="FunctionCall" Id="30F11EC6">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000121"/>
+            <Parameter Type="Param" Library="MPPT" Id="1F120D17"/>
+            <Parameter Type="Param" Library="MPPT" Id="CA1D112D"/>
+            <Parameter Type="Param" Library="MPPT" Id="8CAA9D98"/>
+        </Element>
+        <Element Type="Param" Id="1F120D17">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000191"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="2999701E"/>
+        </Element>
+        <Element Type="Param" Id="CA1D112D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000193"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000074"/>
+        </Element>
+        <Element Type="Param" Id="8CAA9D98">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000192"/>
+            <Value>-cdr</Value>
+            <ValueType Type="string"/>
+        </Element>
+        <Element Type="FunctionCall" Id="DA695CE0">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
+            <Parameter Type="Param" Library="MPPT" Id="926C6DED"/>
+            <Parameter Type="Param" Library="MPPT" Id="21BDEEB8"/>
+            <Parameter Type="Param" Library="MPPT" Id="851716E4"/>
+        </Element>
+        <Element Type="Param" Id="926C6DED">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="4FF7F299"/>
+        </Element>
+        <Element Type="FunctionCall" Id="4FF7F299">
+            <FunctionDef Type="FunctionDef" Library="COTF" Id="5A76B116"/>
+            <Parameter Type="Param" Library="MPPT" Id="43DF8C37"/>
+            <Parameter Type="Param" Library="MPPT" Id="30A41524"/>
+        </Element>
+        <Element Type="Param" Id="43DF8C37">
+            <ParameterDef Type="ParamDef" Library="COTF" Id="4B2BE905"/>
+            <Preset Type="PresetValue" Library="COTF" Id="265D38AD"/>
+        </Element>
+        <Element Type="Param" Id="30A41524">
+            <ParameterDef Type="ParamDef" Library="COTF" Id="41E780FF"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="AD1DEE9E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="AD1DEE9E">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="21BDEEB8">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="1E7A4625"/>
+        </Element>
+        <Element Type="Param" Id="851716E4">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
+            <Value>true</Value>
+            <ValueType Type="bool"/>
+        </Element>
+        <Element Type="FunctionCall" Id="7747D980">
+            <FunctionDef Type="FunctionDef" Library="MPPT" Id="2F4FC50A"/>
+            <Parameter Type="Param" Library="MPPT" Id="AFD3D438"/>
+        </Element>
+        <Element Type="Param" Id="AFD3D438">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="512FE31E"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="386871C4"/>
+        </Element>
+        <Element Type="FunctionCall" Id="386871C4">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Comment" Id="770178ED">
+        </Element>
+        <Element Type="FunctionCall" Id="BB678572">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000137"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="D458F9DA"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="FC7F2418"/>
+        </Element>
+        <Element Type="FunctionCall" Id="D458F9DA">
+            <FunctionDef Type="FunctionDef" Library="MPPT" Id="2F4FC50A"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
+            <Parameter Type="Param" Library="MPPT" Id="F3775D57"/>
+        </Element>
+        <Element Type="Param" Id="F3775D57">
+            <ParameterDef Type="ParamDef" Library="MPPT" Id="512FE31E"/>
+            <Value>2</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="FC7F2418">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000003"/>
+            <Parameter Type="Param" Library="MPPT" Id="012142C0"/>
+            <Parameter Type="Param" Library="MPPT" Id="7AD870C4"/>
+            <Parameter Type="Param" Library="MPPT" Id="4AE96DAB"/>
+        </Element>
+        <Element Type="Param" Id="012142C0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="C5C7B24A"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C5C7B24A">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000240"/>
+            <Parameter Type="Param" Library="MPPT" Id="728ABB97"/>
+            <Parameter Type="Param" Library="MPPT" Id="E14006BB"/>
+            <Parameter Type="Param" Library="MPPT" Id="DDE3DD6C"/>
+        </Element>
+        <Element Type="Param" Id="728ABB97">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000413"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="E14006BB">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000414"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000219"/>
+        </Element>
+        <Element Type="Param" Id="DDE3DD6C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000415"/>
+            <Value>2</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="7AD870C4">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="1E7A4625"/>
+        </Element>
+        <Element Type="Param" Id="4AE96DAB">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
+            <Value>true</Value>
+            <ValueType Type="bool"/>
+        </Element>
+        <Element Type="Comment" Id="B8182B90">
+            <Label Type="Label" Library="Ntve" Id="1D55A90E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="D4AE8446">
+            <FunctionDef Type="FunctionDef" Library="COTF" Id="E677FB03"/>
+        </Element>
+        <Element Type="FunctionDef" Id="2F4FC50A">
+            <FlagAction/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="512FE31E"/>
+            <FunctionCall Type="FunctionCall" Library="MPPT" Id="C87A960B"/>
+        </Element>
+        <Element Type="ParamDef" Id="512FE31E">
+            <ParameterType>
+                <Type Value="int"/>
+            </ParameterType>
+            <Default Type="Param" Library="MPPT" Id="DA85839F"/>
+        </Element>
+        <Element Type="Param" Id="DA85839F">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C87A960B">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="E8E2A8ED"/>
+            <Parameter Type="Param" Library="MPPT" Id="4E97C05D"/>
+            <Parameter Type="Param" Library="MPPT" Id="F2DD81E6"/>
+            <Parameter Type="Param" Library="MPPT" Id="5DF0DF35"/>
+        </Element>
+        <Element Type="Param" Id="4E97C05D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="96524691"/>
+            <Parameter Type="ParamDef" Library="MPPT" Id="512FE31E"/>
+        </Element>
+        <Element Type="Param" Id="F2DD81E6">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="14031B72"/>
+            <Value>Abil/MultiPlayerCollectionWarpGateTrain</Value>
+            <ValueType Type="string"/>
+        </Element>
+        <Element Type="Param" Id="5DF0DF35">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0D65343F"/>
+            <Value>-300.0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+    </Library>
+</TriggerData>

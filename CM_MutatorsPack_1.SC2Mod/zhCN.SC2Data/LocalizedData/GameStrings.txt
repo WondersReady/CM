@@ -1,0 +1,78 @@
+﻿Behavior/Name/AmonBloodDemonWithinLV1=被附体
+Behavior/Name/AmonBloodDemonWithinLV2=被附体
+Behavior/Name/AmonBloodDemonWithinLV3=被附体
+Behavior/Name/AmonBloodDemonWithinLV4=被附体
+Behavior/Name/AmonBloodDemonWithinLV5=被附体
+Behavior/Name/AmonBloodDemonWithinLV6=被附体
+Behavior/Name/AmonBloodDemonWithinLV7=被附体
+Behavior/Name/VoidSpaceSelfTimeSuicide=Void Space Self Time Suicide
+Behavior/Tooltip/AmonBloodDemonWithinLV1=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。
+Behavior/Tooltip/AmonBloodDemonWithinLV2=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。<li/>不断搜索周围的数个单位并吸取其生命值。
+Behavior/Tooltip/AmonBloodDemonWithinLV3=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。<li/>不断搜索周围的数个单位并吸取其生命值。<li/>持续对接近的单位造成大量伤害并有一定几率销毁发射物。
+Behavior/Tooltip/AmonBloodDemonWithinLV4=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。<li/>不断搜索周围的数个单位并吸取其生命值。<li/>持续对接近的单位造成大量伤害并有一定几率销毁发射物。<li/>所能受到的伤害值拥有一定的上限。
+Behavior/Tooltip/AmonBloodDemonWithinLV5=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。<li/>不断搜索周围的数个单位并吸取其生命值。<li/>持续对接近的单位造成大量伤害并有一定几率销毁发射物。<li/>所能受到的伤害值拥有一定的上限。<li/>大幅度提高移动速度、攻击速度、技能冷却速度并不受大部分昏迷效果的影响。
+Behavior/Tooltip/AmonBloodDemonWithinLV6=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。<li/>不断搜索周围的数个单位并吸取其生命值。<li/>持续对接近的单位造成大量伤害并有一定几率销毁发射物。<li/>所能受到的伤害值拥有一定的上限。<li/>大幅度提高移动速度、攻击速度、技能冷却速度并不受大部分昏迷效果的影响。<li/>每隔一段时间获得大量额外的隐藏护盾。
+Behavior/Tooltip/AmonBloodDemonWithinLV7=该单位已被远古血灵附体，拥有邪恶的力量：<n/><ul indent="2" text="▪"><li/>每隔一段时间将会为周围的单位回复一定护盾值与生命值。<li/>不断搜索周围的数个单位并吸取其生命值。<li/>持续对接近的单位造成大量伤害并有一定几率销毁发射物。<li/>所能受到的伤害值拥有一定的上限。<li/>大幅度提高移动速度、攻击速度、技能冷却速度并不受大部分昏迷效果的影响。<li/>每隔一段时间获得大量额外的隐藏护盾。<li/>获得额外的最大生命值与伤害。
+Button/Name/AmonBloodDemonWithin=附体
+Button/Tooltip/AmonBloodDemon=此地游荡的血灵，可以寻找充满戾气与腐化之物附身。
+Button/Tooltip/AmonBloodDemonWithin=附身至目标单位身上，使其拥有邪恶的抛瓦！
+Button/Tooltip/HybridLarva=可发动近战攻击的怪兽，相对弱小，但同样狰狞可怖。<n/><n/><c val="ffff8a">可以对地</c>
+Button/Tooltip/HybridMayfly=狰狞的飞行生物。<n/><n/><c val="#ColorAttackInfo">可以对空和对地。</c>
+DocInfo/DescLong=部分迁移因子。
+DocInfo/Name=CM_MutatorsPack_1
+Effect/Name/HybridLarvaDamage=Hybrid Larva Damage
+Effect/Name/HybridMayflyWeaponDamage=Hybrid Mayfly Weapon Damage
+Effect/Name/HybridMayflyWeaponPersistent=Hybrid Mayfly Weapon (Persistent)
+Effect/Name/MutatorHybridNukeDetonateSmall2s=MutatorHybridNukeDetonateSmall2s
+Effect/Name/TheSecondComingGhastFakeDeath=The Second Coming Ghast Fake Death
+Effect/Name/TheSecondComingGhastHasBeenRevivedAB=The Second Coming Ghast Has Been Revived AB
+Effect/Name/TheSecondComingGhastRB=The Second Coming Ghast RB
+Effect/Name/TheSecondComingGhastSet=The Second Coming Ghast Set
+Effect/Name/TheSecondComingGhastWaitForReviveAB=The Second Coming Ghast Wait For Revive AB
+Effect/Name/TheSecondComingGhastWaitForReviveRB=The Second Coming Ghast Wait For Revive RB
+Effect/Name/TheSecondComingGhastWaitForReviveSet=The Second Coming Ghast Wait For Revive Set
+Effect/Name/TheSecondComingGhastWanderAB=The Second Coming Ghast Wander AB
+Effect/Name/TheSecondComingGhastWanderRB=The Second Coming Ghast Wander RB
+Effect/Name/VoidSpaceDamagePeriodDamage01=Void Space Damage Period Damage 01
+Effect/Name/VoidSpaceDamagePeriodDamage02=Void Space Damage Period Damage 02
+Effect/Name/VoidSpaceDamageSearch=Void Space Damage Search
+Effect/Name/VoidSpaceDamageSet=Void Space Damage Set
+Effect/Name/VoidSpaceDamageSwitch=Void Space Damage Switch
+Effect/Name/VoidSpaceForce=Void Space Force
+Effect/Name/VoidSpaceForceAB=Void Space Force AB
+Effect/Name/VoidSpaceForceImpactSet=Void Space Force Impact Set
+Effect/Name/VoidSpaceForceKnockbackAB=Void Space Force Knockback AB
+Effect/Name/VoidSpaceForceOffsetCP=Void Space Force Offset CP
+Effect/Name/VoidSpaceForceSearch=Void Space Force Search
+Effect/Name/VoidSpaceUnitStateAbilityDisibleAB=Void Space Unit State Ability Disible AB
+Effect/Name/VoidSpaceUnitStateAlertDummyDamage=Void Space Unit State Alert Dummy Damage
+Effect/Name/VoidSpaceUnitStateForcePeriod=Void Space Unit State Force Period
+Effect/Name/VoidSpaceUnitStateKillForceFiled=Void Space Unit State Kill Force Filed
+Effect/Name/VoidSpaceUnitStateSearch=Void Space Unit State Search
+Effect/Name/VoidSpaceUnitStateSet=Void Space Unit State Set
+Effect/Name/VoidSpaceUnitStateSetUnburrow=Void Space Unit State Set Unburrow
+Effect/Name/VoidSpaceUnitStateSetUnsiege=Void Space Unit State Set Unsiege
+Effect/Name/VoidSpaceUnitStateSourceCP=Void Space Unit State Source CP
+Effect/Name/VoidSpaceUnitStateSuicide=Void Space Unit State Suicide
+Unit/Name/AmonBloodDemon=远古血灵
+Unit/Name/HybridLarva=混合幼体
+Unit/Name/HybridMayfly=混合体蜉蝣
+Unit/Name/VoidSpace=虚无空间
+Unit/ShieldArmorName/HybridMayflyShields=混合体蜉蝣护盾
+UserData/MutatorHybridDeathNuke/MutatorHybridNukeDetonateSmall2s_NukeType=延迟2秒小核爆
+UserData/Mutators/AmonBloodDemon_Description=诅咒的灵魂已在这片区域复苏，将会寻找敌方部队附身其上。强大的单位将会获得更恐怖的力量，即使目标死亡血灵也会再度复活。
+UserData/Mutators/AmonBloodDemon_Name=远古血灵
+UserData/Mutators/BetrayalMoment_Description=或许你们知道应该联合对敌，但你们手下的部队并不这么想。
+UserData/Mutators/BetrayalMoment_Name=背叛时刻
+UserData/Mutators/DirtySouls_Description=敌方单位在死亡后会化作灵魂原处游荡，并在一定时间后有一定几率复活一次重新加入战斗。
+UserData/Mutators/DirtySouls_Name=不洁之魂
+UserData/Mutators/GoldRush_Description=存款越多，敌人越狂！
+UserData/Mutators/GoldRush_Name=淘金热
+UserData/Mutators/HybridDisaster_Description=敌方单位在死亡后有一定几率孵化出混合体，具体数量与种类由你已经击杀的敌方单位决定。
+UserData/Mutators/HybridDisaster_Name=异形灾难
+UserData/Mutators/TestMutator_Description=这是一个测试因子
+UserData/Mutators/TestMutator_Name=测试因子
+UserData/Mutators/VoidSpace_Description=战场上将会随机不断地生成无数个虚无空间，将周围的单位吞噬其中并将其彻底毁灭。
+UserData/Mutators/VoidSpace_Name=虚无空间
+Weapon/Name/HybridLarva=利爪
+Weapon/Name/HybridMayflyWeapon=湮灭光束

@@ -1,0 +1,14 @@
+﻿Conversation/acAttackWave/Group00076=MPProt
+Conversation/acAttackWave/Group00077=Enemy Attack Wave
+Conversation/acAttackWave/Group00078=MPProt
+Conversation/acAttackWave/Line00272=敌方攻击部队正在集结。
+Conversation/acAttackWave/Line00273=敌人隐形了，需要侦测！
+Conversation/acAttackWave/Line00274=敌人正在集结，准备发起进攻。
+Conversation/acAttackWave/Line00275=侦测到敌方攻击部队。
+Conversation/acAttackWave/Line00276=我们的敌人正在准备一场进攻。
+Conversation/acAttackWave/Line00277=我们的敌人要展开进攻了。
+Conversation/acResponses/Comment00515=Said in response to Adjutant: "Objective located."
+Conversation/acResponses/Group00583=MPProt
+Conversation/acVictory/Group00020=MPProt
+Conversation/acVictory/Line00120=一夫当关，万夫莫开。
+Conversation/acVictory/Line00121=我们同心协力！

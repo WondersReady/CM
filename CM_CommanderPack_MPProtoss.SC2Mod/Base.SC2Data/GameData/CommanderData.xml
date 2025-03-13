@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CCommander id="MultiPlayerCollectionProtossI">
+        <AttributeId value="MPPT"/>
+        <LevelAchievementId value="91475337087173"/>
+        <Race value="Prot"/>
+        <PurchaseMessage value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Description"/>
+        <Portrait value="Assets\Textures\ui_battlenet_loading_player_raceicon_protoss.dds"/>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitDamage"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="1"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="1"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime"/>
+            <ValuePerRank value="2.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="2"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="2"/>
+        </MasteryTalentArray>
+        <UserReference value="PlayerCommanders;MultiPlayerCollectionProtoss"/>
+        <LoadingImage value="Assets\Textures\ui_battlenet_loading_player_racialicon_protoss_l.dds"/>
+        <LoadingImageAlly value="Assets\Textures\ui_battlenet_loading_player_racialicon_protoss_r.dds"/>
+        <ConsoleSkin value="ConsoleProtoss_Default"/>
+        <LearnMoreTitleText1 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item1/Title"/>
+        <LearnMoreTitleText2 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item2/Title"/>
+        <LearnMoreTitleText3 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item3/Title"/>
+        <LearnMoreBodyText1 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item1/Description"/>
+        <LearnMoreBodyText2 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item2/Description"/>
+        <LearnMoreBodyText3 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item3/Description"/>
+    </CCommander>
+    <CCommander id="MultiPlayerCollectionProtossII">
+        <AttributeId value="MPPT"/>
+        <LevelAchievementId value="91475337087173"/>
+        <Race value="Prot"/>
+        <PurchaseMessage value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Description"/>
+        <Portrait value="Assets\Textures\ui_battlenet_loading_player_raceicon_protoss.dds"/>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitDamage"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="1"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="1"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime"/>
+            <ValuePerRank value="2.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="2"/>
+        </MasteryTalentArray>
+        <MasteryTalentArray>
+            <Talent value="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen"/>
+            <ValuePerRank value="1.000000"/>
+            <MaxRank value="30"/>
+            <Type value="Percent"/>
+            <Bucket value="2"/>
+        </MasteryTalentArray>
+        <UserReference value="PlayerCommanders;MultiPlayerCollectionProtoss"/>
+        <LoadingImage value="Assets\Textures\ui_battlenet_loading_player_racialicon_protoss_l.dds"/>
+        <LoadingImageAlly value="Assets\Textures\ui_battlenet_loading_player_racialicon_protoss_r.dds"/>
+        <ConsoleSkin value="ConsoleProtoss_Default"/>
+        <LearnMoreTitleText1 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item1/Title"/>
+        <LearnMoreTitleText2 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item2/Title"/>
+        <LearnMoreTitleText3 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item3/Title"/>
+        <LearnMoreBodyText1 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item1/Description"/>
+        <LearnMoreBodyText2 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item2/Description"/>
+        <LearnMoreBodyText3 value="UI/CampaignPurchase/InfoDialog/MultiPlayerCollectionProtoss/Standard/Item3/Description"/>
+    </CCommander>
+</Catalog>

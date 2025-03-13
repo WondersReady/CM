@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="MutatorHybridDeathNuke">
+        <Instances Id="MutatorHybridNukeDetonateSmall2s">
+            <GameLink GameLink="MutatorHybridNukeDetonateSmall2s">
+                <Field Id="NukeEffet"/>
+            </GameLink>
+            <GameLink GameLink="HybridMayfly">
+                <Field Id="UniyTypes"/>
+            </GameLink>
+            <Text Text="UserData/MutatorHybridDeathNuke/MutatorHybridNukeDetonateSmall2s_NukeType">
+                <Field Id="NukeType"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]MutatorHybridNukeDetonateSmall1s">
+            <GameLink GameLink="HybridLarva">
+                <Field Id="UniyTypes" Index="1"/>
+            </GameLink>
+        </Instances>
+    </CUser>
+    <!--这里我将会对因子字段值进行一些基本的说明-->
+    <!--Name：因子名称-->
+    <!--Description：因子描述-->
+    <!--State：因子开启状态（这一项不需要更改）-->
+    <!--Icom：因子图标-->
+    <!--RandomAllowed：改为1则表示通过随机因子功能可以随机到此因子（会影响会乱工作室因子池）-->
+    <!--RandomAllowedFirst：仅在指挥官选择界面可以被随即功能随机到-->
+    <!--CustomAllowed：表示这个因子可以被玩家选择（保持默认即可，如果有开发到一半的因子可以改为0防止玩家选择）-->
+    <!--CustomAllowMultiple：表示这个因子可以被选择多次，目前已弃用-->
+    <!--ListOrder：这表示在因子选择列表中因子排序的位置，一般从91开始排序，如果你引用了其他因子依赖项，则可能需要你自行调整-->
+    <!--Unfinished：这一项可以不用管，用于标注该因子未开发完成，但是仅标记这一项的话因子仍然可以被启用-->
+    <!--AllowInSolo：如果有你只希望在双人模式下可以启用的因子，将这项改为0（如极性不定）-->
+    <!--Type：因子类别，详情请见 Mutators - Mutator Type-->
+    <!--SelectState：因子选择状态（无需修改）-->
+    <!--SearchString：用于因子搜索功能，请把你的因子的全部名称和ID都复制到这里，这样可以通过搜索框搜索你的因子，仅针对玩家体验进行优化-->
+    <!--IsPlusOfMutator：如果你的因子类型是某个官方/已有因子的强化版，请在这里选择那个因子，这样的话原有的官方因子会被强制关闭-->
+    <CUser id="Mutators">
+        <Instances Id="AmonBloodDemon">
+            <Image Image="Assets\Textures\btn-ability-protoss-mindblast.dds">
+                <Field Id="Icon"/>
+            </Image>
+            <Int Int="91">
+                <Field Id="ListOrder"/>
+            </Int>
+            <Int>
+                <Field Id="RandomFirstAllowed"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="CustomAllowed"/>
+            </Int>
+            <Text Text="UserData/Mutators/AmonBloodDemon_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Mutators/AmonBloodDemon_Description">
+                <Field Id="Description"/>
+            </Text>
+            <User Type="MutatorType" Instance="ThirdParty">
+                <Field Id="Type"/>
+            </User>
+        </Instances>
+        <Instances Id="GoldRush">
+            <Image Image="Assets\Textures\btn-tips-richminerals.dds">
+                <Field Id="Icon"/>
+            </Image>
+            <Int Int="92">
+                <Field Id="ListOrder"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="CustomAllowed"/>
+            </Int>
+            <Text Text="UserData/Mutators/GoldRush_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Mutators/GoldRush_Description">
+                <Field Id="Description"/>
+            </Text>
+            <User Type="MutatorType" Instance="ThirdParty">
+                <Field Id="Type"/>
+            </User>
+        </Instances>
+        <Instances Id="BetrayalMoment">
+            <Image Image="Assets\Textures\ui_list_battlereports_buildabettermarine.dds">
+                <Field Id="Icon"/>
+            </Image>
+            <Int Int="93">
+                <Field Id="ListOrder"/>
+            </Int>
+            <Int>
+                <Field Id="AllowInSolo"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="CustomAllowed"/>
+            </Int>
+            <Text Text="UserData/Mutators/BetrayalMoment_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Mutators/BetrayalMoment_Name">
+                <Field Id="Name"/>
+            </Text>
+            <User Type="MutatorType" Instance="ThirdParty">
+                <Field Id="Type"/>
+            </User>
+        </Instances>
+        <Instances Id="HybridDisaster">
+            <Image Image="Assets\Textures\tip_hybridbehemoth.dds">
+                <Field Id="Icon"/>
+            </Image>
+            <Int Int="1">
+                <Field Id="CustomAllowed"/>
+            </Int>
+            <Int Int="94">
+                <Field Id="ListOrder"/>
+            </Int>
+            <String String="HybridDisaster,异形灾难">
+                <Field Id="SearchString"/>
+            </String>
+            <Text Text="UserData/Mutators/HybridDisaster_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Mutators/HybridDisaster_Description">
+                <Field Id="Description"/>
+            </Text>
+            <User Type="MutatorType" Instance="ThirdParty">
+                <Field Id="Type"/>
+            </User>
+        </Instances>
+        <Instances Id="VoidSpace">
+            <Image Image="Assets\Textures\btn-ability-protoss-blackhole-redcolor.dds">
+                <Field Id="Icon"/>
+            </Image>
+            <Int Int="1">
+                <Field Id="CustomAllowed"/>
+            </Int>
+            <Int Int="95">
+                <Field Id="ListOrder"/>
+            </Int>
+            <Text Text="UserData/Mutators/VoidSpace_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Mutators/VoidSpace_Description">
+                <Field Id="Description"/>
+            </Text>
+            <User Type="MutatorType" Instance="ThirdParty">
+                <Field Id="Type"/>
+            </User>
+        </Instances>
+        <Instances Id="DirtySouls">
+            <Image Image="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds">
+                <Field Id="Icon"/>
+            </Image>
+            <Int Int="1">
+                <Field Id="CustomAllowed"/>
+            </Int>
+            <Int Int="96">
+                <Field Id="ListOrder"/>
+            </Int>
+            <Text Text="UserData/Mutators/DirtySouls_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Mutators/DirtySouls_Description">
+                <Field Id="Description"/>
+            </Text>
+            <User Type="MutatorType" Instance="ThirdParty">
+                <Field Id="Type"/>
+            </User>
+        </Instances>
+    </CUser>
+    <CUser id="MutatorType"/>
+    <CUser id="MutatorChallenges"/>
+</Catalog>

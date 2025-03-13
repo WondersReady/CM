@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorModelMaterial id="TheSecondComingGhastHasBeenRevivedAddon" parent="GlazeParent">
+        <On Terms="Behavior.TheSecondComingGhastHasBeenRevived.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="Behavior.TheSecondComingGhastHasBeenRevived.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="AnimDone; AnimName Death" Send="ModelMaterialRemoveFrom ::Main"/>
+    </CActorModelMaterial>
+    <CActorModel id="TheSecondComingGhastAddon" parent="ModelAnimationStyleContinuous">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Behavior.TheSecondComingGhastWaitForRevive.On" Send="Create"/>
+        <On Terms="Behavior.TheSecondComingGhastWaitForRevive.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.TheSecondComingGhastWaitForRevive.On" Target="_Selectable" Send="SetTintColor {255,255,255 0.250000} 0.500000"/>
+        <On Terms="Behavior.TheSecondComingGhastWaitForRevive.Off" Target="_Selectable" Send="ClearTintColor 0.500000"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+</Catalog>

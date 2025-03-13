@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilResearch id="MultiPlayerCollectionFleetBeaconResearch">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="90" Upgrade="MultiPlayerCollectionPhoenixRangeUpgrade">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionPhoenixRangeUpgrade" Requirements="MultiPlayerCollectionLearnPhoenixRangeUpgrade">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="80" Upgrade="MultiPlayerCollectionVoidRaySpeedUpgrade">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchVoidRaySpeedUpgrade" Requirements="MultiPlayerCollectionLearnVoidRaySpeedUpgrade">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="140" Upgrade="MultiPlayerCollectionTempestGroundAttackUpgrade">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionTempestResearchGroundAttackUpgrade" Requirements="MultiPlayerCollectionLearnTempestGroundAttackUpgrade">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="MultiPlayerCollectionDarkShrineResearch">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <InfoArray index="Research1" Time="140" Upgrade="MultiPlayerCollectionDarkTemplarBlinkUpgrade">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchDarkTemplarBlink" Requirements="MultiPlayerCollectionLearnDarkTemplarBlink">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="MultiPlayerCollectionCyberneticsCoreResearch">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="180" Upgrade="MultiPlayerCollectionProtossAirWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossAirWeaponsLevel1" Requirements="MultiPlayerCollectionLearnProtossAirWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="215" Upgrade="MultiPlayerCollectionProtossAirWeaponsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossAirWeaponsLevel2" Requirements="MultiPlayerCollectionLearnProtossAirWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="250" Upgrade="MultiPlayerCollectionProtossAirWeaponsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossAirWeaponsLevel3" Requirements="MultiPlayerCollectionLearnProtossAirWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="180" Upgrade="MultiPlayerCollectionProtossAirArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossAirArmorLevel1" Requirements="MultiPlayerCollectionLearnProtossAirArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="215" Upgrade="MultiPlayerCollectionProtossAirArmorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossAirArmorLevel2" Requirements="MultiPlayerCollectionLearnProtossAirArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="250" Upgrade="MultiPlayerCollectionProtossAirArmorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossAirArmorLevel3" Requirements="MultiPlayerCollectionLearnProtossAirArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="140" Upgrade="MultiPlayerCollectionWarpGateResearch">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchWarpGate" Requirements="MultiPlayerCollectionLearnWarpGate">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="MultiPlayerCollectionForgeResearch">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="170" Upgrade="MultiPlayerCollectionProtossGroundWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossGroundWeaponsLevel1" Requirements="MultiPlayerCollectionLearnProtossGroundWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="202.5" Upgrade="MultiPlayerCollectionProtossGroundWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossGroundWeaponsLevel2" Requirements="MultiPlayerCollectionLearnProtossGroundWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="235" Upgrade="MultiPlayerCollectionProtossGroundWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossGroundWeaponsLevel3" Requirements="MultiPlayerCollectionLearnProtossGroundWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="170" Upgrade="MultiPlayerCollectionProtossGroundArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossGroundArmorLevel1" Requirements="MultiPlayerCollectionLearnProtossGroundArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="202.5" Upgrade="MultiPlayerCollectionProtossGroundArmorsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossGroundArmorLevel2" Requirements="MultiPlayerCollectionLearnProtossGroundArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="235" Upgrade="MultiPlayerCollectionProtossGroundArmorsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossGroundArmorLevel3" Requirements="MultiPlayerCollectionLearnProtossGroundArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="170" Upgrade="MultiPlayerCollectionProtossShieldsLevel1">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossShieldsLevel1" Requirements="MultiPlayerCollectionLearnProtossShield1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="202.5" Upgrade="MultiPlayerCollectionProtossShieldsLevel2">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossShieldsLevel2" Requirements="MultiPlayerCollectionLearnProtossShield2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="235" Upgrade="MultiPlayerCollectionProtossShieldsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionProtossShieldsLevel3" Requirements="MultiPlayerCollectionLearnProtossShield3"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="MultiPlayerCollectionForceField">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionForceFieldCU"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <Range value="9"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <CursorEffect value="MultiPlayerCollectionForceFieldSearch"/>
+        <AINotifyEffect value="MultiPlayerCollectionForceFieldCU"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionForceField"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <PlaceUnit value="MultiPlayerCollectionForceField"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="MultiPlayerCollectionGuardianShield">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionGuardianShieldCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Cooldown Link="GuardianShieldGuardianShield2GuardianShieldMultiPlayerCollectionGuardianShield" TimeUse="18"/>
+        </Cost>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionGuardianShield"/>
+    </CAbilEffectInstant>
+    <CAbilTrain id="MultiPlayerCollectionGatewayTrain">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="38">
+            <Button DefaultButtonFace="MultiPlayerCollectionZealot"/>
+            <Unit value="MultiPlayerCollectionZealot"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="38">
+            <Button DefaultButtonFace="MultiPlayerCollectionStalker" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+            <Unit value="MultiPlayerCollectionStalker"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="55">
+            <Button DefaultButtonFace="MultiPlayerCollectionHighTemplar" Requirements="MultiPlayerCollectionHaveTemplarArchives"/>
+            <Unit value="MultiPlayerCollectionHighTemplar"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="55">
+            <Button DefaultButtonFace="MultiPlayerCollectionDarkTemplar" Requirements="MultiPlayerCollectionHaveDarkShrine"/>
+            <Unit value="MultiPlayerCollectionDarkTemplar"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="32">
+            <Button DefaultButtonFace="MultiPlayerCollectionSentry" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+            <Unit value="MultiPlayerCollectionSentry"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="42">
+            <Button DefaultButtonFace="MultiPlayerCollectionWarpInAdept" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+            <Unit value="MultiPlayerCollectionAdept"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="MultiPlayerCollectionStargateTrain">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="35" Effect="WarpInEffect15">
+            <Button DefaultButtonFace="MultiPlayerCollectionPhoenix"/>
+            <Unit value="MultiPlayerCollectionPhoenix"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="90" Effect="WarpInEffect">
+            <Button DefaultButtonFace="MultiPlayerCollectionCarrier" Requirements="MultiPlayerCollectionHaveFleetBeacon"/>
+            <Unit value="MultiPlayerCollectionCarrier"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="60.2" Effect="WarpInEffect">
+            <Button DefaultButtonFace="MultiPlayerCollectionVoidRay"/>
+            <Unit value="MultiPlayerCollectionVoidRay"/>
+        </InfoArray>
+        <InfoArray index="Train9" Time="52" Effect="WarpInEffect">
+            <Button DefaultButtonFace="MultiPlayerCollectionOracle"/>
+            <Unit value="MultiPlayerCollectionOracle"/>
+        </InfoArray>
+        <InfoArray index="Train10" Time="60" Effect="WarpInEffect">
+            <Button DefaultButtonFace="MultiPlayerCollectionTempest" Requirements="MultiPlayerCollectionHaveFleetBeacon"/>
+            <Unit value="MultiPlayerCollectionTempest"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilWarpTrain id="MultiPlayerCollectionWarpGateTrain">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <InfoArray index="Train1" Time="16" Unit="MultiPlayerCollectionZealot">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <TimeStart value="30"/>
+                <TimeUse value="28"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionZealot"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="16" Unit="MultiPlayerCollectionStalker">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <TimeUse value="32"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionStalker" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="16" Unit="MultiPlayerCollectionHighTemplar">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <TimeUse value="45"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionHighTemplar" Requirements="MultiPlayerCollectionHaveTemplarArchives"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="16" Unit="MultiPlayerCollectionDarkTemplar">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <TimeUse value="45"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionDarkTemplar" Requirements="MultiPlayerCollectionHaveDarkShrine"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="16" Unit="MultiPlayerCollectionSentry">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <TimeUse value="32"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionSentry" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="16" Unit="MultiPlayerCollectionAdept">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <TimeUse value="28"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionWarpInAdept" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+    </CAbilWarpTrain>
+    <CAbilResearch id="MultiPlayerCollectionRoboticsBayResearch">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="80" Upgrade="MultiPlayerCollectionObserverGraviticBooster">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchGraviticBooster" Requirements="MultiPlayerCollectionLearnGraviticBooster">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="80" Upgrade="MultiPlayerCollectionGraviticDrive">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchGraviticDrive" Requirements="MultiPlayerCollectionLearnGraviticDrive">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="140" Upgrade="MultiPlayerCollectionExtendedThermalLances">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchExtendedThermalLance" Requirements="MultiPlayerCollectionLearnExtendedThermalLance">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="MultiPlayerCollectionShatter">
+        <Effect index="0" value="Suicide"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Range value="0.1"/>
+        <Arc value="360"/>
+        <AutoCastFilters value="Ground,Massive;Structure,Missile,Destructible,Stasis,Dead,Hidden,Hallucination"/>
+        <AutoCastRange value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Shatter"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilResearch id="MultiPlayerCollectionTwilightCouncilResearch">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="140" Upgrade="MultiPlayerCollectionCharge">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchCharge" Requirements="MultiPlayerCollectionLearnCharge">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="170" Upgrade="MultiPlayerCollectionBlinkTech">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchStalkerTeleport" Requirements="MultiPlayerCollectionLearnBlink">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="140" Upgrade="MultiPlayerCollectionAdeptPiercingAttack">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionAdeptResearchPiercingUpgrade" Requirements="MultiPlayerCollectionLearnAdeptPiercingAttack">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="MultiPlayerCollectionTemplarArchivesResearch">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="110" Upgrade="MultiPlayerCollectionPsiStormTech">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionResearchPsiStorm" Requirements="MultiPlayerCollectionLearnPsiStorm">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="MultiPlayerCollectionGravitonBeam">
+        <AbilSetId value="Graviton"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionGravitonBeamAntiGravityCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <TargetFilters value="Ground,Visible;Self,Neutral,Massive,Structure,Destructible,Invulnerable"/>
+        <Range value="4"/>
+        <RangeSlop value="4"/>
+        <CancelableArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <AINotifyEffect value="MultiPlayerCollectionGravitonBeamAntiGravityCP"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionGravitonBeam">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MultiPlayerCollectionOracleRevelation">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionOracleRevelationSearch"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Cooldown TimeUse="14"/>
+        </Cost>
+        <Range value="12"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="MultiPlayerCollectionOracleRevelationSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionOracleRevelation"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="MultiPlayerCollectionOracleWeapon">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="MultiPlayerCollectionOracleWeaponOn">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="MultiPlayerCollectionOracleWeaponOff">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Cooldown TimeUse="4"/>
+        </Cost>
+        <BehaviorArray value="MultiPlayerCollectionOracleWeapon"/>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="MultiPlayerCollectionMassRecall">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionMothershipStrategicRecallSearch"/>
+        <Cost>
+            <Cooldown TimeUse="125"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="MultiPlayerCollectionMothershipStrategicRecallSearch"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionMassRecall"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="MultiPlayerCollectionMothershipCloak">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
+        <AbilSetId value="Clok"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionCloakingFieldCasterAB"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="70"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionMotherShipCloakField"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="MultiPlayerCollectionVortex">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionVortexKillSet"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Cost>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeStart value="60"/>
+                <TimeUse value="60"/>
+            </Charge>
+        </Cost>
+        <TargetFilters value="Visible;Player,Ally,Structure,Heroic,Missile,Stasis,Dead,Invulnerable,MapBoss"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionVortex"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MultiPlayerCollectionFeedback">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionFeedbackSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <TargetFilters value="CanHaveEnergy,Visible,HasEnergy;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionFeedback"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MultiPlayerCollectionPsiStorm">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionPsiStormCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <Range value="9"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="MultiPlayerCollectionPsiStormSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionPsiStorm" Requirements="MultiPlayerCollectionUsePsiStorm"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="MultiPlayerCollectionPurificationNovaMorphBack">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionPurificationNova"/>
+        <Flags index="Transient" value="1"/>
+        <InfoArray Unit="MultiPlayerCollectionDisruptor"/>
+    </CAbilMorph>
+    <CAbilMorph id="MultiPlayerCollectionPurificationNovaMorph">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionPurificationNova"/>
+        <Flags index="Transient" value="1"/>
+        <InfoArray Unit="DisruptorPhased"/>
+    </CAbilMorph>
+    <CAbilEffectTarget id="MultiPlayerCollectionPurificationNovaTargeted">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <SharedFlags index="RegisterChargeEvent" value="1"/>
+        <SharedFlags index="RegisterCooldownEvent" value="1"/>
+        <Effect index="0" value="MultiPlayerCollectionPurificationNovaTargettedInitialSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/PurificationNovaTargetted"/>
+            <Cooldown Link="Abil/PurificationNovaTargetted" TimeUse="30"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionPurificationNovaTargeted">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilTrain id="MultiPlayerCollectionRoboticsFacilityTrain">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="50" Effect="WarpInEffect15">
+            <Button DefaultButtonFace="MultiPlayerCollectionWarpPrism"/>
+            <Unit value="MultiPlayerCollectionWarpPrism"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="25" Effect="WarpInEffect15">
+            <Button DefaultButtonFace="MultiPlayerCollectionObserver"/>
+            <Unit value="MultiPlayerCollectionObserver"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="75">
+            <Button DefaultButtonFace="MultiPlayerCollectionColossus" Requirements="MultiPlayerCollectionHaveRoboticsBay"/>
+            <Unit value="MultiPlayerCollectionColossus"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="55">
+            <Button DefaultButtonFace="MultiPlayerCollectionImmortal"/>
+            <Unit value="MultiPlayerCollectionImmortal"/>
+        </InfoArray>
+        <InfoArray index="Train19" Time="50">
+            <Button DefaultButtonFace="MultiPlayerCollectionWarpinDisruptor" Requirements="MultiPlayerCollectionHaveRoboticsBay"/>
+            <Unit value="MultiPlayerCollectionDisruptor"/>
+        </InfoArray>
+        <InfoArray index="Train20" Time="20"/>
+    </CAbilTrain>
+    <CAbilEffectTarget id="MultiPlayerCollectionDarkTemplarBlink">
+        <AbilSetId value="Blnk"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="20"/>
+        </Cost>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionDarkTemplarBlink" Requirements="MultiPlayerCollectionUseDarkTemplarBlink">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilMerge id="MultiPlayerCollectionArchonWarp">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="SelectedUnits" DefaultButtonFace="MultiPlayerCollectionArchonWarpSource">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="WithTarget" DefaultButtonFace="MultiPlayerCollectionArchonWarpTarget"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Info Unit="MultiPlayerCollectionArchon" Time="12"/>
+    </CAbilMerge>
+    <CAbilMergeable id="MultiPlayerCollectionMergeable">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Cancelable value="0"/>
+    </CAbilMergeable>
+    <CAbilArmMagazine id="MultiPlayerCollectionCarrierHangar">
+        <AbilSetId value="CarrierHanger"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Flags index="Retarget" value="1"/>
+        <Leash value="12"/>
+        <InfoArray index="Ammo1" Time="12" CountStart="4" Manage="Recall" Unit="MultiPlayerCollectionCarrierInterceptor">
+            <Charge Link="MultiPlayerCollectionCarrierTrainInterceptor" Location="Unit"/>
+            <Cooldown Link="MultiPlayerCollectionCarrierTrainInterceptor" TimeUse="0.01"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionCarrierInterceptor" Requirements="MultiPlayerCollectionCarrierArmInterceptor">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
+        </InfoArray>
+        <Alert value="TrainComplete"/>
+        <MaxCount value="8"/>
+    </CAbilArmMagazine>
+    <CAbilEffectInstant id="MultiPlayerCollectionVoidRayDamageBoost">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionVoidRayDamageBoostAB"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <AINotifyEffect value="MultiPlayerCollectionVoidRayDamageBoostAB"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionVoidRayDamageBoost">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MultiPlayerCollectionVoidRayDamageBoostCancel">
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Cancel" Requirements="MultiPlayerCollectionVoidRayPrismaticAlligned"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilAttack id="MultiPlayerCollectionAttackWarpPrism">
+        <AbilSetId value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionAttackWarpPrism">
+            <Flags index="ToSelection" value="0"/>
+        </CmdButtonArray>
+        <AcquireFilters value="-;Self,Player,Ally,Neutral,Enemy"/>
+        <SmartFilters value="-;Self,Player,Ally,Neutral,Enemy"/>
+        <MinAttackSpeedMultiplier value="0.25"/>
+        <MaxAttackSpeedMultiplier value="128"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+    </CAbilAttack>
+    <CAbilEffectInstant id="MultiPlayerCollectionAdeptPhaseShiftCancel">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionAdeptPhaseShiftCancelAB"/>
+        <Flags index="Transient" value="1"/>
+        <AINotifyEffect value="AdeptPhaseShiftCancel"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Cancel" Requirements="MultiPlayerCollectionPhaseShifting"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="MultiPlayerCollectionAdeptPhaseShift">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="MultiPlayerCollectionPhaseShiftInitialSet"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="16"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionAdeptPhaseShift">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="MultiPlayerCollectionAdeptShadePhaseShiftCancel">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionShadePhaseShiftCancelRB"/>
+        <Flags index="Transient" value="1"/>
+        <AINotifyEffect value="MultiPlayerCollectionShadePhaseShiftCancelRB"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Cancel"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="MultiPlayerCollectionBlink">
+        <AbilSetId value="Blnk"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionBlinkTeleport"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AINotifyEffect value="MultiPlayerCollectionBlinkTeleport"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionBlink" Requirements="MultiPlayerCollectionUseBlink">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilAugment id="MultiPlayerCollectionCharge">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionCharge" Requirements="MultiPlayerCollectionUseCharge"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AbilCmd value="attack,Execute"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <Effect value="MultiPlayerCollectionChargeAB"/>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
+    </CAbilAugment>
+    <CAbilEffectTarget id="MultiPlayerCollectionBatteryOvercharge">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionBatteryOverchargeAB"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown Location="Player" TimeUse="84"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AINotifyEffect value="BatteryOverchargeCreateHealer"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionBatteryOvercharge"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MultiPlayerCollectionEnergyRecharge">
+        <Effect index="0" value="MultiPlayerCollectionEnergyRechargeCP"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown Location="Player" TimeUse="84"/>
+        </Cost>
+        <TargetFilters value="CanHaveEnergy;Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Hallucination,Invulnerable"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <AINotifyEffect value="MultiPlayerCollectionEnergyRechargeMU"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionEnergyRecharge"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MultiPlayerCollectionChronoBoostEnergyCost">
+        <Effect index="0" value="MultiPlayerCollectionChronoBoostEnergyCostAB"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <TargetFilters value="Structure;Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <AINotifyEffect value="ChronoBoost"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionChronoBoostEnergyCost"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MultiPlayerCollectionNexusMassRecall">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionNexusMassRecallSearch"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown Location="Player" TimeUse="182"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="MultiPlayerCollectionNexusMassRecallSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionNexusMassRecall"/>
+    </CAbilEffectTarget>
+    <CAbilRally id="MultiPlayerCollectionRallyNexus">
+        <OrderArray index="0">
+            <DisplayType value="Rally"/>
+            <Color value="255,245,140,70"/>
+            <Model value="Assets\UI\Feedback\WayPointRally\WayPointRally.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+    </CAbilRally>
+    <CAbilMorph id="MultiPlayerCollectionUpgradeToWarpGate">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionUpgradeToWarpGate" Requirements="MultiPlayerCollectionUseWarpGate"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <InfoArray Unit="MultiPlayerCollectionWarpGate">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="10"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="10"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="10"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="TransformationComplete"/>
+        <AutoCastValidatorArray value="MultiPlayerCollectionNotHaveUpgradeToWarpGateAutoCastDisabler"/>
+        <AutoCastRange value="5"/>
+        <AutoCastCountMax value="500"/>
+        <Activity value="UI/Transforming"/>
+    </CAbilMorph>
+    <CAbilMorph id="MultiPlayerCollectionMorphBackToGateway">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionMorphBackToGateway"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <InfoArray Unit="MultiPlayerCollectionGateway">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="10"/>
+                <EffectArray index="Finish" value="MultiPlayerCollectionUpgradeToWarpGateAutoCastDisabler"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="10"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="10"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="TransformationComplete"/>
+    </CAbilMorph>
+    <CAbilEffectTarget id="MultiPlayerCollectionShieldBatteryRecharge">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DataCollection value="ShieldBatteryRechargeEx5"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="CancelResetAutoCast" value="0"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <TargetFilters value="Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSShieldsFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="MultiPlayerCollectionCasterhas10EnergyorCasterisBatteryOvercharged"/>
+        <AutoCastValidatorArray value="UnitOrAttackingStructure"/>
+        <AutoCastValidatorArray value="MultiPlayerCollectionNotHaveBatteryCooldownBehavior"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <CancelableArray index="Channel" value="1"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionShieldBatteryRecharge">
+            <Flags index="UseDefaultButton" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Stop">
+            <Flags index="ToSelection" value="1"/>
+            <Flags index="UseDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilBuild id="MultiPlayerCollectionProtossBuild">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Unit="MultiPlayerCollectionNexus" Time="100">
+            <Button DefaultButtonFace="MultiPlayerCollectionNexus"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="MultiPlayerCollectionPylon" Time="25">
+            <Button DefaultButtonFace="MultiPlayerCollectionPylon"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="MultiPlayerCollectionAssimilator" Time="30">
+            <Button DefaultButtonFace="MultiPlayerCollectionAssimilator"/>
+            <ValidatorArray value="MultiPlayerCollectionHasVespene"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="MultiPlayerCollectionGateway" Time="65">
+            <Button DefaultButtonFace="MultiPlayerCollectionGateway" Requirements="MultiPlayerCollectionHaveNexus"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="MultiPlayerCollectionForge" Time="45">
+            <Button DefaultButtonFace="MultiPlayerCollectionForge" Requirements="MultiPlayerCollectionHaveNexus"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="MultiPlayerCollectionFleetBeacon" Time="60">
+            <Button DefaultButtonFace="MultiPlayerCollectionFleetBeacon" Requirements="MultiPlayerCollectionHaveStargate"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="MultiPlayerCollectionTwilightCouncil" Time="50">
+            <Button DefaultButtonFace="MultiPlayerCollectionTwilightCouncil" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="MultiPlayerCollectionPhotonCannon" Time="40">
+            <Button DefaultButtonFace="MultiPlayerCollectionPhotonCannon" Requirements="MultiPlayerCollectionHaveForge"/>
+        </InfoArray>
+        <InfoArray index="Build9" Time="25"/>
+        <InfoArray index="Build10" Unit="MultiPlayerCollectionStargate" Time="60">
+            <Button DefaultButtonFace="MultiPlayerCollectionStargate" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="MultiPlayerCollectionTemplarArchive" Time="50">
+            <Button DefaultButtonFace="MultiPlayerCollectionTemplarArchive" Requirements="MultiPlayerCollectionHaveTwilightCouncil"/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="MultiPlayerCollectionDarkShrine" Time="100">
+            <Button DefaultButtonFace="MultiPlayerCollectionDarkShrine" Requirements="MultiPlayerCollectionHaveTwilightCouncil"/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="MultiPlayerCollectionRoboticsBay" Time="65">
+            <Button DefaultButtonFace="MultiPlayerCollectionRoboticsBay" Requirements="MultiPlayerCollectionHaveRoboticsFa"/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="MultiPlayerCollectionRoboticsFacility" Time="65">
+            <Button DefaultButtonFace="MultiPlayerCollectionRoboticsFacility" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="MultiPlayerCollectionCyberneticsCore" Time="50">
+            <Button DefaultButtonFace="MultiPlayerCollectionCyberneticsCore" Requirements="MultiPlayerCollectionHaveGateway"/>
+        </InfoArray>
+        <InfoArray index="Build16" Unit="MultiPlayerCollectionShieldBattery" Time="40">
+            <Button DefaultButtonFace="MultiPlayerCollectionShieldBattery" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
+        </InfoArray>
+        <ConstructionMover value="Construction"/>
+    </CAbilBuild>
+    <CAbilTrain id="MultiPlayerCollectionNexusTrain">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="17">
+            <Button DefaultButtonFace="MultiPlayerCollectionProbe"/>
+            <Unit value="MultiPlayerCollectionProbe"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+    </CAbilTrain>
+    <CAbilWarpable id="MultiPlayerCollectionWarpable">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <PowerUserBehavior value="MultiPlayerCollectionPowerUserWarpable"/>
+    </CAbilWarpable>
+    <CAbilMorph id="MultiPlayerCollectionObserverMorphtoObserverSiege">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionMorphtoObserverSiege">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <InfoArray Unit="MultiPlayerCollectionObserverSiegeMode">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="MultiPlayerCollectionObserverSiegeMorphtoObserver">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionMorphtoObserver">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="IgnoreFacing" value="1"/>
+        <InfoArray Unit="MultiPlayerCollectionObserver">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilTransport id="MultiPlayerCollectionWarpPrismTransport">
+        <AbilSetId value="ULdM"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="MedivacLoad"/>
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadAt" DefaultButtonFace="MedivacUnloadAll"/>
+        <CmdButtonArray index="UnloadUnit">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="LoadAll">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <Flags index="CargoDeath" value="1"/>
+        <Range value="5"/>
+        <MaxCargoCount value="8"/>
+        <MaxCargoSize value="8"/>
+        <TotalCargoSpace value="8"/>
+        <LoadCargoEffect value="MultiPlayerCollectionWarpPrismLoadDummy"/>
+        <UnloadCargoEffect value="MultiPlayerCollectionWarpPrismUnloadCargoSetEffect"/>
+        <UnloadPeriod value="1"/>
+        <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
+        <LoadValidatorArray value="MultiPlayerCollectionNotWidowMineTarget"/>
+    </CAbilTransport>
+    <CAbilMorph id="MultiPlayerCollectionPhasingMode">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionPhasingMode"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <InfoArray Unit="MultiPlayerCollectionWarpPrismPhasing">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="MultiPlayerCollectionTransportMode">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionTransportMode"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <InfoArray Unit="MultiPlayerCollectionWarpPrism">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectTarget id="MultiPlayerCollectionTemporalField">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MultiPlayerCollectionTemporalFieldGrowingBubbleCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="84"/>
+        </Cost>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <CursorEffect value="MultiPlayerCollectionTemporalFieldAfterBubbleSearch"/>
+        <AINotifyEffect value="TemporalFieldCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionTemporalField"/>
+    </CAbilEffectTarget>
+    <CAbilTrain id="MultiPlayerCollectionNexusTrainMothership">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="125">
+            <Button DefaultButtonFace="MultiPlayerCollectionNexusTrainMothership" Requirements="MultiPlayerCollectionNexusTrainMothershipRequirements"/>
+            <Unit value="MultiPlayerCollectionMothership"/>
+        </InfoArray>
+        <Alert value="MothershipComplete"/>
+    </CAbilTrain>
+    <CAbilEffectInstant id="MultiPlayerCollectionOracleStasisTrapActivate">
+        <Effect index="0" value="MultiPlayerCollectionOracleStasisTrapActivateSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.5"/>
+        </Cost>
+        <Arc value="360"/>
+        <AutoCastRange value="3"/>
+        <AutoCastValidatorArray value="ActivateStasisWardTargetInRange"/>
+        <PrepTime value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MultiPlayerCollectionActivateStasisWard"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilBuild id="MultiPlayerCollectionBuildStasisWard">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <FlagArray index="RequireFacing" value="1"/>
+        <InfoArray index="Build1" Unit="MultiPlayerCollectionOracleStasisTrap" Time="5">
+            <Vital index="Energy" value="50"/>
+            <Button DefaultButtonFace="MultiPlayerCollectionOracleBuildStasisTrap">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <Range value="5"/>
+        <EffectArray index="Start" value="MultiPlayerCollectionOracleStasisWardBuildBeamOn"/>
+        <EffectArray index="Finish" value="MultiPlayerCollectionOracleStasisTrapBuildBeamOff"/>
+        <EffectArray index="Cancel" value="MultiPlayerCollectionOracleStasisTrapBuildBeamOff"/>
+    </CAbilBuild>
+</Catalog>

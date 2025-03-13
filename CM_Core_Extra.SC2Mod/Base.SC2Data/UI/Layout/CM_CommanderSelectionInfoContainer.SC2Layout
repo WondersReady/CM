@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <DescFlags val="Locked"/>
+    
+    <!-- 
+    
+    Commander Info Container
+    
+    -->
+    
+    <Frame type="Frame" name="CommanderInfoContainerTemplate">
+        <Anchor side="Right" relative="PrestigeLabel" pos="Max" offset="112"/>
+        <Height val="162"/>
+
+        <Frame type="Label" name="NameLabel">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="40"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="112"/>
+            <Style val="@Coop_CommanderTitle"/>
+            <Text val="COMMANDER NAME"/>
+        </Frame>
+
+        <Frame type="Label" name="PrestigeLabel">
+            <Anchor side="Bottom" relative="$parent/NameLabel" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent/NameLabel" pos="Max" offset="15"/>
+            <Style val="@Coop_CommanderPrestigeTitle"/>
+            <Text val="COMMANDER PRESTIGE"/>
+        </Frame>
+    <!-- 
+        <Frame type="Frame" name="AbilHitArea" template="StandardTemplates/HoverableFrameTemplate">
+            <Anchor relative="$parent/NameLabel"/>
+        </Frame>
+    -->
+
+    </Frame>
+</Desc>

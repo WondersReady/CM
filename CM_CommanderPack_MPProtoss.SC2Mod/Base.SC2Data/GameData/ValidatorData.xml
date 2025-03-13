@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorPlayerRequirement id="HaveMultiPlayerCollectionProtossUpgrade">
+        <Find value="1"/>
+        <Value value="HaveMultiPlayerCollectionProtossUpgrade"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryEnergyRegen">
+        <WhichPlayer Value="Creator"/>
+        <Find value="1"/>
+        <UnitSelectionNotRequired value="1"/>
+        <Value value="HaveMasteryMultiPlayerCollectionProtossMasteryEnergyRegen"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed">
+        <WhichPlayer Value="Creator"/>
+        <Find value="1"/>
+        <UnitSelectionNotRequired value="1"/>
+        <Value value="HaveMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitCost">
+        <WhichPlayer Value="Creator"/>
+        <Find value="1"/>
+        <UnitSelectionNotRequired value="1"/>
+        <Value value="HaveMasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime">
+        <WhichPlayer Value="Creator"/>
+        <Find value="1"/>
+        <UnitSelectionNotRequired value="1"/>
+        <Value value="HaveMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed">
+        <WhichPlayer Value="Creator"/>
+        <Find value="1"/>
+        <UnitSelectionNotRequired value="1"/>
+        <Value value="HaveMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveMasteryMultiPlayerCollectionProtossMasteryUnitDamage">
+        <WhichPlayer Value="Creator"/>
+        <Find value="1"/>
+        <UnitSelectionNotRequired value="1"/>
+        <Value value="HaveMasteryMultiPlayerCollectionProtossMasteryUnitDamage"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="IsMultiPlayerCollectionProtossCommander">
+        <Find value="1"/>
+        <Value value="HaveMultiPlayerCollectionProtossUpgrade"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="MultiPlayerCollectionHaveTempestGroundAttackUpgrade">
+        <WhichPlayer Value="Caster"/>
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="MultiPlayerCollectionHaveTempestGroundAttackUpgrade"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="MultiPlayerCollectionHaveAdeptPiercingAttack">
+        <WhichPlayer Value="Caster"/>
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="MultiPlayerCollectionHaveAdeptPiercingAttack"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorCombine id="MultiPlayerCollectionIsNexusMassRecallWarpingOutOrRecalled">
+        <CombineArray value="MultiPlayerCollectionIsNexusMassRecallWarpingOut"/>
+        <CombineArray value="MultiPlayerCollectionIsMothershipStrategicWarpOut"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionIsMothershipStrategicWarpOut">
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionMothershipStrategicWarpOut"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionIsNexusMassRecallWarpingOut">
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionNexusMassRecallWarpOut"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionHaveChronoBoostTargetBehavior">
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionChronoBoostTarget"/>
+        <ResultFailed value="CantTargetThatUnit"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="MultiPlayerCollectionPhoenixRangeUpgraded">
+        <WhichPlayer Value="Caster"/>
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="MultiPlayerCollectionHavePhoenixRangeUpgrade"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitFilters id="MultiPlayerCollectionMultipleHitAttackTargetFilter">
+        <Filters value="-;Stasis,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionPriority">
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionTargetFire"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="MultiPlayerCollectionMothershipRecallSucceeded">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Value Effect="MothershipStrategicRecallSet" Value="TargetPoint"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareOrderTargetRange id="MultiPlayerCollectionDarkTemplarBlinkRangeCheck">
+        <Compare value="GT"/>
+        <AbilLink value="MultiPlayerCollectionDarkTemplarBlink"/>
+        <Value value="30"/>
+    </CValidatorUnitCompareOrderTargetRange>
+    <CValidatorUnitCompareOrderCount id="MultiPlayerCollectionHangarQueueEmpty">
+        <AbilLink value="MultiPlayerCollectionCarrierHangar"/>
+    </CValidatorUnitCompareOrderCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionCasterIsTimeWarpedMothership">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionTemporalField"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionHasVoidRayDamageBoost">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="MultiPlayerCollectionVoidRayDamageBoost"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="MultiPlayerCollectionColossusRangeUpgraded">
+        <WhichPlayer Value="Caster"/>
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="MultiPlayerCollectionHaveExtendedThermalLance"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionNotHaveBeamTargetCDBehavior">
+        <Behavior value="MultiPlayerCollectionBeamTargetCD"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="MultiPlayerCollectionBarrierNoGravitonBeamOrBarrierOnCooldown">
+        <CombineArray value="NotGravitonBeamd"/>
+        <CombineArray value="MultiPlayerCollectionBarrierOnCooldown"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareCooldown id="MultiPlayerCollectionBarrierOnCooldown">
+        <Compare value="GT"/>
+        <CooldownLink value="Behavior/MultiPlayerCollectionBarrierDamageResponse"/>
+        <Location value="Behavior"/>
+        <Behavior value="MultiPlayerCollectionBarrierDamageResponse"/>
+    </CValidatorUnitCompareCooldown>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionHasTakenDamageBehaviorCheck">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionTakenDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionCasterIsNotPhaseShifting">
+        <WhichUnit Effect="MultiPlayerCollectionPhaseShiftCU" Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionAdeptPhaseShiftCancelDummy"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="MultiPlayerCollectionIsNotAdeptShade">
+        <Value value="AdeptPhaseShift"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="MultiPlayerCollectionIsNotPhasedUnit">
+        <Type value="And"/>
+        <CombineArray value="MultiPlayerCollectionIsNotDisruptorPhased"/>
+        <CombineArray value="MultiPlayerCollectionIsNotAdeptShade"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionIsNotWarpingIn">
+        <Compare value="NE"/>
+        <Value value="1"/>
+        <Behavior value="MultiPlayerCollectionPowerUserWarpable"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionIsWarpingIn">
+        <Value value="1"/>
+        <Behavior value="MultiPlayerCollectionPowerUserWarpable"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="MultiPlayerCollectionChargeTargetNotDead">
+        <WhichUnit Effect="MultiPlayerCollectionChargeAB"/>
+        <Filters value="-;Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="MultiPlayerCollectionChargeTargetNotAlive">
+        <WhichUnit Effect="MultiPlayerCollectionChargeAB"/>
+        <Filters value="Dead;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorLocationCompareRange id="MultiPlayerCollectionChargeDamageDistance">
+        <WhichLocation Value="SourceUnit"/>
+        <Compare value="LT"/>
+        <Range value="0.1"/>
+        <Pathing value="1"/>
+        <Value Effect="Charge" Value="TargetUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="MultiPlayerCollectionChargeMaxDistance">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="SourceUnit"/>
+        <Compare value="LT"/>
+        <Range value="4"/>
+        <Pathing value="1"/>
+        <Value Value="TargetUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareOrderTargetRange id="MultiPlayerCollectionChargeMinDistance">
+        <ResultFailed value="TargetIsTooClose"/>
+        <Compare value="GT"/>
+        <AbilLink value="attack"/>
+        <Value value="0.1"/>
+    </CValidatorUnitCompareOrderTargetRange>
+    <CValidatorUnitCompareOrderTargetRange id="MultiPlayerCollectionChargeMinimumTriggerDistance">
+        <ResultFailed value="TargetIsTooClose"/>
+        <WhichUnit Value="Caster"/>
+        <OtherUnit Value="Target"/>
+        <Compare value="GT"/>
+        <AbilLink value="attack"/>
+        <Value value="0.6"/>
+    </CValidatorUnitCompareOrderTargetRange>
+    <CValidatorUnitWeaponFiring id="MultiPlayerCollectionChargeTargetAttacked">
+        <WhichUnit Value="Caster"/>
+        <Weapon value="MultiPlayerCollectionPsiBlades"/>
+        <Find value="0"/>
+    </CValidatorUnitWeaponFiring>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionIsCharging">
+        <Value value="1"/>
+        <Behavior value="MultiPlayerCollectionCharging"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareResourceContents id="MultiPlayerCollectionHasVespene">
+        <ResultFailed value="CantBuildOnThat"/>
+        <ResultNoUnit value="OKPlaceholder"/>
+        <Compare value="GT"/>
+    </CValidatorUnitCompareResourceContents>
+    <CValidatorCombine id="MultiPlayerCollectionCasterhas10EnergyorCasterisBatteryOvercharged">
+        <CombineArray value="CasterHas10Energy"/>
+        <CombineArray value="MultiPlayerCollectionCasterHasBatteryOverchargeBehavior"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionCasterHasBatteryOverchargeBehavior">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="MultiPlayerCollectionBatteryOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionCasterIsNotBatteryOvercharged">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionBatteryOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="MultiPlayerCollectionIsShieldBattery">
+        <ResultFailed value="Error,Error/MustTargetShieldBattery"/>
+        <Value value="MultiPlayerCollectionShieldBattery"/>
+    </CValidatorUnitType>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionGatewayMorphing">
+        <AbilLink value="MultiPlayerCollectionUpgradeToWarpGate"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionNotHaveUpgradeToWarpGateAutoCastDisabler">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionUpgradeToWarpGateAutoCastDisabler"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionTargetNotHaveBatteryOvercharge">
+        <ResultFailed value="Error,Error/CantTargetOverchargedShieldBattery"/>
+        <Behavior value="MultiPlayerCollectionBatteryOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="MultiPlayerCollectionNexusBatteryOvercharge8Range">
+        <ResultFailed value="TargetIsOutOfRange,Error/BatteryMustBeNearNexus"/>
+        <AreaArray>
+            <Compare value="GE"/>
+            <Count value="1"/>
+            <Radius value="12"/>
+            <Validator value="MultiPlayerCollectionNexusBatteryOverchargeisNexus"/>
+        </AreaArray>
+        <Compare value="GE"/>
+        <Count value="1"/>
+        <SearchFilters value="Ground,Structure;Ally,Neutral,Enemy,Air,Worker,RawResource,HarvestableResource,Missile,Destructible,UnderConstruction,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="MultiPlayerCollectionNexusBatteryOverchargeisNexus">
+        <ResultFailed value="Error,Error/IsNexus"/>
+        <Value value="MultiPlayerCollectionNexus"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="MultiPlayerCollectionShieldBatteryRechargeTargetFilter">
+        <Filters value="Visible;Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionNotHaveBatteryCooldownBehavior">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MultiPlayerCollectionBatteryAcquireTargetCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="MultiPlayerCollectionNexusBatteryOvercharge8RangePlacementVisual">
+        <ResultFailed value="TargetIsOutOfRange,Error/BatteryMustBeNearNexus"/>
+        <AreaArray>
+            <Compare value="GE"/>
+            <Count value="1"/>
+            <Radius value="12"/>
+            <Validator value="MultiPlayerCollectionNexusBatteryOverchargeisNexus"/>
+        </AreaArray>
+        <Compare value="GE"/>
+        <Count value="1"/>
+        <SearchFilters value="Ground,Structure;Ally,Neutral,Enemy,Air,Worker,RawResource,HarvestableResource,Missile,Destructible,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingAssimilator">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="2"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingCyberneticsCore">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="14"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingDarkShrine">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="11"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingFleetBeacon">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="5"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingForge">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="4"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingGateway">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="3"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingNexus">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingPhotonCannon">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="7"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingPylon">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="1"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingRoboticsBay">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="12"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingRoboticsFacility">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="13"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingStargate">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="9"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingTemplarArchives">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="10"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitOrderQueue id="MultiPlayerCollectionProbeBuildingTwilightCouncil">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="MultiPlayerCollectionProtossBuild"/>
+        <AbilCmdIndex value="6"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionNotCharging">
+        <ResultFailed value="AlreadyTargeted"/>
+        <Behavior value="MultiPlayerCollectionCharging"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="MultiPlayerCollectionZealotChargeTargetNotHidden">
+        <WhichUnit Effect="MultiPlayerCollectionChargeAB"/>
+        <Filters value="-;Hidden"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionNotWarpingIn">
+        <ResultFailed value="CantTargetThatUnit,Error/CantTargetWarpingInUnits"/>
+        <Behavior value="MultiPlayerCollectionPowerUserWarpable"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationComparePower id="MultiPlayerCollectionSuperPower">
+        <PowerLink value="PowerSource"/>
+        <Value value="2"/>
+    </CValidatorLocationComparePower>
+    <CValidatorUnitCompareBehaviorCount id="MultiPlayerCollectionNotWidowMineTarget">
+        <ResultFailed value="Error,Error/NotWidowMineTarget"/>
+        <Behavior value="MultiPlayerCollectionMineDroneCountdown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="SourceisMultiPlayerCollectionProtossCommander">
+        <WhichPlayer Value="Source"/>
+        <Find value="1"/>
+        <Value value="HaveMultiPlayerCollectionProtossUpgrade"/>
+        <WhichUnit Value="Source"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="TargetisMultiPlayerCollectionProtossCommander">
+        <WhichPlayer Value="Target"/>
+        <Find value="1"/>
+        <Value value="HaveMultiPlayerCollectionProtossUpgrade"/>
+        <WhichUnit Value="Target"/>
+    </CValidatorPlayerRequirement>
+</Catalog>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CConversation id="acAttackWave">
+        <Lines>
+            <Id value="Line00272"/>
+            <Text value="Conversation/acAttackWave/Line00272"/>
+            <FacialBlend value="100"/>
+            <Sound value="acAttackWave_ProtossExecutor_067"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00273"/>
+            <Text value="Conversation/acAttackWave/Line00273"/>
+            <FacialBlend value="100"/>
+            <Sound value="AICommunication_ProtossAICommand_047"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00274"/>
+            <Text value="Conversation/acAttackWave/Line00274"/>
+            <FacialBlend value="100"/>
+            <Sound value="acAttackWave_ProtossExecutor_068"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00275"/>
+            <Text value="Conversation/acAttackWave/Line00275"/>
+            <FacialBlend value="100"/>
+            <Sound value="acAttackWave_ProtossExecutor_069"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00276"/>
+            <Text value="Conversation/acAttackWave/Line00276"/>
+            <FacialBlend value="100"/>
+            <Sound value="acAttackWave_ProtossExecutor_070"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00277"/>
+            <Text value="Conversation/acAttackWave/Line00277"/>
+            <FacialBlend value="100"/>
+            <Sound value="acAttackWave_ProtossExecutor_071"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Groups index="25">
+            <Children value="Group00076"/>
+        </Groups>
+        <Groups index="34">
+            <Children index="18" value="Group00078"/>
+            <Children value="Comment00002"/>
+        </Groups>
+        <Groups>
+            <Id value="Group00076"/>
+            <Name value="Conversation/acAttackWave/Group00076"/>
+            <LineSelection value="Random"/>
+            <MaxLines value="1"/>
+            <Conditions FixedId="SourceCommander" Operation="NotEqual">
+                <User Type="PlayerCommanders" Field="SendingTransmission" Instance="MultiPlayerCollectionProtoss"/>
+            </Conditions>
+            <Children value="Group00077"/>
+        </Groups>
+        <Groups Id="Group00077" Name="Conversation/acAttackWave/Group00077">
+            <Conditions FixedId="TransmissionPlayingNow" Operation="NotEqual">
+                <User Type="MissionTransmission" Field="PlayingNow" Instance="AttackWave"/>
+            </Conditions>
+            <Children value="Line00272"/>
+            <Children value="Line00274"/>
+            <Children value="Line00275"/>
+            <Children value="Line00276"/>
+            <Children value="Line00277"/>
+        </Groups>
+        <Groups>
+            <Id value="Group00078"/>
+            <Name value="Conversation/acAttackWave/Group00078"/>
+            <LineSelection value="Random"/>
+            <MaxLines value="1"/>
+            <Conditions FixedId="SourceCommander" Operation="NotEqual">
+                <User Type="PlayerCommanders" Field="SendingTransmission" Instance="MultiPlayerCollectionProtoss"/>
+            </Conditions>
+            <Children value="Line00273"/>
+        </Groups>
+    </CConversation>
+    <CConversation id="acVictory">
+        <Lines>
+            <Id value="Line00120"/>
+            <Text value="Conversation/acVictory/Line00120"/>
+            <FacialBlend value="100"/>
+            <Sound value="AICommunication_ProtossAICommand_041"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00121"/>
+            <Text value="Conversation/acVictory/Line00121"/>
+            <FacialBlend value="100"/>
+            <Sound value="AICommunication_ProtossAICommand_283"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="ProtossExecutor"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Groups index="0">
+            <Children index="18" value="Group00020"/>
+            <Children value="Comment00004"/>
+        </Groups>
+        <Groups>
+            <Id value="Group00020"/>
+            <Name value="Conversation/acVictory/Group00020"/>
+            <LineSelection value="Random"/>
+            <MaxLines value="1"/>
+            <Conditions FixedId="SourceCommander" Operation="NotEqual">
+                <User Type="PlayerCommanders" Field="SendingTransmission" Instance="MultiPlayerCollectionProtoss"/>
+            </Conditions>
+            <Children value="Line00120"/>
+            <Children value="Line00121"/>
+        </Groups>
+    </CConversation>
+</Catalog>

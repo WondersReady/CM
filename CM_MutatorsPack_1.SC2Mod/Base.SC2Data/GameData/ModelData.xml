@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="CloakModelRed" parent="RacePersistentSpellFX" Race="Protoss">
+        <Model value="Assets\Effects\Terran\TerranCloakingEffect\TerranCloakingEffect.m3"/>
+    </CModel>
+    <CModel id="CloakModelRedLow" parent="RacePersistentSpellFX" Race="Protoss">
+        <Model value="Assets\Effects\Terran\TerranCloakingEffect\TerranCloakingEffect_Low.m3"/>
+    </CModel>
+    <CModel id="TheSecondComingGhastHasBeenRevivedAddon">
+        <Model value="Assets\Effects\Glaze\Glaze_Nova_Buff_Damage\Glaze_Nova_Buff_Damage.m3"/>
+    </CModel>
+    <CModel id="TheSecondComingGhastAddon" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\DarkArchon_MindControl_State\DarkArchon_MindControl_State.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+</Catalog>

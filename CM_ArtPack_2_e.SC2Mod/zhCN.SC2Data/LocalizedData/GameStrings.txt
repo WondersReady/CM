@@ -1,0 +1,3 @@
+﻿DocInfo/DescLong=储存CM的部分导入素材。
+DocInfo/DescShort=任意
+DocInfo/Name=CM_ArtPack_2

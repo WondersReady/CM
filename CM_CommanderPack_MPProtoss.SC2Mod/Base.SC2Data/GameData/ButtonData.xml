@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime"/>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed"/>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed"/>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitDamage"/>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryEnergyRegen"/>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitWithEnergy">
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitDamage" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitDamage"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitCost" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryEnergyRegen" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryEnergyRegen"/>
+        <Icon value="Assets\Icons\AchiSheet01_59.dds"/>
+        <AlertIcon value="Assets\Icons\AchiSheet01_59.dds"/>
+    </CButton>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitBuildingWithEnergy">
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryEnergyRegen" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryEnergyRegen"/>
+        <Icon value="Assets\Icons\AchiSheet01_59.dds"/>
+        <AlertIcon value="Assets\Icons\AchiSheet01_59.dds"/>
+    </CButton>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitWorker">
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime"/>
+        <Icon value="Assets\Icons\AchiSheet01_59.dds"/>
+        <AlertIcon value="Assets\Icons\AchiSheet01_59.dds"/>
+    </CButton>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitWithOutEnergy">
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitAttackSpeed"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitMoveSpeed"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitDamage" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitDamage"/>
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryUnitCost" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryUnitCost"/>
+        <Icon value="Assets\Icons\AchiSheet01_59.dds"/>
+        <AlertIcon value="Assets\Icons\AchiSheet01_59.dds"/>
+    </CButton>
+    <CButton id="MasteryMultiPlayerCollectionProtossMasteryUnitResearcher">
+        <TooltipAppender Validator="HaveMasteryMultiPlayerCollectionProtossMasteryBuildingConstructTime" Text="Button/TooltipAppender/MasteryMultiPlayerCollectionProtossMasteryBuildingConstructTimeResearch"/>
+        <Icon value="Assets\Icons\AchiSheet01_59.dds"/>
+        <AlertIcon value="Assets\Icons\AchiSheet01_59.dds"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionAdeptResearchPiercingUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-resonatingglaives-orange.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-resonatingglaives-orange.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionForceField">
+        <Icon value="Assets\Textures\BTN-Ability-protoss-forcefield-color.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-protoss-forcefield-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionGuardianShield">
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionDarkTemplar">
+        <Icon value="Assets\Textures\btn-unit-protoss-darktemplar.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-darktemplar.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionHighTemplar">
+        <Icon value="Assets\Textures\btn-unit-protoss-hightemplar.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-hightemplar.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionCarrier">
+        <Icon value="Assets\Textures\btn-unit-protoss-carrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-carrier.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionOracle">
+        <Icon value="Assets\Textures\btn-unit-protoss-oracle.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-oracle.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPhoenix">
+        <Icon value="Assets\Textures\btn-unit-protoss-phoenix.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-phoenix.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTempest">
+        <Icon value="Assets\Textures\btn-unit-protoss-tempest.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-tempest.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionVoidRay">
+        <Icon value="Assets\Textures\btn-unit-protoss-warpray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-warpray.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionSentry">
+        <Icon value="Assets\Textures\btn-unit-protoss-sentry.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-sentry.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionStalker">
+        <Icon value="Assets\Textures\btn-unit-protoss-stalker.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-stalker.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionWarpInAdept">
+        <Icon value="Assets\Textures\btn-unit-protoss-adept.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-adept.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionZealot">
+        <Icon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossGroundArmorLevel1">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-GroundArmorLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-GroundArmorLevel1.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossGroundArmorLevel2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-GroundArmorLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-GroundArmorLevel2.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossGroundArmorLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossGroundArmorLevel3">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-GroundArmorLevel3.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-GroundArmorLevel3.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossGroundArmorLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossGroundWeaponsLevel1">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-GroundWeaponsLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-GroundWeaponsLevel1.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossGroundWeaponsLevel2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-GroundWeaponsLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-GroundWeaponsLevel2.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossGroundWeaponsLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossGroundWeaponsLevel3">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-GroundWeaponsLevel3.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-GroundWeaponsLevel3.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossGroundWeaponsLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossShieldsLevel1">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossShieldsLevel2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossShieldsLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossShieldsLevel3">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossShieldsLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossAirArmorLevel1">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-AirArmorLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-AirArmorLevel1.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossAirArmorLevel2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-AirArmorLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-AirArmorLevel2.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossAirArmorLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossAirArmorLevel3">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-AirArmorLevel3.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-AirArmorLevel3.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossAirArmorLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossAirWeaponsLevel1">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-AirWeaponsLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-AirWeaponsLevel1.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossAirWeaponsLevel2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-AirWeaponsLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-AirWeaponsLevel2.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossAirWeaponsLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossAirWeaponsLevel3">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-AirWeaponsLevel3.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-AirWeaponsLevel3.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ProtossAirWeaponsLevel1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchWarpGate">
+        <Icon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchCharge">
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchStalkerTeleport">
+        <Icon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchDarkTemplarBlink">
+        <Icon value="Assets\Textures\btn-ability-protoss-stealth-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-stealth-blink.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchPsiStorm">
+        <Icon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchExtendedThermalLance">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ExtendedThermalLance.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ExtendedThermalLance.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchGraviticBooster">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchGraviticDrive">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-graviticdrive.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-graviticdrive.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPhoenixRangeUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionResearchVoidRaySpeedUpgrade">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-FluxVanes.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-FluxVanes.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTempestResearchGroundAttackUpgrade">
+        <Icon value="Assets\Textures\btn-ability-protoss-disruptionblast.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-disruptionblast.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionActivateStasisWard">
+        <Icon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionGravitonBeam">
+        <Icon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionOracleRevelation">
+        <Icon value="Assets\Textures\btn-ability-protoss-preordain.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-preordain.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionOracleWeaponOff">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOff.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOff.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeySet value="MultiPlayerCollectionOracleWeapon"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionOracleWeaponOn">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOn.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOn.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeySet value="MultiPlayerCollectionOracleWeapon"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionNexusTrainMothership">
+        <Icon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionMassRecall">
+        <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionVortex">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionColossus">
+        <Icon value="Assets\Textures\btn-unit-protoss-colossus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-colossus.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionImmortal">
+        <Icon value="Assets\Textures\BTN-Unit-Protoss-Immortal.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Protoss-Immortal.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionFeedback">
+        <Icon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPsiStorm">
+        <Icon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionObserver">
+        <Icon value="Assets\Textures\btn-unit-protoss-observer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-observer.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPurificationNova">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-PurificationNova.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-PurificationNova.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPurificationNovaTargeted">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-PurificationNova.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-PurificationNova.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionWarpPrism">
+        <Icon value="Assets\Textures\btn-unit-protoss-warpprism.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-warpprism.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionWarpinDisruptor">
+        <Icon value="Assets\Textures\Btn-unit-protoss-disruptor.dds"/>
+        <AlertIcon value="Assets\Textures\Btn-unit-protoss-disruptor.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionDarkTemplarBlink">
+        <Icon value="Assets\Textures\btn-ability-protoss-stealth-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-stealth-blink.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionArchonWarpSource">
+        <Icon value="Assets\Textures\btn-unit-protoss-archon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-archon.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionArchonWarpTarget">
+        <Icon value="Assets\Textures\btn-unit-protoss-archon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-archon.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="AWrp"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionDarkTemplarPermanentlyCloaked">
+        <Icon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-darktemplar-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionCarrierInterceptor">
+        <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionColossusCliffWalk">
+        <Icon value="Assets\Textures\BTN-ability-Protoss-cliffwalk-color.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-ability-Protoss-cliffwalk-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionVoidRayDamageBoost">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-VoidRayPrismaticAlignment.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-VoidRayPrismaticAlignment.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionImmortalOverload">
+        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionImprovedEnergy">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionAttackWarpPrism">
+        <Icon value="Assets\Textures\btn-command-attack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-attack.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Attack"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionAdeptPiercingUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-resonatingglaives-orange.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-resonatingglaives-orange.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionAdeptPhaseShift">
+        <Icon value="Assets\Textures\btn-ability-protoss-psionictransfer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psionictransfer.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionBlink">
+        <Icon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionCharge">
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionAssimilator">
+        <Icon value="Assets\Textures\btn-building-protoss-assimilator.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-assimilator.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionCyberneticsCore">
+        <Icon value="Assets\Textures\btn-building-protoss-CyberneticsCore.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-CyberneticsCore.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionDarkShrine">
+        <Icon value="Assets\Textures\btn-building-protoss-darkshrine.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-darkshrine.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionFleetBeacon">
+        <Icon value="Assets\Textures\btn-building-protoss-fleetbeacon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-fleetbeacon.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionForge">
+        <Icon value="Assets\Textures\btn-building-protoss-forge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-forge.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionGateway">
+        <Icon value="Assets\Textures\btn-building-protoss-gateway.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-gateway.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionBatteryOvercharge">
+        <Icon value="Assets\Textures\btn-ability-zeratul-observer-sensorarray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-observer-sensorarray.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPylonImprovedEnergy">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionEnergyRecharge">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionChronoBoostEnergyCost">
+        <Icon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionNexusMassRecall">
+        <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionUpgradeToWarpGate">
+        <Icon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionMorphBackToGateway">
+        <Icon value="Assets\Textures\btn-building-protoss-gateway.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-gateway.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionShieldBatteryRecharge">
+        <TooltipAppender Validator="MultiPlayerCollectionCasterIsNotBatteryOvercharged" Text="Button/Tooltip/MultiPlayerCollectionShieldBatteryRechargeOvercharged"/>
+        <TooltipAppender Validator="CasterHasBatteryOverchargeBehavior" Text="Button/Tooltip/MultiPlayerCollectionShieldBatteryRechargeNotOvercharged"/>
+        <TooltipAppender Text="Button/Tooltip/MultiPlayerCollectionShieldBatteryRechargeNotOverchargedConstantText"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionNexus">
+        <Icon value="Assets\Textures\btn-building-protoss-nexus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-nexus.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPhotonCannon">
+        <Icon value="Assets\Textures\btn-building-protoss-photoncannon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-photoncannon.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPylon">
+        <Icon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionRoboticsBay">
+        <Icon value="Assets\Textures\btn-building-protoss-roboticssupportbay.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-roboticssupportbay.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionRoboticsFacility">
+        <Icon value="Assets\Textures\btn-building-protoss-roboticsfacility.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-roboticsfacility.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionShieldBattery">
+        <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionStargate">
+        <Icon value="Assets\Textures\btn-building-protoss-stargate.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-stargate.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTemplarArchive">
+        <Icon value="Assets\Textures\btn-building-protoss-templararchives.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-templararchives.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTwilightCouncil">
+        <Icon value="Assets\Textures\btn-building-protoss-twilightcouncil.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-twilightcouncil.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProbe">
+        <Icon value="Assets\Textures\btn-unit-protoss-probe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-probe.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionMorphtoObserverSiege">
+        <Icon value="Assets\Textures\btn-unit-protoss-observer-Surveillance.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-observer-Surveillance.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPermanentlyCloakedObserver">
+        <Icon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-Observer-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionMorphtoObserver">
+        <Icon value="Assets\Textures\btn-unit-protoss-observer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-observer.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPhasingMode">
+        <Icon value="Assets\Textures\btn-unit-protoss-warpprismstationary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-warpprismstationary.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeySet value="WarpPrismModes"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossBuild">
+        <Icon value="Assets\Textures\btn-command-Protoss-buildstructure.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-Protoss-buildstructure.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionProtossBuildAdvanced">
+        <Icon value="Assets\Textures\btn-command-Protoss-buildadvancedstructure.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-Protoss-buildadvancedstructure.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTransportMode">
+        <Icon value="Assets\Textures\btn-unit-protoss-warpprism.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-warpprism.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeySet value="WarpPrismModes"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionWarpPrismLoad">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionWarpPrismUnloadAll">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionMotherShipCloakField">
+        <Icon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTemporalField">
+        <Icon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionPermanentlyCloakedStasis">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="PermanentlyCloakedObserver"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionOracleBuildStasisTrap">
+        <Icon value="Assets\Textures\btn-ability-protoss-oracle-stasisward.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-oracle-stasisward.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="OracleBuildStasisTrap"/>
+    </CButton>
+    <CButton id="MultiPlayerCollectionTempestGroundAttackUpgrade">
+        <Icon value="Assets\Textures\btn-ability-protoss-disruptionblast.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-disruptionblast.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+</Catalog>

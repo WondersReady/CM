@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Actor id="SYSTEM_ActorConfig"/>
+<Behavior id="NoBiomassDrop"/>
+<Behavior id="GoldRush"/>
+<Behavior id="AmonBloodDemonUnitLightning"/>
+<Behavior id="AmonBloodDemonUnitBarrierMain"/>
+<Behavior id="AmonBloodDemonUnitFrenzy"/>
+<Behavior id="AmonBloodDemonUnitHardened"/>
+<Behavior id="AmonBloodDemonUnitHeal"/>
+<Behavior id="AmonBloodDemonUnitStronger"/>
+<Behavior id="AmonBloodDemonUnitPlague"/>
+<Behavior id="AmonBloodDemonAD"/>
+<Behavior id="AmonBloodDemonCreateAbilityChoice"/>
+<Behavior id="AmonBloodDemonWithinLV7"/>
+<Behavior id="TheSecondComingGhast"/>
+<Model id="HybridWarpInEffect"/>
+<Model id="HybridSmallWarpInEffect"/>
+<Unit id="HybridDestroyer"/>
+<Unit id="HybridReaver"/>
+<Unit id="HybridDominatorVoid"/>
+<Unit id="HybridNemesis"/>
+<Unit id="HybridBehemoth"/>
+<Unit id="AmonBloodDemon"/>
+<Unit id="HybridLarva"/>
+<Unit id="HybridMayfly"/>
+<Unit id="VoidSpace"/>
+</Preload>

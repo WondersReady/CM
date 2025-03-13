@@ -1,0 +1,171 @@
+include "TriggerLibs/NativeLib"
+include "LibCOTF"
+
+include "LibMPPT_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: MultiPlayerCollectionProtoss
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libMPPT_InitLibraries () {
+    libNtve_InitVariables();
+    libCOTF_InitVariables();
+}
+
+// Functions
+void libMPPT_gf_CM_MasteryKerriganArmyVespeneCostList (int lp_player) {
+    // Variable Declarations
+    int lv_upgradeCount;
+    int lv_unitCount;
+    string lv_indexUnit;
+    int lv_unitIndex;
+
+    // Automatic Variable Declarations
+    int auto7A2689F5_ae;
+    const int auto7A2689F5_ai = 1;
+
+    // Variable Initialization
+    lv_unitCount = CatalogFieldValueCount(c_gameCatalogUpgrade, "MasteryMultiPlayerCollectionProtossMasteryUnitCost", "AffectedUnitArray", lp_player);
+
+    // Implementation
+    lv_upgradeCount = TechTreeUpgradeCount(lp_player, "MasteryMultiPlayerCollectionProtossMasteryUnitCost", c_techCountCompleteOnly);
+    auto7A2689F5_ae = lv_unitCount;
+    lv_unitIndex = 0;
+    for ( ; ( (auto7A2689F5_ai >= 0 && lv_unitIndex <= auto7A2689F5_ae) || (auto7A2689F5_ai < 0 && lv_unitIndex >= auto7A2689F5_ae) ) ; lv_unitIndex += auto7A2689F5_ai ) {
+        lv_indexUnit = (CatalogFieldValueGet(c_gameCatalogUpgrade, "MasteryMultiPlayerCollectionProtossMasteryUnitCost", "AffectedUnitArray[" + IntToString(lv_unitIndex) + "]", lp_player));
+        libMPPT_gf_MP_MasteryMultiPlayerCollectionProtossMasteryUnitCostReduction(lv_indexUnit, lp_player, lv_upgradeCount);
+    }
+}
+
+void libMPPT_gf_MP_MasteryMultiPlayerCollectionProtossMasteryUnitCostReduction (string lp_unitType, int lp_player, int lp_upgradeCount) {
+    // Variable Declarations
+    fixed lv_unitVespeneCostOriginal;
+    fixed lv_UnitVespeneCostReductionPerPoint;
+    fixed lv_unitVespeneCostReduction;
+    int lv_UnitVespeneCostNew;
+    fixed lv_unitMineralCostOriginal;
+    fixed lv_UnitVespeneCostReductionPerPoint2;
+    fixed lv_unitMineralCostReduction;
+    int lv_UnitVespeneCostNew2;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_UnitVespeneCostReductionPerPoint = 100.0;
+    lv_UnitVespeneCostReductionPerPoint2 = 100.0;
+
+    // Implementation
+    lv_unitVespeneCostOriginal = IntToFixed(CatalogFieldValueGetAsInt(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(1) + "]", lp_player));
+    lv_unitVespeneCostReduction = (IntToFixed(lp_upgradeCount) * lv_unitVespeneCostOriginal);
+    lv_unitVespeneCostReduction = (lv_unitVespeneCostReduction / lv_UnitVespeneCostReductionPerPoint);
+    lv_UnitVespeneCostNew = FixedToInt((lv_unitVespeneCostOriginal - lv_unitVespeneCostReduction));
+    lv_unitMineralCostOriginal = IntToFixed(CatalogFieldValueGetAsInt(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(0) + "]", lp_player));
+    lv_unitMineralCostReduction = (IntToFixed(lp_upgradeCount) * lv_unitMineralCostOriginal);
+    lv_unitMineralCostReduction = (lv_unitMineralCostReduction / lv_UnitVespeneCostReductionPerPoint2);
+    lv_UnitVespeneCostNew2 = FixedToInt((lv_unitMineralCostOriginal - lv_unitMineralCostReduction));
+    CatalogFieldValueSet(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(0) + "]", lp_player, IntToString(lv_UnitVespeneCostNew2));
+    CatalogFieldValueSet(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(1) + "]", lp_player, IntToString(lv_UnitVespeneCostNew));
+}
+
+void libMPPT_gf_UT_Cooldown_MultiPlayerCollectionProtoss (int lp_pPlayer) {
+    // Automatic Variable Declarations
+    // Implementation
+    PlayerAddChargeRegenRemaining(lp_pPlayer, "Abil/MultiPlayerCollectionWarpGateTrain", -300.0);
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: MP_MasteryMultiPlayerCollectionProtoss_TriggerInit
+//--------------------------------------------------------------------------------------------------
+bool libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_TriggerInit_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerExecute(libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_TriggerInit_Init () {
+    libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_TriggerInit = TriggerCreate("libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_TriggerInit_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: MP_MasteryMultiPlayerCollectionProtoss_AfterStart
+//--------------------------------------------------------------------------------------------------
+bool libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while ((GameGetMissionTime() <= 2.0)) {
+        Wait(0.5, c_timeGame);
+    }
+    libMPPT_gf_CM_MasteryKerriganArmyVespeneCostList(1);
+    libMPPT_gf_CM_MasteryKerriganArmyVespeneCostList(2);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart_Init () {
+    libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart = TriggerCreate("libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: UT_Cooldown_MultiPlayerCollectionProtoss
+//--------------------------------------------------------------------------------------------------
+bool libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCOTF_gf_UT_DevCommandsActive(libCOTF_ge_UT_DevCommandTypes_Gamealtering, EventPlayer()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libMPPT_gf_UT_Cooldown_MultiPlayerCollectionProtoss(EventPlayer());
+    if ((PlayerGetAlliance(1, c_allianceIdControl, 2) == true)) {
+        libMPPT_gf_UT_Cooldown_MultiPlayerCollectionProtoss(2);
+    }
+
+    libCOTF_gf_UT_Cheat();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss_Init () {
+    libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss = TriggerCreate("libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss_Func");
+    TriggerAddEventChatMessage(libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss, c_playerAny, "-cdr", false);
+}
+
+void libMPPT_InitTriggers () {
+    libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_TriggerInit_Init();
+    libMPPT_gt_MP_MasteryMultiPlayerCollectionProtoss_AfterStart_Init();
+    libMPPT_gt_UT_Cooldown_MultiPlayerCollectionProtoss_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libMPPT_InitLib_completed = false;
+
+void libMPPT_InitLib () {
+    if (libMPPT_InitLib_completed) {
+        return;
+    }
+
+    libMPPT_InitLib_completed = true;
+
+    libMPPT_InitLibraries();
+    libMPPT_InitTriggers();
+}
+
