@@ -76,6 +76,81 @@
                 <Field Id="Level"/>
             </User>
         </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII01">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII01">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII02">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII02">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII03">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII03">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII04">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII04">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII05">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII05">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII06">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII06">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII07">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII07">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII08">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII08">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII09">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII09">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII10">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII10">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII11">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII11">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII12">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII12">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII13">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII13">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII14">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII14">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
+        <Instances Id="MultiPlayerCollectionProtossLevelII15">
+            <User Type="PlayerLevels" Instance="MultiPlayerCollectionProtossLevelII15">
+                <Field Id="Level"/>
+            </User>
+        </Instances>
     </CUser>
     <CUser id="MasteryUpgrades">
         <Instances Id="MultiPlayerCollectionProtossMastery1">

@@ -26,7 +26,7 @@
     <Frame type="Frame" name="LoadingPlayerCardTemplate" template="LoadingPlayerCardTemplates/LoadingPlayerCardTemplate">
         
         <Frame type="Image" name="Banner">
-            <Texture val="NC_LoadingBanner\racebanner_random_warchest3_1v1.dds"/>
+            <Texture val="Assets\Textures\racebanner_random_twitchprime2019_1v1.dds"/>
         </Frame>
         
         <Frame type="Image" name="ColorIndicator">
@@ -67,7 +67,7 @@
     <Frame type="Frame" name="LoadingPlayerCardReverseTemplate" template="LoadingPlayerCardTemplates/LoadingPlayerCardReverseTemplate">
         
         <Frame type="Image" name="Banner">
-            <Texture val="NC_LoadingBanner\racebanner_random_twitchprime2019_1v1.dds"/>
+            <Texture val="Assets\Textures\racebanner_random_iemkatowice2019_1v1.dds"/>
         </Frame>
         
         <Frame type="Image" name="ColorIndicator">

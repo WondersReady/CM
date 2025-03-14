@@ -212,12 +212,11 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
-                <TimeStart value="30"/>
+                <Link value="WarpGateTrain"/>
                 <TimeUse value="28"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
-            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Cooldown Link="WarpGateTrain"/>
             <Button DefaultButtonFace="MultiPlayerCollectionZealot"/>
         </InfoArray>
         <InfoArray index="Train2" Time="16" Unit="MultiPlayerCollectionStalker">
@@ -225,11 +224,11 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <Link value="WarpGateTrain"/>
                 <TimeUse value="32"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
-            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Cooldown Link="WarpGateTrain"/>
             <Button DefaultButtonFace="MultiPlayerCollectionStalker" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
         </InfoArray>
         <InfoArray index="Train4" Time="16" Unit="MultiPlayerCollectionHighTemplar">
@@ -237,11 +236,11 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <Link value="WarpGateTrain"/>
                 <TimeUse value="45"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
-            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Cooldown Link="WarpGateTrain"/>
             <Button DefaultButtonFace="MultiPlayerCollectionHighTemplar" Requirements="MultiPlayerCollectionHaveTemplarArchives"/>
         </InfoArray>
         <InfoArray index="Train5" Time="16" Unit="MultiPlayerCollectionDarkTemplar">
@@ -249,11 +248,11 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <Link value="WarpGateTrain"/>
                 <TimeUse value="45"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
-            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Cooldown Link="WarpGateTrain"/>
             <Button DefaultButtonFace="MultiPlayerCollectionDarkTemplar" Requirements="MultiPlayerCollectionHaveDarkShrine"/>
         </InfoArray>
         <InfoArray index="Train6" Time="16" Unit="MultiPlayerCollectionSentry">
@@ -261,11 +260,11 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <Link value="WarpGateTrain"/>
                 <TimeUse value="32"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
-            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Cooldown Link="WarpGateTrain"/>
             <Button DefaultButtonFace="MultiPlayerCollectionSentry" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
         </InfoArray>
         <InfoArray index="Train7" Time="16" Unit="MultiPlayerCollectionAdept">
@@ -273,11 +272,11 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <Link value="Alib/MultiPlayerCollectionWarpGateTrain"/>
+                <Link value="WarpGateTrain"/>
                 <TimeUse value="28"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
-            <Cooldown Link="Alib/MultiPlayerCollectionWarpGateTrain"/>
+            <Cooldown Link="WarpGateTrain"/>
             <Button DefaultButtonFace="MultiPlayerCollectionWarpInAdept" Requirements="MultiPlayerCollectionHaveCyberneticsCore"/>
         </InfoArray>
     </CAbilWarpTrain>

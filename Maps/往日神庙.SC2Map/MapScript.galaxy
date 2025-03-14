@@ -188,14 +188,12 @@ void gf_VoidThrasherAIThink (int lp_player, unit lp_aiUnit, unitgroup lp_scanGro
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
-trigger gt_Init01LoadData;
 trigger gt_Init02Players;
 trigger gt_Init04Technology;
 trigger gt_Init05Units;
 trigger gt_Init06MusicSound;
 trigger gt_Init07Environment;
 trigger gt_Init08Difficulties;
-trigger gt_Init03LoadingComplete;
 trigger gt_LoadBankVariables;
 trigger gt_CreateOptionsDialog;
 trigger gt_OpenOptions;
@@ -1001,28 +999,6 @@ void gf_VoidThrasherAIThink (int lp_player, unit lp_aiUnit, unitgroup lp_scanGro
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Init 01 Load Data
-//--------------------------------------------------------------------------------------------------
-bool gt_Init01LoadData_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    TriggerExecute(gt_Init02Players, true, false);
-    TriggerExecute(gt_SleepInactiveUnits, true, false);
-    libCOMI_gf_LoadCoopMission("AC_ShakurasTemple", gt_Init03LoadingComplete);
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_Init01LoadData_Init () {
-    gt_Init01LoadData = TriggerCreate("gt_Init01LoadData_Func");
-    TriggerAddEventMapInit(gt_Init01LoadData);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Init 02 Players
 //--------------------------------------------------------------------------------------------------
 bool gt_Init02Players_Func (bool testConds, bool runActions) {
@@ -1352,33 +1328,6 @@ bool gt_Init08Difficulties_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void gt_Init08Difficulties_Init () {
     gt_Init08Difficulties = TriggerCreate("gt_Init08Difficulties_Func");
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Init 03 Loading Complete
-//--------------------------------------------------------------------------------------------------
-bool gt_Init03LoadingComplete_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    TriggerExecute(gt_Init04Technology, true, false);
-    libCOOC_gf_PurchaseStorymodeTech();
-    TriggerExecute(gt_Init05Units, true, false);
-    TriggerExecute(gt_Init06MusicSound, true, false);
-    TriggerExecute(gt_Init07Environment, true, false);
-    TriggerExecute(gt_Init08Difficulties, true, false);
-    libCOMI_gf_PlayMapIntroZoom(true);
-    TriggerExecute(gt_StartAI, true, false);
-    TriggerExecute(gt_StartGameQ, true, false);
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_Init03LoadingComplete_Init () {
-    gt_Init03LoadingComplete = TriggerCreate("gt_Init03LoadingComplete_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -5363,14 +5312,12 @@ void gt_ObjectiveDestroyZenithStonesFailed_Init () {
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
-    gt_Init01LoadData_Init();
     gt_Init02Players_Init();
     gt_Init04Technology_Init();
     gt_Init05Units_Init();
     gt_Init06MusicSound_Init();
     gt_Init07Environment_Init();
     gt_Init08Difficulties_Init();
-    gt_Init03LoadingComplete_Init();
     gt_LoadBankVariables_Init();
     gt_CreateOptionsDialog_Init();
     gt_OpenOptions_Init();

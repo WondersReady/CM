@@ -68,8 +68,18 @@ void libMPPT_gf_MP_MasteryMultiPlayerCollectionProtossMasteryUnitCostReduction (
 
 void libMPPT_gf_UT_Cooldown_MultiPlayerCollectionProtoss (int lp_pPlayer) {
     // Automatic Variable Declarations
+    unitgroup auto4D83DBCF_g;
+    int auto4D83DBCF_u;
+    unit auto4D83DBCF_var;
+
     // Implementation
-    PlayerAddChargeRegenRemaining(lp_pPlayer, "Abil/MultiPlayerCollectionWarpGateTrain", -300.0);
+    auto4D83DBCF_g = UnitGroup(null, lp_pPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+    auto4D83DBCF_u = UnitGroupCount(auto4D83DBCF_g, c_unitCountAll);
+    for (;; auto4D83DBCF_u -= 1) {
+        auto4D83DBCF_var = UnitGroupUnitFromEnd(auto4D83DBCF_g, auto4D83DBCF_u);
+        if (auto4D83DBCF_var == null) { break; }
+        UnitAbilityReset(auto4D83DBCF_var, AbilityCommand("MultiPlayerCollectionWarpGateTrain", 0), c_spendLocationAll);
+    }
 }
 
 // Triggers
