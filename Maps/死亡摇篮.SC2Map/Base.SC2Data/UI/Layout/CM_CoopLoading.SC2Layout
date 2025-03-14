@@ -778,7 +778,7 @@
         <Anchor relative="$parent"/>
         
         <Frame type="Image" name="BackgroundImage">
-            <Texture val="@UI/SC2_UI_Coop_Loading_CradleOfDeath_Bg"/>
+            <Texture val="Assets\Textures\ui_loading_coop_cradleofdeath.dds"/>
         </Frame>
 
         <Frame type="Label" name="Map_Title">
@@ -788,7 +788,7 @@
         <Frame type="Frame" name="GameplayItem1" template="CM_CoopLoading/CoopGameplayInfoTemplate">
                 
             <Frame type="Image" name="GameplayIcon">
-                <Texture val="@UI/SC2_UI_Coop_Loading_CradleOfDeath_Gameplay1"/>
+                <Texture val="Assets\Textures\ui_loading_coop_gameplay_cradleofdeath1.dds"/>
             </Frame>
             
             <Frame type="Label" name="GameplayText">
@@ -799,7 +799,7 @@
         <Frame type="Frame" name="GameplayItem2" template="CM_CoopLoading/CoopGameplayInfoTemplate">
                 
             <Frame type="Image" name="GameplayIcon">
-                <Texture val="@UI/SC2_UI_Coop_Loading_CradleOfDeath_Gameplay2"/>
+                <Texture val="Assets\Textures\ui_loading_coop_gameplay_cradleofdeath2.dds"/>
             </Frame>
             
             <Frame type="Label" name="GameplayText">
